@@ -8,6 +8,6 @@ namespace OtelProgrami
 {
     class CiftKisilikOda : Oda
     {
-
+        
     }
 }

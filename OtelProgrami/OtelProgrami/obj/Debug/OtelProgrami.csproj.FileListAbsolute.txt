@@ -1,0 +1,11 @@
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe.config
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.pdb
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.Properties.Resources.resources
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.GenerateResource.cache
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CoreCompileInputs.cache
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.exe
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.pdb
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csprojResolveAssemblyReference.cache
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.AnaGiris.resources
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.UyeOl.resources

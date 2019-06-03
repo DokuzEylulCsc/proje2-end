@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OtelProgrami
 {
-    public partial class Form1 : Form
+    public partial class OtelRezervasyon : Form
     {
-        public Form1()
+        public OtelRezervasyon()
         {
             InitializeComponent();
         }
