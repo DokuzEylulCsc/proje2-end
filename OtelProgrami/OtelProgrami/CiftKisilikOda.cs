@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    class CiftKisilikOda : Oda
+    class CiftKisilikOda:Oda
     {
-        
+
     }
 }

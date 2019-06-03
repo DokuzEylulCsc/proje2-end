@@ -9,3 +9,5 @@ C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\
 C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csprojResolveAssemblyReference.cache
 C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.AnaGiris.resources
 C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.UyeOl.resources
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csprojAssemblyReference.cache
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OtelRezervasyon.resources

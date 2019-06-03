@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    public abstract class Oda
+    class Oda
     {
         int fiyat;
         int kisiKapasitesi;
-
-        //metotlar..
     }
 }

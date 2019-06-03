@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    class Pansiyon : Otel
+    class Pansiyon
     {
         public override void MusterileriGoster()
         {

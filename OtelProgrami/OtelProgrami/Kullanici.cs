@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    public abstract class Kullanici
+    class Kullanici
     {
         string adsoyad;
         LinkedList<Rezervasyon> rezervasyonlarim = new LinkedList<Rezervasyon>();

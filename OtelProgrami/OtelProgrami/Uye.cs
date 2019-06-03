@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    class Uye : Kullanici
+    class Uye:Kullanici
     {
         Uye(string adsoyad)
         {

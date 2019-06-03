@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    public abstract class Otel
+    class Otel
     {
         int yildizSayisi;
 
-       //Yonetici erisebilir
+        //Yonetici erisebilir
         public abstract void OdalariGoster();
         public abstract void MusterileriGoster();
     }
