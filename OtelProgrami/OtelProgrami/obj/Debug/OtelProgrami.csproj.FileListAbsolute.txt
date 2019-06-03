@@ -11,3 +11,12 @@ C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\
 C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.UyeOl.resources
 C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csprojAssemblyReference.cache
 C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OtelRezervasyon.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csprojAssemblyReference.cache
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.AnaGiris.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OtelRezervasyon.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.Properties.Resources.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.UyeOl.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.GenerateResource.cache
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CoreCompileInputs.cache
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.exe
+C:\Users\Ozgur Can\Desktop\nesneodev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.pdb

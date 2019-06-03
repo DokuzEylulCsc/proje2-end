@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    class Otel
+    abstract class Otel
     {
         int yildizSayisi;
 
