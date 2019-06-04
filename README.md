@@ -12,7 +12,6 @@
 10. Zaman yeterse verileri JSON olarak tutmak yerine MSSQL veritabanına kaydedilip okunması [-] //Emre
 11. Programda onceden tanımlı oteller, oda bilgileri girilmesi [-] //Emre
 
-
 # BİL 2002 Nesneye Yönelik Programlama
 ## Proje 2 Teslim Tarihi: 12 Haziran 2019 Çarşamba 21:30 (GitHub üzerinden)
 ### (2 veya 3 kişilik gruplar halinde)
