@@ -20,12 +20,11 @@ namespace OtelProgrami
         private void button_giris_Click(object sender, EventArgs e)
         {
             string kullanici_Adi = textBox_KullaniciAdi.Text;
-            int kullanici_Sifre = Int32.Parse(textBox_Sifre.Text);//ınt mi string mi?
+            string kullanici_Sifre = textBox_Sifre.Text;//ınt mi string mi?
             //Kullanıcı kontrole veriler gönderilip kontrol edilecek
             //bunlar o klasa aktarılacak.
-            //OtelRezervasyon rez = new OtelRezervasyon();
-            //rez.ShowDialog();
-
+            OtelRezervasyon rez = new OtelRezervasyon();
+            rez.ShowDialog();
         }
 
         private void Kayit_Click(object sender, EventArgs e)

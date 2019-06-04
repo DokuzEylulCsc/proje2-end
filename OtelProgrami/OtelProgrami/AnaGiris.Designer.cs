@@ -139,8 +139,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_giris);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "AnaGiris";
-            this.Text = "Form1";
+            this.Text = "Otel Otomasyonu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
