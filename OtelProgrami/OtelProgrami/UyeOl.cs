@@ -24,9 +24,10 @@ namespace OtelProgrami
             string e_mail = textBox_Email.Text;
             string kullanici_Adi = textBox_KullaniciAdi.Text;
             string tel = textBox_Tel.Text;
-            int sifre = Int32.Parse(textBox_Sifre.Text);
-
-
+            string sifre = textBox_Sifre.Text;
+            MessageBox.Show("Merhaba " + ad + " kaydınız başarı ile oluşturulmuştur.");
+            this.Close();
+           
         }
     }
 }
