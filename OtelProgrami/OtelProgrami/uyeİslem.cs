@@ -27,38 +27,38 @@ namespace OtelProgrami
                 db.baglanti.Open();
                 SqlCommand loginName = new SqlCommand("select kullaniciAdi from kullaniciBilgileri where kullaniciAdi=@kulAdi", db.baglanti);
                 loginName.Parameters.AddWithValue("@kulAdi", kullaniciAdi);
-                SqlDataReader kulAdi_oku = loginName.ExecuteReader();            
+                SqlDataReader kulAdi_oku = loginName.ExecuteReader();
                 if (kulAdi_oku.Read())
                 {
                     kullaniciAdi_tut = kulAdi_oku["kullaniciAdi"].ToString();
                     SqlCommand loginpasword = new SqlCommand("select kullaniciSifre from kullaniciBilgileri where kullaniciSifre = @kulSifre", db.baglanti);
                     loginName.Parameters.AddWithValue("kulSifre", kullaniciSifre);
                     SqlDataReader kulSifre_oku = loginpasword.ExecuteReader();
-                    if(kulSifre_oku.Read())
+                    if (kulSifre_oku.Read())
                     {
                         kullaniciSifre_tut = kulSifre_oku["kullaniciSifre"].ToString();
                         girisDurumu = kullaniciAdi_tut + " " + kullaniciSifre_tut;
-                        if(kullaniciAdi_tut=="Admin" && kullaniciSifre_tut=="Admin")
+                        if (kullaniciAdi_tut == "Admin" && kullaniciSifre_tut == "Admin")
                         {
                             frm.ShowDialog();
                         }
                         rez.ShowDialog();
-                       // dateUpdate.Parameters
+                        // dateUpdate.Parameters
                     }
                     else
                     {
-                        MessageBox.Show("Kullanici Şifresini Yanlış Girdiniz.","Hata|AnaGiris", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        
+                        MessageBox.Show("Kullanici Şifresini Yanlış Girdiniz.", "Hata|AnaGiris", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     }
                     loginpasword.Dispose();
-                    kulSifre_oku.Close();   
+                    kulSifre_oku.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Kullanici Adini Yanlış Girdiniz.","Hata|AnaGiris",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Kullanici Adini Yanlış Girdiniz.", "Hata|AnaGiris", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 loginName.Dispose();
-                kulAdi_oku.Close();              
+                kulAdi_oku.Close();
                 db.baglanti.Close();
             }
             catch { }
@@ -77,20 +77,20 @@ namespace OtelProgrami
             {
                 db.baglanti.Open();
                 SqlCommand kayit_al = new SqlCommand("insert into Musteriler values(@ad,@soyad,@tel,@eMail,@kullaniciAdi,@kullaniciSifre)", db.baglanti);
-                kayit_al.Parameters.AddWithValue("ad",ad);
-                kayit_al.Parameters.AddWithValue("soyad",soyad);
-                kayit_al.Parameters.AddWithValue("tel",tel);
-                kayit_al.Parameters.AddWithValue("eMail",e_mail);
-                kayit_al.Parameters.AddWithValue("kullaniciAdi",kullanici_Adi);
-                kayit_al.Parameters.AddWithValue("kullaniciSifre",sifre);
+                kayit_al.Parameters.AddWithValue("ad", ad);
+                kayit_al.Parameters.AddWithValue("soyad", soyad);
+                kayit_al.Parameters.AddWithValue("tel", tel);
+                kayit_al.Parameters.AddWithValue("eMail", e_mail);
+                kayit_al.Parameters.AddWithValue("kullaniciAdi", kullanici_Adi);
+                kayit_al.Parameters.AddWithValue("kullaniciSifre", sifre);
                 kayit_al.ExecuteNonQuery();
                 MessageBox.Show("Merhaba " + ad + " kaydınız başarı ile oluşturulmuştur.");
                 kayit_al.Dispose();
             }
             catch (Exception)
             {
+                throw new Exception();
 
-                throw;
             }
             finally
             {

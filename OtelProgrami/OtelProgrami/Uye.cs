@@ -5,25 +5,48 @@ using System.Text;
 using System.Threading.Tasks;
 namespace OtelProgrami
 {
-    class Uye:Kullanici
+    class Uye
     {
-        
-        Uye(string adsoyad)
-        {
-            Adsoyad = adsoyad;
-        }
-        
-        public override void BilgileriniGuncelle()
-        {
+        string adSoyad;
+        string tcNo;
+        int yas;
 
-        }
+        // Rezervasyon classının gerekip gerekmemesine gore silinecek
+        //LinkedList<Rezervasyon> rezervasyonlarim = new LinkedList<Rezervasyon>();
 
-        public override void RezervasyonIptalEt()
+        Uye(string adsoyad, int yas, string tcno)
         {
-
+            AdSoyad = adSoyad;
+            TcNo = tcno;
+            Yas = yas;
         }
 
-        public override void RezervasyonYap()
+        public string AdSoyad { get => adSoyad; set => adSoyad = value; }
+        public string TcNo { get => tcNo; set => tcNo = value; }
+        public int Yas { get => yas; set => yas = value; }
+
+        public void BilgileriniGuncelle(string yeniAdsoyad, string yeniTc, int yeniYas)
+        {
+            AdSoyad = yeniAdsoyad;
+            TcNo = yeniTc;
+            Yas = yeniYas;
+        }
+
+        public void RezervasyonIptalEt()
+        {
+
+        }
+
+        // Sistem'e rezervasyon talebi gider, sistem uyenin talebine uygun sonuclari
+        // uyeye bildirir.
+        public void RezervasyonTalepEt()
+        {
+
+        }
+
+        // Uye, sistemin sundugu uygun otel sonuclarindan birini secer,
+        // ve rezervasyonu tamamlar.
+        public void RezervasyonTamamla()
         {
 
         }

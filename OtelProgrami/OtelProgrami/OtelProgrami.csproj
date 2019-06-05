@@ -56,7 +56,6 @@
     <Compile Include="CiftKisilikOda.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="IkizYatakliOda.cs" />
-    <Compile Include="Kullanici.cs" />
     <Compile Include="Oda.cs" />
     <Compile Include="Otel.cs" />
     <Compile Include="OtelRezervasyon.cs">
@@ -81,7 +80,7 @@
     </Compile>
     <Compile Include="uyeİslem.cs" />
     <Compile Include="Yonetici.cs" />
-    <Compile Include="Yonetim.cs" />
+    <Compile Include="Sistem.cs" />
     <Compile Include="YoneticiForm.cs">
       <SubType>Form</SubType>
     </Compile>

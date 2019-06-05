@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OtelProgrami
 {
-    class TekKisilikOda:Oda
+    class TekKisilikOda : Oda
     {
+
     }
 }
