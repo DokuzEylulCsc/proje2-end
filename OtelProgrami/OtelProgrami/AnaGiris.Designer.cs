@@ -142,6 +142,7 @@
             this.MaximizeBox = false;
             this.Name = "AnaGiris";
             this.Text = "Otel Otomasyonu";
+            this.Load += new System.EventHandler(this.AnaGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,12 +15,14 @@ namespace OtelProgrami
         public string kullaniciAdi_tut { get; set; }
         public string kullaniciSifre_tut { get; set; }
         public string girisDurumu { get; set; }
+
         public void giris(string kullaniciAdi, string kullaniciSifre)
         {
             if (db.baglanti.State == System.Data.ConnectionState.Open)
             {
                 db.baglanti.Close();
             }
+           
             //girişteki kullanici veya sifre girme hatası log kaydı için
             try
             {
@@ -38,11 +40,15 @@ namespace OtelProgrami
                     {
                         kullaniciSifre_tut = kulSifre_oku["kullaniciSifre"].ToString();
                         girisDurumu = kullaniciAdi_tut + " " + kullaniciSifre_tut;
-                        if(kullaniciAdi_tut=="Admin" && kullaniciSifre_tut=="Admin")
+                        //Yönetici formuna yonlendirme
+                        if (kullaniciAdi_tut == "Admin" && kullaniciSifre_tut == "Admin")
                         {
                             frm.ShowDialog();
                         }
-                        rez.ShowDialog();
+                        else
+                        {
+                            rez.ShowDialog();
+                        } 
                        // dateUpdate.Parameters
                     }
                     else

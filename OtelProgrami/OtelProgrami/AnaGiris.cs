@@ -19,7 +19,7 @@ namespace OtelProgrami
 
         private void button_giris_Click(object sender, EventArgs e)
         {
-            uyeİslem giris = new uyeİslem();
+            Uye giris = new Uye();
            
             if (textBox_KullaniciAdi.Text==string.Empty || textBox_Sifre.Text==string.Empty)
             {
@@ -50,6 +50,11 @@ namespace OtelProgrami
             {
                 textBox_Sifre.PasswordChar = '*';
             }
+        }
+
+        private void AnaGiris_Load(object sender, EventArgs e)
+        {
+            textBox_Sifre.PasswordChar = '*';
         }
     }
 }
