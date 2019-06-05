@@ -7,8 +7,9 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 namespace OtelProgrami
 {
-    class Uye:Kullanici
+    class Uye
     {
+<<<<<<< HEAD
         Database db = new Database();
         OtelRezervasyon rez = new OtelRezervasyon();
         YoneticiForm frm = new YoneticiForm();
@@ -108,16 +109,48 @@ namespace OtelProgrami
             }
         }
         public override void BilgileriniGuncelle()
+=======
+        string adSoyad;
+        string tcNo;
+        int yas;
+
+        // Rezervasyon classının gerekip gerekmemesine gore silinecek
+        //LinkedList<Rezervasyon> rezervasyonlarim = new LinkedList<Rezervasyon>();
+
+        Uye(string adsoyad, int yas, string tcno)
+        {
+            AdSoyad = adSoyad;
+            TcNo = tcno;
+            Yas = yas;
+        }
+
+        public string AdSoyad { get => adSoyad; set => adSoyad = value; }
+        public string TcNo { get => tcNo; set => tcNo = value; }
+        public int Yas { get => yas; set => yas = value; }
+
+        public void BilgileriniGuncelle(string yeniAdsoyad, string yeniTc, int yeniYas)
+        {
+            AdSoyad = yeniAdsoyad;
+            TcNo = yeniTc;
+            Yas = yeniYas;
+        }
+
+        public void RezervasyonIptalEt()
+>>>>>>> 357a3b84ba9a9eac3c7878e2981bf9ee97df3246
         {
 
         }
 
-        public override void RezervasyonIptalEt()
+        // Sistem'e rezervasyon talebi gider, sistem uyenin talebine uygun sonuclari
+        // uyeye bildirir.
+        public void RezervasyonTalepEt()
         {
 
         }
 
-        public override void RezervasyonYap()
+        // Uye, sistemin sundugu uygun otel sonuclarindan birini secer,
+        // ve rezervasyonu tamamlar.
+        public void RezervasyonTamamla()
         {
 
         }

@@ -8,6 +8,7 @@ namespace OtelProgrami
 {
     class Database
     {
+        //Ozgur 4H7EI52
         public SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-89UBDQO;Initial Catalog=OtelOtomasyonu;Integrated Security=True");
     }
 }
