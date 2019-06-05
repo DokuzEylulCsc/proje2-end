@@ -21,6 +21,7 @@ namespace OtelProgrami
         {
             comboBox_OdaTuru.SelectedIndex = 0;
             comboBox_OtelTuru.SelectedIndex = 0;
+            comboBox_odaOzellik.SelectedIndex = 0;
             uc_yildiz.Checked=true;
         }
 

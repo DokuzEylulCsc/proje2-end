@@ -19,15 +19,16 @@ namespace OtelProgrami
 
         private void button_Kayitol_Click(object sender, EventArgs e)
         {
+            uyeİslem kyt = new uyeİslem();
             string ad = textBox_Ad.Text;
             string soyad = textBox_Soyad.Text;
             string e_mail = textBox_Email.Text;
             string kullanici_Adi = textBox_KullaniciAdi.Text;
             string tel = textBox_Tel.Text;
             string sifre = textBox_Sifre.Text;
-            MessageBox.Show("Merhaba " + ad + " kaydınız başarı ile oluşturulmuştur.");
+            kyt.kayit(ad, soyad, e_mail, kullanici_Adi, tel, sifre);
             this.Close();
-           
+            
         }
     }
 }

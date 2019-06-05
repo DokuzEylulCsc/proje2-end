@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="ButikOtel.cs" />
     <Compile Include="CiftKisilikOda.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="IkizYatakliOda.cs" />
     <Compile Include="Kullanici.cs" />
     <Compile Include="Oda.cs" />
@@ -78,13 +79,14 @@
     <Compile Include="UyeOl.Designer.cs">
       <DependentUpon>UyeOl.cs</DependentUpon>
     </Compile>
+    <Compile Include="uyeİslem.cs" />
     <Compile Include="Yonetici.cs" />
     <Compile Include="Yonetim.cs" />
-    <Compile Include="YöneticiForm.cs">
+    <Compile Include="YoneticiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YöneticiForm.Designer.cs">
-      <DependentUpon>YöneticiForm.cs</DependentUpon>
+    <Compile Include="YoneticiForm.Designer.cs">
+      <DependentUpon>YoneticiForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AnaGiris.resx">
       <DependentUpon>AnaGiris.cs</DependentUpon>
@@ -105,8 +107,8 @@
     <EmbeddedResource Include="UyeOl.resx">
       <DependentUpon>UyeOl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YöneticiForm.resx">
-      <DependentUpon>YöneticiForm.cs</DependentUpon>
+    <EmbeddedResource Include="YoneticiForm.resx">
+      <DependentUpon>YoneticiForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -123,6 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Deniz-Manzarasi_a5ac1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\376352.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

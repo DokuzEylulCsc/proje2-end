@@ -19,12 +19,18 @@ namespace OtelProgrami
 
         private void button_giris_Click(object sender, EventArgs e)
         {
-            string kullanici_Adi = textBox_KullaniciAdi.Text;
-            string kullanici_Sifre = textBox_Sifre.Text;//ınt mi string mi?
-            //Kullanıcı kontrole veriler gönderilip kontrol edilecek
-            //bunlar o klasa aktarılacak.
-            OtelRezervasyon rez = new OtelRezervasyon();
-            rez.ShowDialog();
+            uyeİslem giris = new uyeİslem();
+           
+            if (textBox_KullaniciAdi.Text==string.Empty || textBox_Sifre.Text==string.Empty)
+            {
+                MessageBox.Show("Kullanıcı Adinizi veya Şifrenizi Yazmadınız.");
+            }
+            else
+            {
+                string kullanici_Adi = textBox_KullaniciAdi.Text;
+                string kullanici_Sifre = textBox_Sifre.Text;
+                giris.giris(kullanici_Adi, kullanici_Sifre);
+            }
         }
 
         private void Kayit_Click(object sender, EventArgs e)

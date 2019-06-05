@@ -47,7 +47,7 @@ namespace OtelProgrami.Properties {
         }
         
         /// <summary>
-        ///   Bu türü kesin olarak belirtilmiş kaynak sınıfını kullanarak geçerli iş parçacığının
+        ///   Tümü için geçerli iş parçacığının CurrentUICulture özelliğini geçersiz kular
         ///   CurrentUICulture özelliğini tüm kaynak aramaları için geçersiz kılar.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -57,6 +57,16 @@ namespace OtelProgrami.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _376352 {
+            get {
+                object obj = ResourceManager.GetObject("376352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
