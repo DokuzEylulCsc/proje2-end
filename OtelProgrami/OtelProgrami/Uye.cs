@@ -14,11 +14,16 @@ namespace OtelProgrami
         int yas;
         LinkedList<Rezervasyon> rezervasyonlarim = new LinkedList<Rezervasyon>();
 
-        Uye(string adsoyad, int yas, string tcno)
+        public Uye(string adsoyad, int yas, string tcno)
         {
             AdSoyad = adSoyad;
             TcNo = tcno;
             Yas = yas;
+        }
+
+        public Uye()
+        {
+
         }
 
         public string AdSoyad { get => adSoyad; set => adSoyad = value; }

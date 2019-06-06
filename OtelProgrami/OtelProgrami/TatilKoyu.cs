@@ -8,6 +8,13 @@ namespace OtelProgrami
 {
     class TatilKoyu : Otel
     {
+        public TatilKoyu(string otelIsmi, string sehirBilgisi, int yildizSy)
+        {
+            OtelIsmi = otelIsmi;
+            SehirBilgisi = sehirBilgisi;
+            YildizSayisi = yildizSy;
+        }
+
         public override void MusterileriGoster()
         {
 

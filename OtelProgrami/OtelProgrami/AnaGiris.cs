@@ -29,7 +29,7 @@ namespace OtelProgrami
             {
                 string kullanici_Adi = textBox_KullaniciAdi.Text;
                 string kullanici_Sifre = textBox_Sifre.Text;
-                giris.giris(kullanici_Adi, kullanici_Sifre);
+                //giris.giris(kullanici_Adi, kullanici_Sifre);
             }
         }
 
