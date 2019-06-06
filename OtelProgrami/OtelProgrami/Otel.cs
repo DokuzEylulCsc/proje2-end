@@ -9,9 +9,10 @@ namespace OtelProgrami
     abstract class Otel
     {
         int yildizSayisi;
-        //List olarak odalarin listesi ..
+        LinkedList<Oda> odaListesi = new LinkedList<Oda>();
 
         public int YildizSayisi { get => yildizSayisi; set => yildizSayisi = value; }
+        internal LinkedList<Oda> OdaListesi { get => odaListesi; set => odaListesi = value; }
 
         //Yonetici erisebilir
         public abstract void OdalariGoster();
