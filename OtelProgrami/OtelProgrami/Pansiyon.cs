@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ namespace OtelProgrami
             OtelIsmi = otelIsmi;
             SehirBilgisi = sehirBilgisi;
             YildizSayisi = yildizSy;
+            OtelTuru = "Pansiyon";
         }
 
         public override void MusterileriGoster()
@@ -24,5 +27,6 @@ namespace OtelProgrami
         {
 
         }
+
     }
 }

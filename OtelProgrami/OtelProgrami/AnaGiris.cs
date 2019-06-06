@@ -20,7 +20,7 @@ namespace OtelProgrami
 
         private void button_giris_Click(object sender, EventArgs e)
         {
-            Uye giris = new Uye();
+            //Uye giris = new Uye();
            
             if (textBox_KullaniciAdi.Text==string.Empty || textBox_Sifre.Text==string.Empty)
             {

@@ -13,6 +13,7 @@ namespace OtelProgrami
             OtelIsmi = otelIsmi;
             SehirBilgisi = sehirBilgisi;
             YildizSayisi = yildizSy;
+            OtelTuru = "Butik Otel";
         }
 
         public override void MusterileriGoster()
