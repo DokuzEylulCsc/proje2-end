@@ -32,20 +32,32 @@ namespace OtelProgrami
 
                 MessageBox.Show("Üye başarıyla kayıt oldu");
 
-                // Buraya log kaydi eklenecek uye kayit oldu bilgisi yazilacak
-
                 textBox_Ad.Text = "";
                 textBox_Soyad.Text = "";
                 textBox_Tel.Text = "";
                 textBox_TcNo.Text = "";
                 textBox_Sifre.Text = "";
             }
-            catch(Exception hata)
+            catch (Exception hata)
             {
-                //Log classi eklenecek uye kayit olamadı log'u olusturulacak
+                //Log classi eklenecek uye kayit olamadi log'u olusturulacak
                 MessageBox.Show(hata.Message);
             }
-            
+
+        }
+
+        private void sifreGizle_UyeOl_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (sifreGizle_UyeOl.Checked)
+            {
+                textBox_Sifre.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox_Sifre.PasswordChar = '*';
+            }
+
         }
     }
 }

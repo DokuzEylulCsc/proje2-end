@@ -76,7 +76,7 @@ namespace OtelProgrami
         }
 
         // JSONVeri/Uyeler klasörune yeni uye'nin json olarak bilgilerini yazdir
-        public void KayitOl()
+        internal void KayitOl()
         {
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Uyeler\";

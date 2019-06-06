@@ -51,32 +51,34 @@
             this.radioButton_besYildiz = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox_odaOzelligi = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.uyeListesiDataGrid = new System.Windows.Forms.DataGridView();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OtelTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OdaOzelligi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OdaTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ucret = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GirisTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uyeListesiDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker_Giris
             // 
-            this.dateTimePicker_Giris.Location = new System.Drawing.Point(510, 51);
+            this.dateTimePicker_Giris.Location = new System.Drawing.Point(382, 41);
+            this.dateTimePicker_Giris.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker_Giris.Name = "dateTimePicker_Giris";
-            this.dateTimePicker_Giris.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker_Giris.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker_Giris.TabIndex = 0;
             // 
             // dateTimePicker_Cikis
             // 
-            this.dateTimePicker_Cikis.Location = new System.Drawing.Point(510, 95);
+            this.dateTimePicker_Cikis.Location = new System.Drawing.Point(382, 77);
+            this.dateTimePicker_Cikis.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker_Cikis.Name = "dateTimePicker_Cikis";
-            this.dateTimePicker_Cikis.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker_Cikis.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker_Cikis.TabIndex = 1;
             // 
             // label1
@@ -84,9 +86,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(453, 51);
+            this.label1.Location = new System.Drawing.Point(340, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Giriş:";
             // 
@@ -95,9 +98,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(453, 95);
+            this.label2.Location = new System.Drawing.Point(340, 77);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 18);
+            this.label2.Size = new System.Drawing.Size(42, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Çıkış:";
             // 
@@ -108,17 +112,19 @@
             "Butik",
             "Pansiyon",
             "Tatil Köyü"});
-            this.comboBox_otelTuru.Location = new System.Drawing.Point(134, 42);
+            this.comboBox_otelTuru.Location = new System.Drawing.Point(100, 34);
+            this.comboBox_otelTuru.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_otelTuru.Name = "comboBox_otelTuru";
-            this.comboBox_otelTuru.Size = new System.Drawing.Size(168, 24);
+            this.comboBox_otelTuru.Size = new System.Drawing.Size(127, 21);
             this.comboBox_otelTuru.TabIndex = 4;
             // 
             // button_Ekle
             // 
             this.button_Ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Ekle.Location = new System.Drawing.Point(852, 21);
+            this.button_Ekle.Location = new System.Drawing.Point(639, 17);
+            this.button_Ekle.Margin = new System.Windows.Forms.Padding(2);
             this.button_Ekle.Name = "button_Ekle";
-            this.button_Ekle.Size = new System.Drawing.Size(153, 54);
+            this.button_Ekle.Size = new System.Drawing.Size(115, 44);
             this.button_Ekle.TabIndex = 5;
             this.button_Ekle.Text = "Ekle";
             this.button_Ekle.UseVisualStyleBackColor = true;
@@ -127,13 +133,14 @@
             // 
             this.comboBox_odaTuru.FormattingEnabled = true;
             this.comboBox_odaTuru.Items.AddRange(new object[] {
-            "Tek Kişik",
+            "Tek Kişilik",
             "Çift Kişilik",
             "İkiz Yataklı Çift Kişilik",
             "Üç Kişilik"});
-            this.comboBox_odaTuru.Location = new System.Drawing.Point(134, 97);
+            this.comboBox_odaTuru.Location = new System.Drawing.Point(100, 79);
+            this.comboBox_odaTuru.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_odaTuru.Name = "comboBox_odaTuru";
-            this.comboBox_odaTuru.Size = new System.Drawing.Size(168, 24);
+            this.comboBox_odaTuru.Size = new System.Drawing.Size(127, 21);
             this.comboBox_odaTuru.TabIndex = 7;
             // 
             // label3
@@ -141,9 +148,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(12, 43);
+            this.label3.Location = new System.Drawing.Point(9, 35);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 18);
+            this.label3.Size = new System.Drawing.Size(70, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Otel Türü:";
             // 
@@ -152,18 +160,20 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(12, 95);
+            this.label4.Location = new System.Drawing.Point(9, 77);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 18);
+            this.label4.Size = new System.Drawing.Size(70, 15);
             this.label4.TabIndex = 9;
             this.label4.Text = "Oda Türü:";
             // 
             // button_Sil
             // 
             this.button_Sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Sil.Location = new System.Drawing.Point(852, 89);
+            this.button_Sil.Location = new System.Drawing.Point(639, 72);
+            this.button_Sil.Margin = new System.Windows.Forms.Padding(2);
             this.button_Sil.Name = "button_Sil";
-            this.button_Sil.Size = new System.Drawing.Size(153, 54);
+            this.button_Sil.Size = new System.Drawing.Size(115, 44);
             this.button_Sil.TabIndex = 10;
             this.button_Sil.Text = "Sil";
             this.button_Sil.UseVisualStyleBackColor = true;
@@ -171,9 +181,10 @@
             // button_rezSorgu
             // 
             this.button_rezSorgu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_rezSorgu.Location = new System.Drawing.Point(852, 159);
+            this.button_rezSorgu.Location = new System.Drawing.Point(639, 129);
+            this.button_rezSorgu.Margin = new System.Windows.Forms.Padding(2);
             this.button_rezSorgu.Name = "button_rezSorgu";
-            this.button_rezSorgu.Size = new System.Drawing.Size(153, 54);
+            this.button_rezSorgu.Size = new System.Drawing.Size(115, 44);
             this.button_rezSorgu.TabIndex = 11;
             this.button_rezSorgu.Text = "Rezervasyon Sorgula";
             this.button_rezSorgu.UseVisualStyleBackColor = true;
@@ -182,9 +193,10 @@
             // 
             this.radioButton_ucYildiz.AutoSize = true;
             this.radioButton_ucYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_ucYildiz.Location = new System.Drawing.Point(369, 159);
+            this.radioButton_ucYildiz.Location = new System.Drawing.Point(277, 129);
+            this.radioButton_ucYildiz.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_ucYildiz.Name = "radioButton_ucYildiz";
-            this.radioButton_ucYildiz.Size = new System.Drawing.Size(60, 29);
+            this.radioButton_ucYildiz.Size = new System.Drawing.Size(48, 24);
             this.radioButton_ucYildiz.TabIndex = 12;
             this.radioButton_ucYildiz.TabStop = true;
             this.radioButton_ucYildiz.Text = "***";
@@ -194,9 +206,10 @@
             // 
             this.radioButton_dortYildiz.AutoSize = true;
             this.radioButton_dortYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_dortYildiz.Location = new System.Drawing.Point(504, 159);
+            this.radioButton_dortYildiz.Location = new System.Drawing.Point(378, 129);
+            this.radioButton_dortYildiz.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_dortYildiz.Name = "radioButton_dortYildiz";
-            this.radioButton_dortYildiz.Size = new System.Drawing.Size(69, 29);
+            this.radioButton_dortYildiz.Size = new System.Drawing.Size(55, 24);
             this.radioButton_dortYildiz.TabIndex = 13;
             this.radioButton_dortYildiz.TabStop = true;
             this.radioButton_dortYildiz.Text = "****";
@@ -206,9 +219,10 @@
             // 
             this.radioButton_besYildiz.AutoSize = true;
             this.radioButton_besYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_besYildiz.Location = new System.Drawing.Point(645, 159);
+            this.radioButton_besYildiz.Location = new System.Drawing.Point(484, 129);
+            this.radioButton_besYildiz.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_besYildiz.Name = "radioButton_besYildiz";
-            this.radioButton_besYildiz.Size = new System.Drawing.Size(78, 29);
+            this.radioButton_besYildiz.Size = new System.Drawing.Size(62, 24);
             this.radioButton_besYildiz.TabIndex = 14;
             this.radioButton_besYildiz.TabStop = true;
             this.radioButton_besYildiz.Text = "*****";
@@ -219,9 +233,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(12, 144);
+            this.label5.Location = new System.Drawing.Point(9, 117);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 18);
+            this.label5.Size = new System.Drawing.Size(90, 15);
             this.label5.TabIndex = 15;
             this.label5.Text = "Oda Özelliği:";
             // 
@@ -233,30 +248,32 @@
             "Normal",
             "Dağ Manzarası",
             "Deniz Manzarası"});
-            this.comboBox_odaOzelligi.Location = new System.Drawing.Point(134, 138);
+            this.comboBox_odaOzelligi.Location = new System.Drawing.Point(100, 112);
+            this.comboBox_odaOzelligi.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_odaOzelligi.Name = "comboBox_odaOzelligi";
-            this.comboBox_odaOzelligi.Size = new System.Drawing.Size(168, 24);
+            this.comboBox_odaOzelligi.Size = new System.Drawing.Size(127, 21);
             this.comboBox_odaOzelligi.TabIndex = 16;
             // 
-            // dataGridView1
+            // uyeListesiDataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.uyeListesiDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.uyeListesiDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ad,
             this.Soyad,
             this.Tel,
-            this.Email,
+            this.TC,
             this.OtelTuru,
             this.OdaOzelligi,
             this.OdaTuru,
             this.Ucret,
             this.GirisTarih,
             this.CikisTarihi});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 230);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1103, 291);
-            this.dataGridView1.TabIndex = 17;
+            this.uyeListesiDataGrid.Location = new System.Drawing.Point(2, 187);
+            this.uyeListesiDataGrid.Margin = new System.Windows.Forms.Padding(2);
+            this.uyeListesiDataGrid.Name = "uyeListesiDataGrid";
+            this.uyeListesiDataGrid.RowTemplate.Height = 24;
+            this.uyeListesiDataGrid.Size = new System.Drawing.Size(827, 236);
+            this.uyeListesiDataGrid.TabIndex = 17;
             // 
             // Ad
             // 
@@ -280,10 +297,10 @@
             this.Tel.HeaderText = "Telefon";
             this.Tel.Name = "Tel";
             // 
-            // Email
+            // TC
             // 
-            this.Email.HeaderText = "E-Mail";
-            this.Email.Name = "Email";
+            this.TC.HeaderText = "TC";
+            this.TC.Name = "TC";
             // 
             // OtelTuru
             // 
@@ -326,12 +343,12 @@
             this.CikisTarihi.Name = "CikisTarihi";
             this.CikisTarihi.Width = 120;
             // 
-            // YöneticiForm
+            // YoneticiForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 522);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(831, 424);
+            this.Controls.Add(this.uyeListesiDataGrid);
             this.Controls.Add(this.comboBox_odaOzelligi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.radioButton_besYildiz);
@@ -348,11 +365,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker_Cikis);
             this.Controls.Add(this.dateTimePicker_Giris);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "YöneticiForm";
+            this.Name = "YoneticiForm";
             this.Text = "YöneticiForm";
             this.Load += new System.EventHandler(this.YöneticiForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uyeListesiDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,11 +394,11 @@
         private System.Windows.Forms.RadioButton radioButton_besYildiz;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox_odaOzelligi;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView uyeListesiDataGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TC;
         private System.Windows.Forms.DataGridViewTextBoxColumn OtelTuru;
         private System.Windows.Forms.DataGridViewTextBoxColumn OdaOzelligi;
         private System.Windows.Forms.DataGridViewTextBoxColumn OdaTuru;

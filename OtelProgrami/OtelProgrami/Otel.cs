@@ -19,9 +19,5 @@ namespace OtelProgrami
         public int YildizSayisi { get => yildizSayisi; set => yildizSayisi = value; }
         internal LinkedList<Oda> OdaListesi { get => odaListesi; set => odaListesi = value; }
         public string OtelTuru { get => otelTuru; set => otelTuru = value; }
-
-        //Yonetici erisebilir
-        public abstract void OdalariGoster();
-        public abstract void MusterileriGoster();
     }
 }

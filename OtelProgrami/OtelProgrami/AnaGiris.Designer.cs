@@ -44,9 +44,10 @@
             this.button_giris.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button_giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button_giris.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_giris.Location = new System.Drawing.Point(353, 249);
+            this.button_giris.Location = new System.Drawing.Point(265, 202);
+            this.button_giris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_giris.Name = "button_giris";
-            this.button_giris.Size = new System.Drawing.Size(179, 35);
+            this.button_giris.Size = new System.Drawing.Size(134, 28);
             this.button_giris.TabIndex = 0;
             this.button_giris.Text = "Giriş";
             this.button_giris.UseVisualStyleBackColor = false;
@@ -57,9 +58,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(229, 115);
+            this.label1.Location = new System.Drawing.Point(172, 93);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 24);
+            this.label1.Size = new System.Drawing.Size(90, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kullanıcı Adı:";
             // 
@@ -68,9 +70,10 @@
             this.Kayit.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Kayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kayit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Kayit.Location = new System.Drawing.Point(353, 316);
+            this.Kayit.Location = new System.Drawing.Point(265, 257);
+            this.Kayit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Kayit.Name = "Kayit";
-            this.Kayit.Size = new System.Drawing.Size(179, 35);
+            this.Kayit.Size = new System.Drawing.Size(134, 28);
             this.Kayit.TabIndex = 2;
             this.Kayit.Text = "Kayıt Ol";
             this.Kayit.UseVisualStyleBackColor = false;
@@ -78,18 +81,20 @@
             // 
             // textBox_KullaniciAdi
             // 
-            this.textBox_KullaniciAdi.Location = new System.Drawing.Point(353, 115);
+            this.textBox_KullaniciAdi.Location = new System.Drawing.Point(265, 93);
+            this.textBox_KullaniciAdi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_KullaniciAdi.Multiline = true;
             this.textBox_KullaniciAdi.Name = "textBox_KullaniciAdi";
-            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(179, 24);
+            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(135, 20);
             this.textBox_KullaniciAdi.TabIndex = 3;
             // 
             // textBox_Sifre
             // 
-            this.textBox_Sifre.Location = new System.Drawing.Point(353, 176);
+            this.textBox_Sifre.Location = new System.Drawing.Point(265, 143);
+            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_Sifre.Multiline = true;
             this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(179, 24);
+            this.textBox_Sifre.Size = new System.Drawing.Size(135, 20);
             this.textBox_Sifre.TabIndex = 4;
             // 
             // label2
@@ -97,9 +102,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(295, 176);
+            this.label2.Location = new System.Drawing.Point(221, 143);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 24);
+            this.label2.Size = new System.Drawing.Size(42, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Şifre:";
             // 
@@ -108,9 +114,10 @@
             this.checkBox_sifregizle.AutoSize = true;
             this.checkBox_sifregizle.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox_sifregizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox_sifregizle.Location = new System.Drawing.Point(552, 176);
+            this.checkBox_sifregizle.Location = new System.Drawing.Point(414, 143);
+            this.checkBox_sifregizle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox_sifregizle.Name = "checkBox_sifregizle";
-            this.checkBox_sifregizle.Size = new System.Drawing.Size(129, 22);
+            this.checkBox_sifregizle.Size = new System.Drawing.Size(108, 19);
             this.checkBox_sifregizle.TabIndex = 6;
             this.checkBox_sifregizle.Text = "Şireyi Göster";
             this.checkBox_sifregizle.UseVisualStyleBackColor = false;
@@ -120,17 +127,18 @@
             // 
             this.pictureBox1.Image = global::OtelProgrami.Properties.Resources.Deniz_Manzarasi_a5ac1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(801, 457);
+            this.pictureBox1.Size = new System.Drawing.Size(601, 371);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // AnaGiris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.checkBox_sifregizle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_Sifre);
@@ -139,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_giris);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "AnaGiris";
             this.Text = "Otel Otomasyonu";

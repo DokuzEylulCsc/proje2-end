@@ -20,9 +20,7 @@ namespace OtelProgrami
 
         private void button_giris_Click(object sender, EventArgs e)
         {
-            //Uye giris = new Uye();
-           
-            if (textBox_KullaniciAdi.Text==string.Empty || textBox_Sifre.Text==string.Empty)
+            if (textBox_KullaniciAdi.Text == string.Empty || textBox_Sifre.Text == string.Empty)
             {
                 MessageBox.Show("Kullanıcı Adinizi veya Şifrenizi Yazmadınız.");
             }
@@ -38,7 +36,7 @@ namespace OtelProgrami
         {
             UyeOl uye = new UyeOl();
             uye.ShowDialog();
-            
+
         }
 
         private void checkBox_sifregizle_CheckedChanged(object sender, EventArgs e)

@@ -40,6 +40,7 @@
             this.textBox_Sifre = new System.Windows.Forms.TextBox();
             this.button_Kayitol = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sifreGizle_UyeOl = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +107,7 @@
             // textBox_Ad
             // 
             this.textBox_Ad.Location = new System.Drawing.Point(240, 50);
-            this.textBox_Ad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Ad.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Ad.Multiline = true;
             this.textBox_Ad.Name = "textBox_Ad";
             this.textBox_Ad.Size = new System.Drawing.Size(119, 20);
@@ -115,7 +116,7 @@
             // textBox_Soyad
             // 
             this.textBox_Soyad.Location = new System.Drawing.Point(240, 94);
-            this.textBox_Soyad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Soyad.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Soyad.Multiline = true;
             this.textBox_Soyad.Name = "textBox_Soyad";
             this.textBox_Soyad.Size = new System.Drawing.Size(119, 20);
@@ -124,7 +125,7 @@
             // textBox_Tel
             // 
             this.textBox_Tel.Location = new System.Drawing.Point(240, 129);
-            this.textBox_Tel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Tel.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Tel.Multiline = true;
             this.textBox_Tel.Name = "textBox_Tel";
             this.textBox_Tel.Size = new System.Drawing.Size(119, 20);
@@ -133,7 +134,7 @@
             // textBox_TcNo
             // 
             this.textBox_TcNo.Location = new System.Drawing.Point(240, 173);
-            this.textBox_TcNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_TcNo.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_TcNo.Multiline = true;
             this.textBox_TcNo.Name = "textBox_TcNo";
             this.textBox_TcNo.Size = new System.Drawing.Size(119, 20);
@@ -142,9 +143,10 @@
             // textBox_Sifre
             // 
             this.textBox_Sifre.Location = new System.Drawing.Point(240, 212);
-            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Sifre.Multiline = true;
             this.textBox_Sifre.Name = "textBox_Sifre";
+            this.textBox_Sifre.PasswordChar = '*';
             this.textBox_Sifre.Size = new System.Drawing.Size(119, 22);
             this.textBox_Sifre.TabIndex = 11;
             // 
@@ -153,7 +155,7 @@
             this.button_Kayitol.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button_Kayitol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button_Kayitol.Location = new System.Drawing.Point(232, 302);
-            this.button_Kayitol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_Kayitol.Margin = new System.Windows.Forms.Padding(2);
             this.button_Kayitol.Name = "button_Kayitol";
             this.button_Kayitol.Size = new System.Drawing.Size(125, 28);
             this.button_Kayitol.TabIndex = 12;
@@ -165,17 +167,32 @@
             // 
             this.pictureBox1.Image = global::OtelProgrami.Properties.Resources.Deniz_Manzarasi_a5ac1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(599, 362);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            // 
+            // sifreGizle_UyeOl
+            // 
+            this.sifreGizle_UyeOl.AutoSize = true;
+            this.sifreGizle_UyeOl.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.sifreGizle_UyeOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.sifreGizle_UyeOl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.sifreGizle_UyeOl.Location = new System.Drawing.Point(374, 214);
+            this.sifreGizle_UyeOl.Name = "sifreGizle_UyeOl";
+            this.sifreGizle_UyeOl.Size = new System.Drawing.Size(112, 19);
+            this.sifreGizle_UyeOl.TabIndex = 14;
+            this.sifreGizle_UyeOl.Text = "Şifreyi Göster";
+            this.sifreGizle_UyeOl.UseVisualStyleBackColor = false;
+            this.sifreGizle_UyeOl.CheckedChanged += new System.EventHandler(this.sifreGizle_UyeOl_CheckedChanged);
             // 
             // UyeOl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.sifreGizle_UyeOl);
             this.Controls.Add(this.button_Kayitol);
             this.Controls.Add(this.textBox_Sifre);
             this.Controls.Add(this.textBox_TcNo);
@@ -188,7 +205,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UyeOl";
             this.Text = "UyeOl";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -211,5 +228,6 @@
         private System.Windows.Forms.TextBox textBox_Sifre;
         private System.Windows.Forms.Button button_Kayitol;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox sifreGizle_UyeOl;
     }
 }

@@ -15,15 +15,5 @@ namespace OtelProgrami
             YildizSayisi = yildizSy;
             OtelTuru = "Butik Otel";
         }
-
-        public override void MusterileriGoster()
-        {
-
-        }
-
-        public override void OdalariGoster()
-        {
-
-        }
     }
 }

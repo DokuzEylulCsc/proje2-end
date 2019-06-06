@@ -12,10 +12,10 @@ namespace OtelProgrami
 {
     public partial class YoneticiForm : Form
     {
+
         public YoneticiForm()
         {
             InitializeComponent();
-            
         }
 
         private void YöneticiForm_Load(object sender, EventArgs e)
@@ -24,8 +24,13 @@ namespace OtelProgrami
             comboBox_odaTuru.SelectedIndex = 0;
             comboBox_otelTuru.SelectedIndex = 0;
             radioButton_ucYildiz.Checked = true;
-        }
 
-      
+            Yonetici deneme = new Yonetici();
+            foreach (var element in deneme.Listele())
+            {
+                uyeListesiDataGrid.Rows.Add(element.Ad, element.Soyad, element.TelNo, element.TcNo, "cc", "cc", "d", "df");
+            }
+
+        }
     }
 }
