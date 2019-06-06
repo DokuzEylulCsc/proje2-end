@@ -20,13 +20,18 @@ namespace OtelProgrami
         string sifre;
         LinkedList<Rezervasyon> rezervasyonlarim = new LinkedList<Rezervasyon>();
 
-        public Uye(string ad, string soyad, string telNo, string tcNo, string sifre)
+        internal Uye(string ad, string soyad, string telNo, string tcNo, string sifre)
         {
             Ad = ad;
             Soyad = soyad;
             TelNo = telNo;
             TcNo = tcNo;
             Sifre = sifre;
+        }
+
+        internal Uye()
+        {
+
         }
 
         public string Ad { get => ad; set => ad = value; }
@@ -36,7 +41,7 @@ namespace OtelProgrami
         public string Sifre { get => sifre; set => sifre = value; }
         internal LinkedList<Rezervasyon> Rezervasyonlarim { get => rezervasyonlarim; set => rezervasyonlarim = value; }
 
-        public void BilgileriniGuncelle(string yeniAd, string yeniSoyad, string yeniTelNo, string yeniTcNo, string yeniSifre)
+        internal void BilgileriniGuncelle(string yeniAd, string yeniSoyad, string yeniTelNo, string yeniTcNo, string yeniSifre)
         {
             Ad = ad;
             Soyad = soyad;
@@ -45,21 +50,21 @@ namespace OtelProgrami
             Sifre = yeniSifre;
         }
 
-        public void RezervasyonIptalEt()
+        internal void RezervasyonIptalEt()
         {
 
         }
 
         // Sistem'e rezervasyon talebi gider, sistem uyenin talebine uygun sonuclari
         // uyeye bildirir.
-        public void RezervasyonTalepEt()
+        internal void RezervasyonTalepEt()
         {
-
+            //Rezervasyon rezervasyon = new Rezervasyon();
         }
 
         // Uye, sistemin sundugu uygun otel sonuclarindan birini secer,
         // ve rezervasyonu tamamlar.
-        public void RezervasyonTamamla()
+        internal void RezervasyonTamamla()
         {
 
         }

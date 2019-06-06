@@ -99,7 +99,6 @@ namespace OtelProgrami
                 // read file into a string and deserialize JSON to a type
                 Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(a));
 
-                //Console.WriteLine(uye.Serialize(uye));
                 uyeler.Add(uye);
             }
 

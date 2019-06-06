@@ -63,6 +63,12 @@
     <Compile Include="IkizYatakliOda.cs" />
     <Compile Include="Oda.cs" />
     <Compile Include="Otel.cs" />
+    <Compile Include="OdaveOtelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaveOtelEkle.Designer.cs">
+      <DependentUpon>OdaveOtelEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="OtelRezervasyon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="AnaGiris.resx">
       <DependentUpon>AnaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaveOtelEkle.resx">
+      <DependentUpon>OdaveOtelEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OtelRezervasyon.resx">
       <DependentUpon>OtelRezervasyon.cs</DependentUpon>

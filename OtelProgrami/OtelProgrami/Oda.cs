@@ -11,6 +11,8 @@ namespace OtelProgrami
         int fiyat;
         int kisiKapasitesi;
 
+        string otelBilgisi;
+
         // klima, minibar, deniz manzarasi var/yok vs.
         bool klimaSecenigi;
         bool miniBarSecenegi;
@@ -22,6 +24,7 @@ namespace OtelProgrami
 
         public int Fiyat { get => fiyat; set => fiyat = value; }
         public int KisiKapasitesi { get => kisiKapasitesi; set => kisiKapasitesi = value; }
+        public string OtelBilgisi { get => otelBilgisi; set => otelBilgisi = value; }
         public bool KlimaSecenigi { get => klimaSecenigi; set => klimaSecenigi = value; }
         public bool MiniBarSecenegi { get => miniBarSecenegi; set => miniBarSecenegi = value; }
         public bool DenizManzarasiSecenegi { get => denizManzarasiSecenegi; set => denizManzarasiSecenegi = value; }
