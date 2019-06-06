@@ -46,3 +46,6 @@ C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgra
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe.config
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.pdb
+C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CopyComplete
