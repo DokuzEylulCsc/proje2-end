@@ -12,21 +12,32 @@ namespace OtelProgrami
 {
     public partial class OdaveOtelEkle : Form
     {
+        int i = 1;
+
         public OdaveOtelEkle()
         {
             InitializeComponent();
         }
 
+        public int I { get => i; set => i = value; }
+
         private void odaEkle_Click(object sender, EventArgs e)
         {
-            string odaFiyati = odaFiyat.Text;
-            string kisiKap = odaKisiKapasitesi.Text;
             string otelAd = odaOtelIsim.Text;
+            int odaFiyati = Int32.Parse(odaFiyat.Text);
+            int kisiKap = Int32.Parse(odaKisiKapasitesi.Text);
             bool klimaBilgisi = odaKlimaChck.Checked;
             bool minibarBilgisi = odaMinibarChck.Checked;
             bool denizBilgisi = odaDenizChck.Checked;
             bool dagBilgisi = odaDagChck.Checked;
             bool ekoBilgisi = odaEkoChck.Checked;
+            bool rezBilgisi = false;
+
+            //Oda oda = new Oda(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);
+            CiftKisilikOda oda = new CiftKisilikOda();
+            oda.OdaBilgiGir(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);
+            oda.OdaEkle(I);
+            I++;
         }
 
         private void otelEkle_Click(object sender, EventArgs e)
@@ -34,28 +45,10 @@ namespace OtelProgrami
             string otelIsmi = otelIsim.Text;
             string sehir = otelSehir.Text;
             int yildizSy = Int32.Parse(otelYildiz.Text);
-            //string 
+            string otelTur = otelTuru.Text;
+
+            Otel otel = new Otel(otelIsmi, sehir, yildizSy, otelTur);
+            otel.OtelEkle();
         }
-
-        //internal string Serialize(Object o)
-        //{
-        //    //Serilestirip, Json'u guzel bicimde yazdiriyor.
-        //    return JToken.Parse(JsonConvert.SerializeObject(o)).ToString(Formatting.Indented);
-        //}
-
-        //internal Uye Deserialize(string serialized)
-        //{
-        //    return JsonConvert.DeserializeObject<Uye>(serialized);
-        //}
-
-        //// JSONVeri/Uyeler klasörune yeni uye'nin json olarak bilgilerini yazdir
-        //internal void KayitOl()
-        //{
-        //    string filePath = System.IO.Directory.GetCurrentDirectory();
-        //    filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Uyeler\";
-
-        //    // ...\JSONVeri\Uyeler\Ahmet Mehmet 4534323122.json
-        //    File.WriteAllText(filePath + this.Ad + " " + this.Soyad + " " + this.TcNo + ".json", this.Serialize(this));
-        //}
     }
 }

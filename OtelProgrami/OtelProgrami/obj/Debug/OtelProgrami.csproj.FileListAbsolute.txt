@@ -49,3 +49,4 @@ C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgra
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CopyComplete
+C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OdaveOtelEkle.resources

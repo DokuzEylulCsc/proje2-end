@@ -1,0 +1,12 @@
+{
+  "OtelIsmi": "Rest Otel",
+  "OdaTuru": "Üç kişilik oda",
+  "Fiyat": 900,
+  "KisiKapasitesi": 3,
+  "KlimaSecenegi": true,
+  "MiniBarSecenegi": true,
+  "DenizManzarasiSecenegi": false,
+  "DagManzarasiSecenegi": true,
+  "EkonomikFiyatSecenegi": true,
+  "RezervBilgisi": false
+}

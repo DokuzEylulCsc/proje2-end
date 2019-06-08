@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.otelEkle = new System.Windows.Forms.Button();
-            this.otelTur = new System.Windows.Forms.TextBox();
+            this.otelTuru = new System.Windows.Forms.TextBox();
             this.otelYildiz = new System.Windows.Forms.TextBox();
             this.otelSehir = new System.Windows.Forms.TextBox();
             this.otelIsim = new System.Windows.Forms.TextBox();
@@ -54,6 +54,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.odaOtelIsim = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // odaEkle
@@ -160,14 +162,14 @@
             this.otelEkle.UseVisualStyleBackColor = false;
             this.otelEkle.Click += new System.EventHandler(this.otelEkle_Click);
             // 
-            // otelTur
+            // otelTuru
             // 
-            this.otelTur.Location = new System.Drawing.Point(481, 179);
-            this.otelTur.Margin = new System.Windows.Forms.Padding(2);
-            this.otelTur.Multiline = true;
-            this.otelTur.Name = "otelTur";
-            this.otelTur.Size = new System.Drawing.Size(119, 20);
-            this.otelTur.TabIndex = 35;
+            this.otelTuru.Location = new System.Drawing.Point(481, 179);
+            this.otelTuru.Margin = new System.Windows.Forms.Padding(2);
+            this.otelTuru.Multiline = true;
+            this.otelTuru.Name = "otelTuru";
+            this.otelTuru.Size = new System.Drawing.Size(119, 20);
+            this.otelTuru.TabIndex = 35;
             // 
             // otelYildiz
             // 
@@ -339,11 +341,38 @@
             this.label9.TabIndex = 47;
             this.label9.Text = "OtelIsmi";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(12, 100);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 18);
+            this.label13.TabIndex = 48;
+            this.label13.Text = "OdaTuru";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tek Kişilik",
+            "İki Kişilik",
+            "İkiz Yataklı Çift Kişilik",
+            "Üç Kişilik"});
+            this.comboBox1.Location = new System.Drawing.Point(128, 96);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 49;
+            // 
             // OdaveOtelEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.odaOtelIsim);
             this.Controls.Add(this.odaEkoChck);
@@ -354,7 +383,7 @@
             this.Controls.Add(this.odaMinibarChck);
             this.Controls.Add(this.odaKlimaChck);
             this.Controls.Add(this.otelEkle);
-            this.Controls.Add(this.otelTur);
+            this.Controls.Add(this.otelTuru);
             this.Controls.Add(this.otelYildiz);
             this.Controls.Add(this.otelSehir);
             this.Controls.Add(this.otelIsim);
@@ -387,7 +416,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button otelEkle;
-        private System.Windows.Forms.TextBox otelTur;
+        private System.Windows.Forms.TextBox otelTuru;
         private System.Windows.Forms.TextBox otelYildiz;
         private System.Windows.Forms.TextBox otelSehir;
         private System.Windows.Forms.TextBox otelIsim;
@@ -404,5 +433,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox odaOtelIsim;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

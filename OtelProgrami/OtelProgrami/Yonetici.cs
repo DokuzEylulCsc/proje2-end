@@ -95,7 +95,7 @@ namespace OtelProgrami
 
             foreach (var a in fileEntries)
             {
-                //newton soft json okuma
+                // newton soft json okuma
                 // read file into a string and deserialize JSON to a type
                 Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(a));
 

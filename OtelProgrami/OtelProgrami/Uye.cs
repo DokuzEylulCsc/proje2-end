@@ -18,7 +18,6 @@ namespace OtelProgrami
         string telNo;
         string tcNo;
         string sifre;
-        LinkedList<Rezervasyon> rezervasyonlarim = new LinkedList<Rezervasyon>();
 
         internal Uye(string ad, string soyad, string telNo, string tcNo, string sifre)
         {
@@ -39,7 +38,6 @@ namespace OtelProgrami
         public string TelNo { get => telNo; set => telNo = value; }
         public string TcNo { get => tcNo; set => tcNo = value; }
         public string Sifre { get => sifre; set => sifre = value; }
-        internal LinkedList<Rezervasyon> Rezervasyonlarim { get => rezervasyonlarim; set => rezervasyonlarim = value; }
 
         internal void BilgileriniGuncelle(string yeniAd, string yeniSoyad, string yeniTelNo, string yeniTcNo, string yeniSifre)
         {
