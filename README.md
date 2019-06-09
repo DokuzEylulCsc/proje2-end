@@ -6,8 +6,8 @@
 4. Yonetim classının uygulama akışına uyarlanması[-] //Ozgur
 5. İki adet design pattern kullanılması(#iterator, #factory)[-] //Ozgur
 6. Kullanıcı için otel, oda arama sorgusu [-] //Emre
-7. Exception handling ile olası hataların belirlenmesi [-] //Emre
-8. Her bir farklı exception türü için log kayıtlarının tutulması (+Log classının yaratılması) [-] //Emre
+7. Exception handling ile olası hataların belirlenmesi [+] //Emre
+8. Her bir farklı exception türü için log kayıtlarının tutulması (+Log classının yaratılması) [+] //Emre
 9. Rezervasyon bilgilerinin JSON serileştirme/deserileştirmesi [-] //Ozgur
 10. Zaman yeterse verileri JSON olarak tutmak yerine MSSQL veritabanına kaydedilip okunması [-] //Emre
 11. Programda onceden tanımlı oteller, oda bilgileri girilmesi [-] //Emre

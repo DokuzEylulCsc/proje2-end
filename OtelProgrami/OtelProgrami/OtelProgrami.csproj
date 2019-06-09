@@ -61,6 +61,7 @@
     <Compile Include="ButikOtel.cs" />
     <Compile Include="CiftKisilikOda.cs" />
     <Compile Include="IkizYatakliOda.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Oda.cs" />
     <Compile Include="Otel.cs" />
     <Compile Include="OtelRezervasyon.cs">
@@ -82,6 +83,12 @@
     </Compile>
     <Compile Include="UyeOl.Designer.cs">
       <DependentUpon>UyeOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeRezKayitlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeRezKayitlari.Designer.cs">
+      <DependentUpon>uyeRezKayitlari.cs</DependentUpon>
     </Compile>
     <Compile Include="Yonetici.cs" />
     <Compile Include="Sistem.cs" />
@@ -109,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="UyeOl.resx">
       <DependentUpon>UyeOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeRezKayitlari.resx">
+      <DependentUpon>uyeRezKayitlari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YoneticiForm.resx">
       <DependentUpon>YoneticiForm.cs</DependentUpon>

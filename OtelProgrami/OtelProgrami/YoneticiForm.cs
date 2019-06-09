@@ -32,5 +32,10 @@ namespace OtelProgrami
             }
 
         }
+
+        private void button_rezSorgu_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

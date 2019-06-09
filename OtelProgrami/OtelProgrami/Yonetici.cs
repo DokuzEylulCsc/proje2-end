@@ -11,29 +11,20 @@ namespace OtelProgrami
 {
     class Yonetici
     {
-        string ad;
-        string soyad;
-        string telNo;
-        string tcNo;
+        string kullanici_Ad;
         string sifre;
 
         LinkedList<Oda> odaListesi = new LinkedList<Oda>();
         LinkedList<Uye> musteriListesi = new LinkedList<Uye>();
 
-        internal string Ad { get => ad; set => ad = value; }
-        internal string Soyad { get => soyad; set => soyad = value; }
-        internal string TelNo { get => telNo; set => telNo = value; }
-        internal string TcNo { get => tcNo; set => tcNo = value; }
+        internal string Kullanici_Ad { get => kullanici_Ad; set => kullanici_Ad = value; }
         internal string Sifre { get => sifre; set => sifre = value; }
         internal LinkedList<Oda> OdaListesi { get => odaListesi; set => odaListesi = value; }
         internal LinkedList<Uye> MusteriListesi { get => musteriListesi; set => musteriListesi = value; }
 
         internal Yonetici(string ad, string soyad, string telNo, string tcNo, string sifre)
         {
-            Ad = ad;
-            Soyad = soyad;
-            TelNo = telNo;
-            TcNo = tcNo;
+            kullanici_Ad = ad;
             Sifre = sifre;
         }
 
@@ -42,12 +33,9 @@ namespace OtelProgrami
 
         }
 
-        public void BilgileriniGuncelle(string yeniAd, string yeniSoyad, string yeniTelNo, string yeniTcNo, string yeniSifre)
+        public void BilgileriniGuncelle(string yeniAd, string yeniSifre)
         {
-            Ad = yeniAd;
-            Soyad = yeniSoyad;
-            TelNo = yeniTelNo;
-            TcNo = yeniTcNo;
+            kullanici_Ad = yeniAd;
             Sifre = yeniSifre;
         }
 

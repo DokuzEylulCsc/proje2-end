@@ -37,7 +37,7 @@
             this.comboBox_OdaTuru = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_rezKayitlari = new System.Windows.Forms.Button();
             this.uc_yildiz = new System.Windows.Forms.RadioButton();
             this.dort_yildiz = new System.Windows.Forms.RadioButton();
             this.bes_yildiz = new System.Windows.Forms.RadioButton();
@@ -45,6 +45,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox_ucret = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox_Sehir = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // dateTimePicker_Giris
@@ -95,7 +97,7 @@
             // 
             this.button_rezYap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button_rezYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_rezYap.Location = new System.Drawing.Point(343, 323);
+            this.button_rezYap.Location = new System.Drawing.Point(533, 282);
             this.button_rezYap.Margin = new System.Windows.Forms.Padding(5);
             this.button_rezYap.Name = "button_rezYap";
             this.button_rezYap.Size = new System.Drawing.Size(274, 74);
@@ -149,23 +151,24 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Oda Türü:";
             // 
-            // button2
+            // button_rezKayitlari
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(343, 445);
-            this.button2.Margin = new System.Windows.Forms.Padding(5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(274, 74);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Rezervasyon Kayıtları";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_rezKayitlari.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button_rezKayitlari.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button_rezKayitlari.Location = new System.Drawing.Point(533, 404);
+            this.button_rezKayitlari.Margin = new System.Windows.Forms.Padding(5);
+            this.button_rezKayitlari.Name = "button_rezKayitlari";
+            this.button_rezKayitlari.Size = new System.Drawing.Size(274, 74);
+            this.button_rezKayitlari.TabIndex = 14;
+            this.button_rezKayitlari.Text = "Rezervasyon Kayıtları";
+            this.button_rezKayitlari.UseVisualStyleBackColor = false;
+            this.button_rezKayitlari.Click += new System.EventHandler(this.button_rezKayitlari_Click);
             // 
             // uc_yildiz
             // 
             this.uc_yildiz.AutoSize = true;
             this.uc_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.uc_yildiz.Location = new System.Drawing.Point(282, 262);
+            this.uc_yildiz.Location = new System.Drawing.Point(481, 221);
             this.uc_yildiz.Name = "uc_yildiz";
             this.uc_yildiz.Size = new System.Drawing.Size(60, 29);
             this.uc_yildiz.TabIndex = 15;
@@ -177,7 +180,7 @@
             // 
             this.dort_yildiz.AutoSize = true;
             this.dort_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.dort_yildiz.Location = new System.Drawing.Point(450, 262);
+            this.dort_yildiz.Location = new System.Drawing.Point(640, 221);
             this.dort_yildiz.Name = "dort_yildiz";
             this.dort_yildiz.Size = new System.Drawing.Size(69, 29);
             this.dort_yildiz.TabIndex = 16;
@@ -189,7 +192,7 @@
             // 
             this.bes_yildiz.AutoSize = true;
             this.bes_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bes_yildiz.Location = new System.Drawing.Point(616, 262);
+            this.bes_yildiz.Location = new System.Drawing.Point(806, 221);
             this.bes_yildiz.Name = "bes_yildiz";
             this.bes_yildiz.Size = new System.Drawing.Size(78, 29);
             this.bes_yildiz.TabIndex = 17;
@@ -224,7 +227,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label6.Location = new System.Drawing.Point(22, 193);
+            this.label6.Location = new System.Drawing.Point(22, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 25);
             this.label6.TabIndex = 20;
@@ -232,11 +235,36 @@
             // 
             // textBox_ucret
             // 
-            this.textBox_ucret.Location = new System.Drawing.Point(165, 188);
+            this.textBox_ucret.Location = new System.Drawing.Point(165, 239);
             this.textBox_ucret.Name = "textBox_ucret";
             this.textBox_ucret.Size = new System.Drawing.Size(209, 30);
             this.textBox_ucret.TabIndex = 21;
             this.textBox_ucret.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label7.Location = new System.Drawing.Point(22, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 25);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Şehir:";
+            // 
+            // comboBox_Sehir
+            // 
+            this.comboBox_Sehir.FormattingEnabled = true;
+            this.comboBox_Sehir.Items.AddRange(new object[] {
+            "İzmir",
+            "İstanbul",
+            "Ankara",
+            "Mersin",
+            "Muğla",
+            "Antalya"});
+            this.comboBox_Sehir.Location = new System.Drawing.Point(165, 185);
+            this.comboBox_Sehir.Name = "comboBox_Sehir";
+            this.comboBox_Sehir.Size = new System.Drawing.Size(209, 33);
+            this.comboBox_Sehir.TabIndex = 23;
             // 
             // OtelRezervasyon
             // 
@@ -245,6 +273,8 @@
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(914, 542);
+            this.Controls.Add(this.comboBox_Sehir);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox_ucret);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -252,7 +282,7 @@
             this.Controls.Add(this.bes_yildiz);
             this.Controls.Add(this.dort_yildiz);
             this.Controls.Add(this.uc_yildiz);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_rezKayitlari);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox_OdaTuru);
@@ -284,7 +314,7 @@
         private System.Windows.Forms.ComboBox comboBox_OdaTuru;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_rezKayitlari;
         private System.Windows.Forms.RadioButton uc_yildiz;
         private System.Windows.Forms.RadioButton dort_yildiz;
         private System.Windows.Forms.RadioButton bes_yildiz;
@@ -292,5 +322,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox_ucret;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox_Sehir;
     }
 }

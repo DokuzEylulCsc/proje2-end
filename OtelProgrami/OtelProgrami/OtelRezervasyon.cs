@@ -12,6 +12,7 @@ namespace OtelProgrami
 {
     public partial class OtelRezervasyon : Form
     {
+       
         public OtelRezervasyon()
         {
             InitializeComponent();
@@ -19,9 +20,11 @@ namespace OtelProgrami
 
         private void OtelRezervasyon_Load(object sender, EventArgs e)
         {
+            //ındexlendi ki exception hataları engellendi.
             comboBox_OdaTuru.SelectedIndex = 0;
             comboBox_OtelTuru.SelectedIndex = 0;
             comboBox_odaOzellik.SelectedIndex = 0;
+            comboBox_Sehir.SelectedIndex = 0;
             uc_yildiz.Checked=true;
         }
 
@@ -36,24 +39,26 @@ namespace OtelProgrami
             if(uc_yildiz.Checked)
             {
                 yildiz = 3;
-                //dort_yildiz.Checked = false;
-                //bes_yildiz.Checked = false;
+                
             }
             else if(dort_yildiz.Checked)
             {
-                //uc_yildiz.Checked = false;
-                //bes_yildiz.Checked = false;
+                
                 yildiz = 4;
             }
             else
             {
-                //uc_yildiz.Checked = false;
-                //dort_yildiz.Checked = false;
+                
                 yildiz = 5;
             }
             MessageBox.Show(" " + otelTuru + " , " + odaTuru + " ve " + yildiz + " yıldızlı otele " + giris.ToString("dd/MM/yyyy") + " - " + cikis.ToString("dd/MM/yyyy") + " tarihleri arasinda rezervasyon yaptınız.");
         }
 
-      
+        private void button_rezKayitlari_Click(object sender, EventArgs e)
+        {
+            //nesnemizi burada tanımlıyoruz ki form sayfası kapatıldıgında bır daha açılmak istendiginde hata vermesin.
+            uyeRezKayitlari rez = new uyeRezKayitlari();
+            rez.Show();
+        }
     }
 }
