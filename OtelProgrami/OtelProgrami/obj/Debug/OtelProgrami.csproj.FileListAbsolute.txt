@@ -49,6 +49,7 @@ C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgra
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\EMRE\Desktop\nesneODev\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe.config
 C:\Users\EMRE\Desktop\nesneODev\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe
 C:\Users\EMRE\Desktop\nesneODev\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.pdb
@@ -66,3 +67,6 @@ C:\Users\EMRE\Desktop\nesneODev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\O
 C:\Users\EMRE\Desktop\nesneODev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.exe
 C:\Users\EMRE\Desktop\nesneODev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.pdb
 C:\Users\EMRE\Desktop\nesneOdev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.uyeRezKayitlari.resources
+=======
+C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OdaveOtelEkle.resources
+>>>>>>> 0e99e88693768377c7462bf6cdaa5848111b1cfe

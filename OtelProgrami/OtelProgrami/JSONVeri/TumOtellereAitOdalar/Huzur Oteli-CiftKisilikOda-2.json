@@ -1,0 +1,12 @@
+{
+  "OtelIsmi": "Huzur Oteli",
+  "OdaTuru": "Çift kişilik oda",
+  "Fiyat": 389,
+  "KisiKapasitesi": 2,
+  "KlimaSecenegi": true,
+  "MiniBarSecenegi": true,
+  "DenizManzarasiSecenegi": false,
+  "DagManzarasiSecenegi": true,
+  "EkonomikFiyatSecenegi": true,
+  "RezervBilgisi": false
+}

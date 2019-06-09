@@ -24,24 +24,28 @@ namespace OtelProgrami
             comboBox_OdaTuru.SelectedIndex = 0;
             comboBox_OtelTuru.SelectedIndex = 0;
             comboBox_odaOzellik.SelectedIndex = 0;
+<<<<<<< HEAD
             comboBox_Sehir.SelectedIndex = 0;
             uc_yildiz.Checked=true;
+=======
+            uc_yildiz.Checked = true;
+>>>>>>> 0e99e88693768377c7462bf6cdaa5848111b1cfe
         }
 
         private void button_rezYap_Click(object sender, EventArgs e)
         {
-            
+
             DateTime giris = dateTimePicker_Giris.Value.Date;
             DateTime cikis = dateTimePicker_Cikis.Value.Date;
             int yildiz;
-            string otelTuru=comboBox_OtelTuru.Text;
-            string odaTuru=comboBox_OdaTuru.Text;
-            if(uc_yildiz.Checked)
+            string otelTuru = comboBox_OtelTuru.Text;
+            string odaTuru = comboBox_OdaTuru.Text;
+            if (uc_yildiz.Checked)
             {
                 yildiz = 3;
                 
             }
-            else if(dort_yildiz.Checked)
+            else if (dort_yildiz.Checked)
             {
                 
                 yildiz = 4;
@@ -54,11 +58,15 @@ namespace OtelProgrami
             MessageBox.Show(" " + otelTuru + " , " + odaTuru + " ve " + yildiz + " yıldızlı otele " + giris.ToString("dd/MM/yyyy") + " - " + cikis.ToString("dd/MM/yyyy") + " tarihleri arasinda rezervasyon yaptınız.");
         }
 
+<<<<<<< HEAD
         private void button_rezKayitlari_Click(object sender, EventArgs e)
         {
             //nesnemizi burada tanımlıyoruz ki form sayfası kapatıldıgında bır daha açılmak istendiginde hata vermesin.
             uyeRezKayitlari rez = new uyeRezKayitlari();
             rez.Show();
         }
+=======
+
+>>>>>>> 0e99e88693768377c7462bf6cdaa5848111b1cfe
     }
 }

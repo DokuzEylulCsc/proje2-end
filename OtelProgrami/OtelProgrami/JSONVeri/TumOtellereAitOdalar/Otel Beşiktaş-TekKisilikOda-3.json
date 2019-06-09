@@ -1,0 +1,12 @@
+{
+  "OtelIsmi": "Otel Beşiktaş",
+  "OdaTuru": "Tek kişilik oda",
+  "Fiyat": 450,
+  "KisiKapasitesi": 1,
+  "KlimaSecenegi": true,
+  "MiniBarSecenegi": true,
+  "DenizManzarasiSecenegi": false,
+  "DagManzarasiSecenegi": true,
+  "EkonomikFiyatSecenegi": true,
+  "RezervBilgisi": false
+}

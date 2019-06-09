@@ -1,0 +1,12 @@
+{
+  "OtelIsmi": "Yıldız Oteli",
+  "OdaTuru": "Tek kişilik oda",
+  "Fiyat": 400,
+  "KisiKapasitesi": 1,
+  "KlimaSecenegi": true,
+  "MiniBarSecenegi": true,
+  "DenizManzarasiSecenegi": true,
+  "DagManzarasiSecenegi": false,
+  "EkonomikFiyatSecenegi": false,
+  "RezervBilgisi": false
+}

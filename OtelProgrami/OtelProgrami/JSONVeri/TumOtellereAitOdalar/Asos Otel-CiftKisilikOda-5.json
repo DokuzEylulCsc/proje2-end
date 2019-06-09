@@ -1,0 +1,12 @@
+{
+  "OtelIsmi": "Asos Otel",
+  "OdaTuru": "Çift kişilik oda",
+  "Fiyat": 800,
+  "KisiKapasitesi": 2,
+  "KlimaSecenegi": true,
+  "MiniBarSecenegi": true,
+  "DenizManzarasiSecenegi": true,
+  "DagManzarasiSecenegi": true,
+  "EkonomikFiyatSecenegi": false,
+  "RezervBilgisi": false
+}

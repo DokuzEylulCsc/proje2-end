@@ -19,11 +19,17 @@ namespace OtelProgrami
             else Fiyat = 800;
 
             KisiKapasitesi = 2;
-            KlimaSecenigi = true;
+            KlimaSecenegi = true;
             MiniBarSecenegi = true;
             DenizManzarasiSecenegi = denizManzarasiBilgisi;
             DagManzarasiSecenegi = dagManzarasiBilgisi;
             EkonomikFiyatSecenegi = ekonomikFiyatBilgisi;
+            OdaTuru = "Çift kişilik oda";
+        }
+
+        public CiftKisilikOda()
+        {
+            OdaTuru = "Çift kişilik oda";
         }
     }
 }

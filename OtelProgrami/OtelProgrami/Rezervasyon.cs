@@ -8,22 +8,32 @@ namespace OtelProgrami
 {
     class Rezervasyon
     {
-        DateTime rezervasyonTarihi;
         Otel otelBilgisi;
-        Oda odaBilgisi;
-        LinkedList<Uye> rezervasyonSahipleri = new LinkedList<Uye>();
+        string otelTuru; // Otel türü: Butik, Pansiyon vs.
+        string odaTuru; // Oda türü: Tek kisilik, iki kisilik vs.
+        string odaOzelligi; // Ekonomik, Normal, Deniz manzarasi vs.
+        DateTime rezervasyonBaslangic;
+        DateTime rezervasyonBitis;
+        Uye rezerveEden = new Uye();
 
-        Rezervasyon(DateTime rezTarihi, Otel otel, Oda oda, LinkedList<Uye> kalacakKisiler)
+        // Otel Türü, Oda Türü, Oda Özelliği vs seçilecek,
+        // Kriterlere Uygun x Otelinin y Odası bu tarihlerde rezerve olacak.
+        Rezervasyon(string otelTuru, string odaTuru, string odaOzelligi, DateTime baslangic, DateTime bitis, Uye uye)
         {
-            RezervasyonTarihi = rezTarihi;
-            OtelBilgisi = otel;
-            OdaBilgisi = oda;
-            RezervasyonSahipleri = kalacakKisiler;
+            OtelTuru = otelTuru;
+            OdaTuru = odaTuru;
+            OdaOzelligi = odaOzelligi;
+            RezervasyonBaslangic = baslangic;
+            RezervasyonBitis = bitis;
+            RezerveEden = uye;
         }
 
-        public DateTime RezervasyonTarihi { get => rezervasyonTarihi; set => rezervasyonTarihi = value; }
+        public string OtelTuru { get => otelTuru; set => otelTuru = value; }
+        public string OdaTuru { get => odaTuru; set => odaTuru = value; }
+        public string OdaOzelligi { get => odaOzelligi; set => odaOzelligi = value; }
+        public DateTime RezervasyonBaslangic { get => rezervasyonBaslangic; set => rezervasyonBaslangic = value; }
+        public DateTime RezervasyonBitis { get => rezervasyonBitis; set => rezervasyonBitis = value; }
         internal Otel OtelBilgisi { get => otelBilgisi; set => otelBilgisi = value; }
-        internal Oda OdaBilgisi { get => odaBilgisi; set => odaBilgisi = value; }
-        internal LinkedList<Uye> RezervasyonSahipleri { get => rezervasyonSahipleri; set => rezervasyonSahipleri = value; }
+        internal Uye RezerveEden { get => rezerveEden; set => rezerveEden = value; }
     }
 }
