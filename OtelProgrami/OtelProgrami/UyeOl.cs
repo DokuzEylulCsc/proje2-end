@@ -27,7 +27,7 @@ namespace OtelProgrami
         {
             try
             {
-                string ad =textBox_Ad.Text;
+                string ad = textBox_Ad.Text;
                 string soyad = textBox_Soyad.Text;
                 string telNo = textBox_Tel.Text;
                 string tcNo = textBox_TcNo.Text;
@@ -36,7 +36,7 @@ namespace OtelProgrami
                 int telNo_Kontrol = Convert.ToInt32(textBox_Tel.Text);
                 int tcNo_Kontrol = Convert.ToInt32(textBox_TcNo.Text);
                 //bilgileri boş bırakmasını istemiyoruz.
-                if(textBox_Ad.Text==string.Empty || textBox_Sifre.Text==string.Empty || textBox_Tel.Text == string.Empty ||
+                if (textBox_Ad.Text == string.Empty || textBox_Sifre.Text == string.Empty || textBox_Tel.Text == string.Empty ||
                     textBox_TcNo.Text == string.Empty || textBox_Soyad.Text == string.Empty)
                 {
                     onemli_ad.Visible = true;
@@ -47,24 +47,22 @@ namespace OtelProgrami
                     MessageBox.Show("Lütfen Bilgileri Boş Bırakmayınız.");
                     //exception log kaydı gelecek.
                     kayit.logOlustur("Üye Olunurken Bilgiler Boş bırakıldı", DateTime.Now.ToString());
-                    
+
                 }
                 //15 karakterden buyuk kullanıcı adı alamaz.
-                else if (ad.Length>15)
+                else if (ad.Length > 15)
                 {
                     //hatayı nerede yaptıgı goruntulendi
                     onemli_ad.Visible = true;
                     MessageBox.Show("15 karakterden büyük yazdınız.");
-                    kayit.logOlustur("Üye Olunurken Kullanıcı adı 15 karakterden fazla girildi",DateTime.Now.ToString());                 
+                    kayit.logOlustur("Üye Olunurken Kullanıcı adı 15 karakterden fazla girildi", DateTime.Now.ToString());
                 }
-                else
+                else if (ad.Length <= 15)
                 {
                     Uye yeniUye = new Uye(ad, soyad, telNo, tcNo, sifre);
                     yeniUye.KayitOl();
                     MessageBox.Show("Üye başarıyla kayıt oldu");
                 }
-               
-
             }
             catch (Exception exp)
             {
@@ -76,11 +74,10 @@ namespace OtelProgrami
                 kayit.logOlustur("Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı", DateTime.Now.ToString());
                 MessageBox.Show(exp.Message);
                 string json = JsonConvert.SerializeObject(exp);
-                MessageBox.Show(json);             
+                MessageBox.Show(json);
             }
             finally
             {
-
                 textBox_Ad.Text = "";
                 textBox_Soyad.Text = "";
                 textBox_Tel.Text = "";

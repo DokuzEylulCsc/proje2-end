@@ -1,1 +1,1 @@
-Giriş yaparken Kullanici adini veya şifresini yanlış girdi
+Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı
