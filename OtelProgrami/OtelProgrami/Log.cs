@@ -9,10 +9,10 @@ namespace OtelProgrami
 {
     class Log
     {
-        public void logOlustur(string log,string zaman)
+        public void logOlustur(string log, string zaman)
         {
-            StreamWriter yazici = new StreamWriter("Log.txt", false);
-            yazici.WriteLine(log,zaman);
+            StreamWriter yazici = new StreamWriter("Log.txt", append: true);
+            yazici.WriteLine(log + " " + zaman);
             yazici.Close();
         }
     }
