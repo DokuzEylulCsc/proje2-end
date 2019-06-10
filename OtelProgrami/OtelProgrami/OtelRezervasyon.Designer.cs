@@ -47,6 +47,8 @@
             this.textBox_ucret = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox_Sehir = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox_OtelIsim = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // dateTimePicker_Giris
@@ -227,7 +229,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label6.Location = new System.Drawing.Point(22, 244);
+            this.label6.Location = new System.Drawing.Point(21, 296);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 25);
             this.label6.TabIndex = 20;
@@ -235,7 +237,7 @@
             // 
             // textBox_ucret
             // 
-            this.textBox_ucret.Location = new System.Drawing.Point(165, 239);
+            this.textBox_ucret.Location = new System.Drawing.Point(165, 293);
             this.textBox_ucret.Name = "textBox_ucret";
             this.textBox_ucret.Size = new System.Drawing.Size(209, 30);
             this.textBox_ucret.TabIndex = 21;
@@ -245,7 +247,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label7.Location = new System.Drawing.Point(22, 193);
+            this.label7.Location = new System.Drawing.Point(22, 250);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 25);
             this.label7.TabIndex = 22;
@@ -261,10 +263,33 @@
             "Mersin",
             "Muğla",
             "Antalya"});
-            this.comboBox_Sehir.Location = new System.Drawing.Point(165, 185);
+            this.comboBox_Sehir.Location = new System.Drawing.Point(165, 247);
             this.comboBox_Sehir.Name = "comboBox_Sehir";
             this.comboBox_Sehir.Size = new System.Drawing.Size(209, 33);
             this.comboBox_Sehir.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label8.Location = new System.Drawing.Point(21, 193);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 25);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Otel İsmi:";
+            // 
+            // comboBox_OtelIsim
+            // 
+            this.comboBox_OtelIsim.FormattingEnabled = true;
+            this.comboBox_OtelIsim.Items.AddRange(new object[] {
+            "Ekonomik",
+            "Normal",
+            "Dağ Manzarasi",
+            "Deniz Manzarasi"});
+            this.comboBox_OtelIsim.Location = new System.Drawing.Point(165, 185);
+            this.comboBox_OtelIsim.Name = "comboBox_OtelIsim";
+            this.comboBox_OtelIsim.Size = new System.Drawing.Size(209, 33);
+            this.comboBox_OtelIsim.TabIndex = 25;
             // 
             // OtelRezervasyon
             // 
@@ -273,6 +298,8 @@
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(914, 542);
+            this.Controls.Add(this.comboBox_OtelIsim);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox_Sehir);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox_ucret);
@@ -324,5 +351,7 @@
         private System.Windows.Forms.TextBox textBox_ucret;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox_Sehir;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox_OtelIsim;
     }
 }

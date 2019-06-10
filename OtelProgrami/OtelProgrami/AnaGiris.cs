@@ -14,6 +14,7 @@ namespace OtelProgrami
     public partial class AnaGiris : Form
     {
         OtelRezervasyon rez = new OtelRezervasyon();
+        
         Log kayit = new Log();
         public AnaGiris()
         {
@@ -22,7 +23,7 @@ namespace OtelProgrami
 
         private void button_giris_Click(object sender, EventArgs e)
         {
-            if (textBox_KullaniciAdi.Text == string.Empty || textBox_Sifre.Text == string.Empty)
+            if (textBox_KullaniciTcNo.Text == string.Empty || textBox_Sifre.Text == string.Empty)
             {
                 MessageBox.Show("Kullanıcı Adinizi veya Şifrenizi Yazmadınız.");
                 kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yazmadı",DateTime.Now.ToString());
@@ -30,7 +31,7 @@ namespace OtelProgrami
             }
             else
             {
-                string kullanici_Adi = textBox_KullaniciAdi.Text;
+                string kullanici_TcNo = textBox_KullaniciTcNo.Text;
                 string kullanici_Sifre = textBox_Sifre.Text;
                 //giris.giris(kullanici_Adi, kullanici_Sifre);
                 /*
@@ -75,7 +76,6 @@ namespace OtelProgrami
         {
             //form load kısmına bu kodu yazdık cunku ilk girildiginde sifre göster butonuna basmadan gosteriyordu.
             textBox_Sifre.PasswordChar = '*';
-            rez.Show();
         }
     }
 }

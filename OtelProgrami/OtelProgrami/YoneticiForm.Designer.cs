@@ -44,7 +44,6 @@
             this.comboBox_odaTuru = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button_Sil = new System.Windows.Forms.Button();
             this.button_rezSorgu = new System.Windows.Forms.Button();
             this.radioButton_ucYildiz = new System.Windows.Forms.RadioButton();
             this.radioButton_dortYildiz = new System.Windows.Forms.RadioButton();
@@ -52,7 +51,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox_odaOzelligi = new System.Windows.Forms.ComboBox();
             this.uyeListesiDataGrid = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +62,7 @@
             this.Ucret = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GirisTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.uyeListesiDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,6 +127,7 @@
             this.button_Ekle.TabIndex = 5;
             this.button_Ekle.Text = "Ekle";
             this.button_Ekle.UseVisualStyleBackColor = true;
+            this.button_Ekle.Click += new System.EventHandler(this.button_Ekle_Click);
             // 
             // comboBox_odaTuru
             // 
@@ -165,21 +165,10 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Oda Türü:";
             // 
-            // button_Sil
-            // 
-            this.button_Sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Sil.Location = new System.Drawing.Point(852, 89);
-            this.button_Sil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_Sil.Name = "button_Sil";
-            this.button_Sil.Size = new System.Drawing.Size(153, 54);
-            this.button_Sil.TabIndex = 10;
-            this.button_Sil.Text = "Sil";
-            this.button_Sil.UseVisualStyleBackColor = true;
-            // 
             // button_rezSorgu
             // 
             this.button_rezSorgu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_rezSorgu.Location = new System.Drawing.Point(852, 159);
+            this.button_rezSorgu.Location = new System.Drawing.Point(852, 95);
             this.button_rezSorgu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_rezSorgu.Name = "button_rezSorgu";
             this.button_rezSorgu.Size = new System.Drawing.Size(153, 54);
@@ -359,7 +348,6 @@
             this.Controls.Add(this.radioButton_dortYildiz);
             this.Controls.Add(this.radioButton_ucYildiz);
             this.Controls.Add(this.button_rezSorgu);
-            this.Controls.Add(this.button_Sil);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox_odaTuru);
@@ -391,7 +379,6 @@
         private System.Windows.Forms.ComboBox comboBox_odaTuru;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button_Sil;
         private System.Windows.Forms.Button button_rezSorgu;
         private System.Windows.Forms.RadioButton radioButton_ucYildiz;
         private System.Windows.Forms.RadioButton radioButton_dortYildiz;

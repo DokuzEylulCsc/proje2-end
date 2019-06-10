@@ -12,11 +12,11 @@ namespace OtelProgrami
 {
     public partial class UyeOl : Form
     {
-<<<<<<< HEAD
+
         Log kayit = new Log();
-=======
+
         //Uye uyeHataDurumunda = new Uye(); // Log eklemek icin uye nesnesi burada tutulabilir.
->>>>>>> 0e99e88693768377c7462bf6cdaa5848111b1cfe
+
         public UyeOl()
         {
             InitializeComponent();
