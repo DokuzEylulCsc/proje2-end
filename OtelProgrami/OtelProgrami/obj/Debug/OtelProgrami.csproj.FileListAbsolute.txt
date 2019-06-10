@@ -71,3 +71,21 @@ C:\Users\EMRE\Desktop\nesneOdev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\O
 C:\Users\Ozgur Can\Desktop\nesneodev\6haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OdaveOtelEkle.resources
 >>>>>>> 0e99e88693768377c7462bf6cdaa5848111b1cfe
 C:\Users\EMRE\Desktop\nesneOdev\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OdaveOtelEkle.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe.config
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.exe
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\OtelProgrami.pdb
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csprojAssemblyReference.cache
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.AnaGiris.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OdaveOtelEkle.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OtelRezervasyon.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.Properties.Resources.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.UyeOl.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.uyeRezKayitlari.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.YoneticiForm.resources
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.GenerateResource.cache
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CoreCompileInputs.cache
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CopyComplete
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.exe
+C:\Users\Ozgur Can\Desktop\nesneodev\10haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.pdb

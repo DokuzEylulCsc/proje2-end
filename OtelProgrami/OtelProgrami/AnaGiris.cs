@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace OtelProgrami
     public partial class AnaGiris : Form
     {
         OtelRezervasyon rez = new OtelRezervasyon();
-        
+
         Log kayit = new Log();
         public AnaGiris()
         {
@@ -26,28 +27,38 @@ namespace OtelProgrami
             if (textBox_KullaniciTcNo.Text == string.Empty || textBox_Sifre.Text == string.Empty)
             {
                 MessageBox.Show("Kullanıcı Adinizi veya Şifrenizi Yazmadınız.");
-                kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yazmadı",DateTime.Now.ToString());
+                kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yazmadı", DateTime.Now.ToString());
 
             }
             else
             {
                 string kullanici_TcNo = textBox_KullaniciTcNo.Text;
                 string kullanici_Sifre = textBox_Sifre.Text;
-                //giris.giris(kullanici_Adi, kullanici_Sifre);
-                /*
-                 * kullanıcının bilgileri dogru mu diye kontrol edilecek.
-                 * eger dogruysa if bloguna girecek
-                if ()
+
+                string filePath = System.IO.Directory.GetCurrentDirectory();
+                filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Uyeler\";
+
+                string[] fileEntries = Directory.GetFiles(filePath);
+
+                bool kullaniciBulundu = false;
+
+                // kullanici girisi yapildi.
+                foreach (var a in fileEntries)
                 {
-                    rez.Show();
+                    Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(a));
+                    if (uye.TcNo == kullanici_TcNo && uye.Sifre == kullanici_Sifre)
+                    {
+                        MessageBox.Show("Sayın " + uye.Ad + " " + uye.Soyad + " Hoşgeldiniz");
+                        kullaniciBulundu = true;
+                        rez.Show();
+                        break;
+                    }
                 }
-                else
+                if (kullaniciBulundu == false)
                 {
                     MessageBox.Show("Kullanıcı Bilgileriniz Yanlış Lütfen Tekrar Deneyiniz.");
-                    kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yanlış girdi",DateTime.Now);
-                    
+                    kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yanlış girdi", DateTime.Now.ToShortDateString());
                 }
-                */
             }
 
         }

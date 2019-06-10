@@ -25,7 +25,7 @@ namespace OtelProgrami
             comboBox_otelTuru.SelectedIndex = 0;
             radioButton_ucYildiz.Checked = true;
             uyeListesiDataGrid.Visible = false;
-           
+
         }
 
         private void button_rezSorgu_Click(object sender, EventArgs e)
@@ -35,7 +35,8 @@ namespace OtelProgrami
             foreach (var element in deneme.Listele())
             {
                 uyeListesiDataGrid.Rows.Add(element.Ad, element.Soyad, element.TelNo, element.TcNo, "cc", "cc", "d", "df");
-            }       }
+            }
+        }
 
         private void button_Ekle_Click(object sender, EventArgs e)
         {

@@ -1,1 +1,1 @@
-Üye Olunurken Bilgiler Boş bırakıldı
+Giriş yaparken Kullanici adini veya şifresini yanlış girdi
