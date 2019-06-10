@@ -15,6 +15,7 @@ namespace OtelProgrami
     public partial class AnaGiris : Form
     {
         OtelRezervasyon rez = new OtelRezervasyon();
+        YoneticiForm formYonetici = new YoneticiForm();
 
         Log kayit = new Log();
         public AnaGiris()
@@ -40,21 +41,29 @@ namespace OtelProgrami
 
                 string[] fileEntries = Directory.GetFiles(filePath);
 
-                bool kullaniciBulundu = false;
+                bool kullaniciGirisiSaglandi = false;
 
                 // kullanici girisi yapildi.
                 foreach (var a in fileEntries)
                 {
                     Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(a));
-                    if (uye.TcNo == kullanici_TcNo && uye.Sifre == kullanici_Sifre)
+                    if (kullanici_TcNo == "admin" && kullanici_Sifre == "admin")
+                    {
+                        MessageBox.Show("Yonetici girişi yaptınız!");
+                        formYonetici.Show();
+                        kullaniciGirisiSaglandi = true;
+                        break;
+                    }
+                    else if (uye.TcNo == kullanici_TcNo && uye.Sifre == kullanici_Sifre)
                     {
                         MessageBox.Show("Sayın " + uye.Ad + " " + uye.Soyad + " Hoşgeldiniz");
-                        kullaniciBulundu = true;
+                        kullaniciGirisiSaglandi = true;
                         rez.Show();
                         break;
                     }
                 }
-                if (kullaniciBulundu == false)
+
+                if (kullaniciGirisiSaglandi == false)
                 {
                     MessageBox.Show("Kullanıcı Bilgileriniz Yanlış Lütfen Tekrar Deneyiniz.");
                     kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yanlış girdi", DateTime.Now.ToShortDateString());
