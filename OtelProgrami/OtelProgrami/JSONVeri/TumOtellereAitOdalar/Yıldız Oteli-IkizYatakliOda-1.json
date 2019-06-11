@@ -1,12 +1,9 @@
 {
   "OtelIsmi": "Yıldız Oteli",
-  "OdaTuru": "İkiz yataklı oda",
-  "Fiyat": 450,
+  "OdaTuru": "İkiz Yataklı Oda",
+  "Fiyat": 2222,
   "KisiKapasitesi": 2,
-  "KlimaSecenegi": true,
-  "MiniBarSecenegi": true,
-  "DenizManzarasiSecenegi": false,
-  "DagManzarasiSecenegi": false,
-  "EkonomikFiyatSecenegi": true,
+  "SehirBilgisi": "efe",
+  "OdaOzelligi": "Dağ Manzarası",
   "RezervBilgisi": false
 }

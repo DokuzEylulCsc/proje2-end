@@ -33,9 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button_Bul = new System.Windows.Forms.Button();
-            this.comboBox_OtelTuru = new System.Windows.Forms.ComboBox();
             this.comboBox_OdaTuru = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button_rezKayitlari = new System.Windows.Forms.Button();
             this.uc_yildiz = new System.Windows.Forms.RadioButton();
@@ -68,7 +66,7 @@
             this.dateTimePicker_Giris.Location = new System.Drawing.Point(749, 25);
             this.dateTimePicker_Giris.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker_Giris.Name = "dateTimePicker_Giris";
-            this.dateTimePicker_Giris.Size = new System.Drawing.Size(323, 24);
+            this.dateTimePicker_Giris.Size = new System.Drawing.Size(323, 21);
             this.dateTimePicker_Giris.TabIndex = 0;
             // 
             // dateTimePicker_Cikis
@@ -78,7 +76,7 @@
             this.dateTimePicker_Cikis.Location = new System.Drawing.Point(749, 77);
             this.dateTimePicker_Cikis.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker_Cikis.Name = "dateTimePicker_Cikis";
-            this.dateTimePicker_Cikis.Size = new System.Drawing.Size(323, 24);
+            this.dateTimePicker_Cikis.Size = new System.Drawing.Size(323, 21);
             this.dateTimePicker_Cikis.TabIndex = 1;
             // 
             // label1
@@ -89,7 +87,7 @@
             this.label1.Location = new System.Drawing.Point(648, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 18);
+            this.label1.Size = new System.Drawing.Size(78, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Giriş Tarihi";
             // 
@@ -101,7 +99,7 @@
             this.label2.Location = new System.Drawing.Point(646, 77);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 18);
+            this.label2.Size = new System.Drawing.Size(79, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Çıkış Tarihi";
             // 
@@ -118,18 +116,6 @@
             this.button_Bul.UseVisualStyleBackColor = false;
             this.button_Bul.Click += new System.EventHandler(this.button_rezYap_Click);
             // 
-            // comboBox_OtelTuru
-            // 
-            this.comboBox_OtelTuru.FormattingEnabled = true;
-            this.comboBox_OtelTuru.Items.AddRange(new object[] {
-            "Butik Otel",
-            "Pansiyon",
-            "Tatil Köyü"});
-            this.comboBox_OtelTuru.Location = new System.Drawing.Point(166, 12);
-            this.comboBox_OtelTuru.Name = "comboBox_OtelTuru";
-            this.comboBox_OtelTuru.Size = new System.Drawing.Size(209, 33);
-            this.comboBox_OtelTuru.TabIndex = 8;
-            // 
             // comboBox_OdaTuru
             // 
             this.comboBox_OdaTuru.FormattingEnabled = true;
@@ -140,18 +126,8 @@
             "Üç Kişilik "});
             this.comboBox_OdaTuru.Location = new System.Drawing.Point(166, 64);
             this.comboBox_OdaTuru.Name = "comboBox_OdaTuru";
-            this.comboBox_OdaTuru.Size = new System.Drawing.Size(209, 33);
+            this.comboBox_OdaTuru.Size = new System.Drawing.Size(209, 28);
             this.comboBox_OdaTuru.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label3.Location = new System.Drawing.Point(23, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 25);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Otel Türü:";
             // 
             // label4
             // 
@@ -159,7 +135,7 @@
             this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label4.Location = new System.Drawing.Point(22, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 25);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 11;
             this.label4.Text = "Oda Türü:";
             // 
@@ -182,7 +158,7 @@
             this.uc_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uc_yildiz.Location = new System.Drawing.Point(669, 127);
             this.uc_yildiz.Name = "uc_yildiz";
-            this.uc_yildiz.Size = new System.Drawing.Size(60, 29);
+            this.uc_yildiz.Size = new System.Drawing.Size(48, 24);
             this.uc_yildiz.TabIndex = 15;
             this.uc_yildiz.TabStop = true;
             this.uc_yildiz.Text = "***";
@@ -194,7 +170,7 @@
             this.dort_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.dort_yildiz.Location = new System.Drawing.Point(833, 127);
             this.dort_yildiz.Name = "dort_yildiz";
-            this.dort_yildiz.Size = new System.Drawing.Size(69, 29);
+            this.dort_yildiz.Size = new System.Drawing.Size(55, 24);
             this.dort_yildiz.TabIndex = 16;
             this.dort_yildiz.TabStop = true;
             this.dort_yildiz.Text = "****";
@@ -206,7 +182,7 @@
             this.bes_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.bes_yildiz.Location = new System.Drawing.Point(994, 127);
             this.bes_yildiz.Name = "bes_yildiz";
-            this.bes_yildiz.Size = new System.Drawing.Size(78, 29);
+            this.bes_yildiz.Size = new System.Drawing.Size(62, 24);
             this.bes_yildiz.TabIndex = 17;
             this.bes_yildiz.TabStop = true;
             this.bes_yildiz.Text = "*****";
@@ -221,7 +197,7 @@
             "Deniz Manzarası"});
             this.comboBox_odaOzellik.Location = new System.Drawing.Point(166, 114);
             this.comboBox_odaOzellik.Name = "comboBox_odaOzellik";
-            this.comboBox_odaOzellik.Size = new System.Drawing.Size(209, 33);
+            this.comboBox_odaOzellik.Size = new System.Drawing.Size(209, 28);
             this.comboBox_odaOzellik.TabIndex = 18;
             // 
             // label5
@@ -230,7 +206,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label5.Location = new System.Drawing.Point(22, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 25);
+            this.label5.Size = new System.Drawing.Size(110, 20);
             this.label5.TabIndex = 19;
             this.label5.Text = "Oda Özelliği:";
             // 
@@ -240,7 +216,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label6.Location = new System.Drawing.Point(22, 273);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 25);
+            this.label6.Size = new System.Drawing.Size(58, 20);
             this.label6.TabIndex = 20;
             this.label6.Text = "Ücret:";
             // 
@@ -248,7 +224,7 @@
             // 
             this.textBox_ucret.Location = new System.Drawing.Point(166, 270);
             this.textBox_ucret.Name = "textBox_ucret";
-            this.textBox_ucret.Size = new System.Drawing.Size(209, 30);
+            this.textBox_ucret.Size = new System.Drawing.Size(209, 26);
             this.textBox_ucret.TabIndex = 21;
             this.textBox_ucret.Text = "0";
             // 
@@ -258,7 +234,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label7.Location = new System.Drawing.Point(23, 227);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 25);
+            this.label7.Size = new System.Drawing.Size(56, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "Şehir:";
             // 
@@ -274,7 +250,7 @@
             "Antalya"});
             this.comboBox_Sehir.Location = new System.Drawing.Point(166, 224);
             this.comboBox_Sehir.Name = "comboBox_Sehir";
-            this.comboBox_Sehir.Size = new System.Drawing.Size(209, 33);
+            this.comboBox_Sehir.Size = new System.Drawing.Size(209, 28);
             this.comboBox_Sehir.TabIndex = 23;
             // 
             // label8
@@ -283,7 +259,7 @@
             this.label8.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label8.Location = new System.Drawing.Point(22, 170);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 25);
+            this.label8.Size = new System.Drawing.Size(85, 20);
             this.label8.TabIndex = 24;
             this.label8.Text = "Otel İsmi:";
             // 
@@ -299,7 +275,7 @@
             "Otel Beşiktaş"});
             this.comboBox_OtelIsim.Location = new System.Drawing.Point(166, 167);
             this.comboBox_OtelIsim.Name = "comboBox_OtelIsim";
-            this.comboBox_OtelIsim.Size = new System.Drawing.Size(209, 33);
+            this.comboBox_OtelIsim.Size = new System.Drawing.Size(209, 28);
             this.comboBox_OtelIsim.TabIndex = 25;
             // 
             // dataGridView1
@@ -368,7 +344,7 @@
             // 
             // OtelRezervasyon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -387,9 +363,7 @@
             this.Controls.Add(this.uc_yildiz);
             this.Controls.Add(this.button_rezKayitlari);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox_OdaTuru);
-            this.Controls.Add(this.comboBox_OtelTuru);
             this.Controls.Add(this.button_Bul);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -414,9 +388,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_Bul;
-        private System.Windows.Forms.ComboBox comboBox_OtelTuru;
         private System.Windows.Forms.ComboBox comboBox_OdaTuru;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_rezKayitlari;
         private System.Windows.Forms.RadioButton uc_yildiz;

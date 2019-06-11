@@ -12,7 +12,6 @@ namespace OtelProgrami
 {
     public partial class OdaveOtelEkle : Form
     {
-        int i = 1;
         private object odaOtelIsim;
         private object otelYildiz;
 
@@ -21,38 +20,60 @@ namespace OtelProgrami
             InitializeComponent();
         }
 
-        public int I { get => i; set => i = value; }
-
         private void odaEkle_Click(object sender, EventArgs e)
         {
-            //string otelAd = odaOtelIsim.Text;
             int odaFiyati = Int32.Parse(odaFiyat.Text);
             string odaTuru = comboBox_OdaTuru.Text;
             string otelIsmi = comboBox_OtelIsmi.Text;
-            string odaOzelligi = comboBox_odaOzellik.Text;
-            bool rezBilgisi = false;         
-            //Oda oda = new Oda(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);
-           // CiftKisilikOda oda = new CiftKisilikOda();
-          //  oda.OdaBilgiGir(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);
-            //oda.OdaEkle(I);
-            I++;
+            string odaOzelligi = comboBox_odaOzelligi.Text;
+            string sehir = odaSehir.Text;
+
+            if (odaTuru == "Tek Kişilik")
+            {
+                TekKisilikOda oda = new TekKisilikOda(odaFiyati, odaOzelligi);
+                oda.OdaBilgiGir(otelIsmi, sehir, odaOzelligi);
+                oda.OdaEkle();
+            }
+            else if (odaTuru == "Çift Kişilik")
+            {
+                CiftKisilikOda oda = new CiftKisilikOda(odaFiyati, odaOzelligi);
+                oda.OdaBilgiGir(otelIsmi, sehir, odaOzelligi);
+                oda.OdaEkle();
+            }
+            else if (odaTuru == "İkiz Yataklı Çift Kişilik")
+            {
+                IkizYatakliOda oda = new IkizYatakliOda(odaFiyati, odaOzelligi);
+                oda.OdaBilgiGir(otelIsmi, sehir, odaOzelligi);
+                oda.OdaEkle();
+            }
+            else if (odaTuru == "Üç Kişilik")
+            {
+                UcKisilikOda oda = new UcKisilikOda(odaFiyati, odaOzelligi);
+                oda.OdaBilgiGir(otelIsmi, sehir, odaOzelligi);
+                oda.OdaEkle();
+            }
+            MessageBox.Show(odaFiyati + " " + odaTuru + " " + otelIsmi + " " + odaOzelligi);
         }
 
         private void otelEkle_Click(object sender, EventArgs e)
         {
             string otelIsmi = otelIsim.Text;
             string sehir = otelSehir.Text;
-            string otelTur = otelTuru.Text;
-            int yildiz;
+            string otelTur = comboBox_otelTuru_otel.Text;
+            int yildizSy;
+
             if (radioButton_ucYildiz.Checked)
-            {
-                yildiz = 3;
-            }
+                yildizSy = 3;
             else if (radioButton_dortYildiz.Checked)
-            {
-                yildiz = 4;
-            }
-            else yildiz = 5;
+                yildizSy = 4;
+            else
+                yildizSy = 5;
+
+            Otel otel = new Otel(otelIsmi, sehir, yildizSy, otelTur);
+            otel.OtelEkle();
+
+            MessageBox.Show(otelIsmi + " " + sehir + " " + otelTur + " " + yildizSy);
+
             //Otel otel = new Otel(otelIsmi, sehir, yildizSy, otelTur);
             //otel.OtelEkle();
         }

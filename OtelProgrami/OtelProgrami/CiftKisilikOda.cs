@@ -8,12 +8,12 @@ namespace OtelProgrami
 {
     class CiftKisilikOda : Oda
     {
-        public CiftKisilikOda(int fiyat, string odaOzeligi)
+        public CiftKisilikOda(int fiyat, string odaOzelligi)
         {
             Fiyat = fiyat;
             KisiKapasitesi = 2;
-            OdaOzelligi = odaOzeligi;
-            OdaTuru = "Çift kişilik oda";
+            OdaOzelligi = odaOzelligi;
+            OdaTuru = "Çift Kişilik Oda";
         }
 
     }

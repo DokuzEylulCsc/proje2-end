@@ -14,7 +14,7 @@ namespace OtelProgrami
 
         internal List<Oda> BulunanOdalar { get => bulunanOdalar; set => bulunanOdalar = value; }
 
-        public void OdaAra(string otelTuru, string odaTuru, bool eko, bool dag, bool deniz, string sehir)
+        public void OdaAra(string otelTuru, string odaTuru, string odaOzelligi, string sehir)
         {
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\TumOtellereAitOdalar\";
@@ -28,11 +28,11 @@ namespace OtelProgrami
                 // read file into a string and deserialize JSON to a type
                 Oda oda = JsonConvert.DeserializeObject<Oda>(File.ReadAllText(element));
 
-                if (oda.OtelTuru == otelTuru && oda.OdaTuru == odaTuru && oda.GetType().Name == odaTuru && (oda.EkonomikFiyatSecenegi == eko || oda.DagManzarasiSecenegi == dag || oda.DenizManzarasiSecenegi == deniz) && oda.SehirBilgisi == sehir)
-                {
-                    //oda aramasi ile oda bulduk, listeye ekledik.
-                    BulunanOdalar.Add(oda);
-                }
+                //if (oda.OtelTuru == otelTuru && oda.OdaTuru == odaTuru && oda.GetType().Name == odaTuru && (oda.EkonomikFiyatSecenegi == eko || oda.DagManzarasiSecenegi == dag || oda.DenizManzarasiSecenegi == deniz) && oda.SehirBilgisi == sehir)
+                //{
+                //    //oda aramasi ile oda bulduk, listeye ekledik.
+                //    BulunanOdalar.Add(oda);
+                //}
                 //Console.WriteLine(oda.Serialize(oda));
             }
 

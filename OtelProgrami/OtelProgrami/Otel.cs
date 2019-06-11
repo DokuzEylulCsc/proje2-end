@@ -20,7 +20,7 @@ namespace OtelProgrami
         public string SehirBilgisi { get => sehirBilgisi; set => sehirBilgisi = value; }
         public int YildizSayisi { get => yildizSayisi; set => yildizSayisi = value; }
         public string OtelTuru { get => otelTuru; set => otelTuru = value; }
-    
+
         internal Otel(string otelIsmi, string sehirBilgisi, int yildizSy, string otelTur)
         {
             OtelIsmi = otelIsmi;
@@ -46,8 +46,9 @@ namespace OtelProgrami
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Oteller\";
 
-            // ...\JSONVeri\Oteller\Otelismi.json
-            File.WriteAllText(filePath + OtelIsmi + ".json", this.Serialize(this));
+            // ...\JSONVeri\Oteller\Otelismi-uniqueID.json
+            // Guid.NewGuid().ToString("N") her bir json dosyasina unique isim vermek icin kullanildi.
+            File.WriteAllText(filePath + OtelIsmi + "-" + Guid.NewGuid().ToString("N") + ".json", this.Serialize(this));
         }
     }
 }
