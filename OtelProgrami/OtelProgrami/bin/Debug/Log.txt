@@ -1,3 +1,8 @@
 Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı 10.06.2019 21:08:12
 Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı 10.06.2019 21:10:34
 Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı 10.06.2019 21:10:42
+Giriş yaparken Kullanici adini veya şifresini yanlış girdi 10.06.2019
+Giriş yaparken Kullanici adini veya şifresini yanlış girdi 10.06.2019
+Giriş yaparken Kullanici adini veya şifresini yazmadı 10.06.2019 22:12:42
+Giriş yaparken Kullanici adini veya şifresini yazmadı 10.06.2019 22:53:01
+Giriş yaparken Kullanici adini veya şifresini yanlış girdi 10.06.2019 23:17:39

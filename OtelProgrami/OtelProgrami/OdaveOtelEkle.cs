@@ -27,7 +27,7 @@ namespace OtelProgrami
         {
             //string otelAd = odaOtelIsim.Text;
             int odaFiyati = Int32.Parse(odaFiyat.Text);
-            int kisiKap = Int32.Parse(odaKisiKapasitesi.Text);
+            
             bool rezBilgisi = false;
 
             //Oda oda = new Oda(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);

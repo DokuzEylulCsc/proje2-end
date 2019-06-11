@@ -65,8 +65,9 @@ namespace OtelProgrami
 
                 if (kullaniciGirisiSaglandi == false)
                 {
+                    
                     MessageBox.Show("Kullanıcı Bilgileriniz Yanlış Lütfen Tekrar Deneyiniz.");
-                    kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yanlış girdi", DateTime.Now.ToShortDateString());
+                    kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yanlış girdi", DateTime.Now.ToString());
                 }
             }
 
@@ -94,6 +95,8 @@ namespace OtelProgrami
 
         private void AnaGiris_Load(object sender, EventArgs e)
         {
+            //OtelRezervasyon aa = new OtelRezervasyon();
+            //aa.Show();
             //form load kısmına bu kodu yazdık cunku ilk girildiginde sifre göster butonuna basmadan gosteriyordu.
             textBox_Sifre.PasswordChar = '*';
         }

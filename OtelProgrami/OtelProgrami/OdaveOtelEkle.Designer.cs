@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.odaEkle = new System.Windows.Forms.Button();
-            this.odaKisiKapasitesi = new System.Windows.Forms.TextBox();
             this.odaFiyat = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.otelEkle = new System.Windows.Forms.Button();
@@ -56,52 +54,33 @@
             // 
             this.odaEkle.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.odaEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.odaEkle.Location = new System.Drawing.Point(93, 329);
-            this.odaEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.odaEkle.Location = new System.Drawing.Point(70, 267);
+            this.odaEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.odaEkle.Name = "odaEkle";
-            this.odaEkle.Size = new System.Drawing.Size(167, 64);
+            this.odaEkle.Size = new System.Drawing.Size(125, 52);
             this.odaEkle.TabIndex = 25;
             this.odaEkle.Text = "Oda Ekle";
             this.odaEkle.UseVisualStyleBackColor = false;
             this.odaEkle.Click += new System.EventHandler(this.odaEkle_Click);
             // 
-            // odaKisiKapasitesi
-            // 
-            this.odaKisiKapasitesi.Location = new System.Drawing.Point(171, 90);
-            this.odaKisiKapasitesi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.odaKisiKapasitesi.Multiline = true;
-            this.odaKisiKapasitesi.Name = "odaKisiKapasitesi";
-            this.odaKisiKapasitesi.Size = new System.Drawing.Size(157, 24);
-            this.odaKisiKapasitesi.TabIndex = 21;
-            // 
             // odaFiyat
             // 
-            this.odaFiyat.Location = new System.Drawing.Point(171, 36);
-            this.odaFiyat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.odaFiyat.Location = new System.Drawing.Point(128, 29);
+            this.odaFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.odaFiyat.Multiline = true;
             this.odaFiyat.Name = "odaFiyat";
-            this.odaFiyat.Size = new System.Drawing.Size(157, 24);
+            this.odaFiyat.Size = new System.Drawing.Size(119, 20);
             this.odaFiyat.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(29, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 24);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Kişi Sayısı:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(29, 251);
+            this.label2.Location = new System.Drawing.Point(22, 168);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 24);
+            this.label2.Size = new System.Drawing.Size(105, 18);
             this.label2.TabIndex = 16;
             this.label2.Text = "Oda Özelliği:";
             // 
@@ -110,9 +89,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(29, 34);
+            this.label1.Location = new System.Drawing.Point(22, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 24);
+            this.label1.Size = new System.Drawing.Size(49, 18);
             this.label1.TabIndex = 15;
             this.label1.Text = "Fiyat:";
             // 
@@ -120,10 +100,10 @@
             // 
             this.otelEkle.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.otelEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.otelEkle.Location = new System.Drawing.Point(711, 273);
-            this.otelEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.otelEkle.Location = new System.Drawing.Point(533, 222);
+            this.otelEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otelEkle.Name = "otelEkle";
-            this.otelEkle.Size = new System.Drawing.Size(167, 57);
+            this.otelEkle.Size = new System.Drawing.Size(125, 46);
             this.otelEkle.TabIndex = 37;
             this.otelEkle.Text = "Otel Ekle";
             this.otelEkle.UseVisualStyleBackColor = false;
@@ -131,29 +111,29 @@
             // 
             // otelTuru
             // 
-            this.otelTuru.Location = new System.Drawing.Point(739, 150);
-            this.otelTuru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.otelTuru.Location = new System.Drawing.Point(554, 122);
+            this.otelTuru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otelTuru.Multiline = true;
             this.otelTuru.Name = "otelTuru";
-            this.otelTuru.Size = new System.Drawing.Size(157, 24);
+            this.otelTuru.Size = new System.Drawing.Size(119, 20);
             this.otelTuru.TabIndex = 35;
             // 
             // otelSehir
             // 
-            this.otelSehir.Location = new System.Drawing.Point(739, 96);
-            this.otelSehir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.otelSehir.Location = new System.Drawing.Point(554, 78);
+            this.otelSehir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otelSehir.Multiline = true;
             this.otelSehir.Name = "otelSehir";
-            this.otelSehir.Size = new System.Drawing.Size(157, 24);
+            this.otelSehir.Size = new System.Drawing.Size(119, 20);
             this.otelSehir.TabIndex = 33;
             // 
             // otelIsim
             // 
-            this.otelIsim.Location = new System.Drawing.Point(739, 42);
-            this.otelIsim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.otelIsim.Location = new System.Drawing.Point(554, 34);
+            this.otelIsim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otelIsim.Multiline = true;
             this.otelIsim.Name = "otelIsim";
-            this.otelIsim.Size = new System.Drawing.Size(157, 24);
+            this.otelIsim.Size = new System.Drawing.Size(119, 20);
             this.otelIsim.TabIndex = 32;
             // 
             // label7
@@ -161,9 +141,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(630, 150);
+            this.label7.Location = new System.Drawing.Point(472, 122);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 24);
+            this.label7.Size = new System.Drawing.Size(78, 18);
             this.label7.TabIndex = 30;
             this.label7.Text = "Otel Türü";
             // 
@@ -172,9 +153,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(665, 96);
+            this.label8.Location = new System.Drawing.Point(499, 78);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 24);
+            this.label8.Size = new System.Drawing.Size(47, 18);
             this.label8.TabIndex = 29;
             this.label8.Text = "Şehir";
             // 
@@ -183,9 +165,10 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(635, 42);
+            this.label10.Location = new System.Drawing.Point(476, 34);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 24);
+            this.label10.Size = new System.Drawing.Size(75, 18);
             this.label10.TabIndex = 27;
             this.label10.Text = "Otel İsmi";
             // 
@@ -194,9 +177,10 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(29, 195);
+            this.label9.Location = new System.Drawing.Point(22, 122);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 24);
+            this.label9.Size = new System.Drawing.Size(80, 18);
             this.label9.TabIndex = 47;
             this.label9.Text = "Otel İsmi:";
             // 
@@ -205,9 +189,10 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(29, 145);
+            this.label13.Location = new System.Drawing.Point(22, 82);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 24);
+            this.label13.Size = new System.Drawing.Size(83, 18);
             this.label13.TabIndex = 48;
             this.label13.Text = "Oda Türü:";
             // 
@@ -219,10 +204,9 @@
             "İki Kişilik",
             "İkiz Yataklı Çift Kişilik",
             "Üç Kişilik"});
-            this.comboBox_OdaTuru.Location = new System.Drawing.Point(171, 145);
-            this.comboBox_OdaTuru.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox_OdaTuru.Location = new System.Drawing.Point(128, 82);
             this.comboBox_OdaTuru.Name = "comboBox_OdaTuru";
-            this.comboBox_OdaTuru.Size = new System.Drawing.Size(160, 24);
+            this.comboBox_OdaTuru.Size = new System.Drawing.Size(121, 21);
             this.comboBox_OdaTuru.TabIndex = 49;
             // 
             // comboBox_OtelIsmi
@@ -233,10 +217,9 @@
             "İki Kişilik",
             "İkiz Yataklı Çift Kişilik",
             "Üç Kişilik"});
-            this.comboBox_OtelIsmi.Location = new System.Drawing.Point(171, 197);
-            this.comboBox_OtelIsmi.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox_OtelIsmi.Location = new System.Drawing.Point(128, 124);
             this.comboBox_OtelIsmi.Name = "comboBox_OtelIsmi";
-            this.comboBox_OtelIsmi.Size = new System.Drawing.Size(160, 24);
+            this.comboBox_OtelIsmi.Size = new System.Drawing.Size(121, 21);
             this.comboBox_OtelIsmi.TabIndex = 50;
             // 
             // comboBox1
@@ -247,19 +230,19 @@
             "İki Kişilik",
             "İkiz Yataklı Çift Kişilik",
             "Üç Kişilik"});
-            this.comboBox1.Location = new System.Drawing.Point(171, 253);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(128, 170);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 51;
             // 
             // radioButton_ucYildiz
             // 
             this.radioButton_ucYildiz.AutoSize = true;
             this.radioButton_ucYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_ucYildiz.Location = new System.Drawing.Point(742, 203);
+            this.radioButton_ucYildiz.Location = new System.Drawing.Point(556, 165);
+            this.radioButton_ucYildiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton_ucYildiz.Name = "radioButton_ucYildiz";
-            this.radioButton_ucYildiz.Size = new System.Drawing.Size(51, 24);
+            this.radioButton_ucYildiz.Size = new System.Drawing.Size(44, 21);
             this.radioButton_ucYildiz.TabIndex = 52;
             this.radioButton_ucYildiz.TabStop = true;
             this.radioButton_ucYildiz.Text = "***";
@@ -269,9 +252,10 @@
             // 
             this.radioButton_dortYildiz.AutoSize = true;
             this.radioButton_dortYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_dortYildiz.Location = new System.Drawing.Point(820, 203);
+            this.radioButton_dortYildiz.Location = new System.Drawing.Point(615, 165);
+            this.radioButton_dortYildiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton_dortYildiz.Name = "radioButton_dortYildiz";
-            this.radioButton_dortYildiz.Size = new System.Drawing.Size(58, 24);
+            this.radioButton_dortYildiz.Size = new System.Drawing.Size(50, 21);
             this.radioButton_dortYildiz.TabIndex = 53;
             this.radioButton_dortYildiz.TabStop = true;
             this.radioButton_dortYildiz.Text = "****";
@@ -281,9 +265,10 @@
             // 
             this.radioButton_besYildiz.AutoSize = true;
             this.radioButton_besYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_besYildiz.Location = new System.Drawing.Point(895, 203);
+            this.radioButton_besYildiz.Location = new System.Drawing.Point(671, 165);
+            this.radioButton_besYildiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton_besYildiz.Name = "radioButton_besYildiz";
-            this.radioButton_besYildiz.Size = new System.Drawing.Size(65, 24);
+            this.radioButton_besYildiz.Size = new System.Drawing.Size(56, 21);
             this.radioButton_besYildiz.TabIndex = 54;
             this.radioButton_besYildiz.TabStop = true;
             this.radioButton_besYildiz.Text = "*****";
@@ -294,17 +279,18 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(656, 203);
+            this.label3.Location = new System.Drawing.Point(492, 165);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 55;
             this.label3.Text = "Yıldız:";
             // 
             // OdaveOtelEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.radioButton_besYildiz);
             this.Controls.Add(this.radioButton_dortYildiz);
@@ -322,12 +308,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.odaEkle);
-            this.Controls.Add(this.odaKisiKapasitesi);
             this.Controls.Add(this.odaFiyat);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OdaveOtelEkle";
             this.Text = "OdaveOtelekle";
             this.ResumeLayout(false);
@@ -337,9 +320,7 @@
 
         #endregion
         private System.Windows.Forms.Button odaEkle;
-        private System.Windows.Forms.TextBox odaKisiKapasitesi;
         private System.Windows.Forms.TextBox odaFiyat;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button otelEkle;

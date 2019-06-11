@@ -8,19 +8,10 @@ namespace OtelProgrami
 {
     class TekKisilikOda : Oda
     {
-        public TekKisilikOda(bool denizManzarasiBilgisi, bool dagManzarasiBilgisi, bool ekonomikFiyatBilgisi)
+        public TekKisilikOda(int fiyat, bool denizManzarasiBilgisi, bool dagManzarasiBilgisi, bool ekonomikFiyatBilgisi)
         {
-            if (denizManzarasiBilgisi == true)
-                Fiyat = 500;
-            else if (dagManzarasiBilgisi == true)
-                Fiyat = 400;
-            else if (ekonomikFiyatBilgisi == true)
-                Fiyat = 250;
-            else Fiyat = 350;
-
+            Fiyat = fiyat;
             KisiKapasitesi = 1;
-            KlimaSecenegi = true;
-            MiniBarSecenegi = true;
             DenizManzarasiSecenegi = denizManzarasiBilgisi;
             DagManzarasiSecenegi = dagManzarasiBilgisi;
             EkonomikFiyatSecenegi = ekonomikFiyatBilgisi;

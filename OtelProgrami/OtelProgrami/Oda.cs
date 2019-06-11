@@ -12,13 +12,12 @@ namespace OtelProgrami
     class Oda
     {
         string otelIsmi;
+        string otelTuru;
         string odaTuru;
         int fiyat;
         int kisiKapasitesi;
+        string sehirBilgisi;
 
-        // klima, minibar, deniz manzarasi var/yok vs.
-        bool klimaSecenegi;
-        bool miniBarSecenegi;
         bool denizManzarasiSecenegi;
         bool dagManzarasiSecenegi;
 
@@ -27,11 +26,11 @@ namespace OtelProgrami
         bool rezervBilgisi = false;
 
         public string OtelIsmi { get => otelIsmi; set => otelIsmi = value; }
+        public string OtelTuru { get => otelTuru; set => otelTuru = value; }
         public string OdaTuru { get => odaTuru; set => odaTuru = value; }
         public int Fiyat { get => fiyat; set => fiyat = value; }
         public int KisiKapasitesi { get => kisiKapasitesi; set => kisiKapasitesi = value; }
-        public bool KlimaSecenegi { get => klimaSecenegi; set => klimaSecenegi = value; }
-        public bool MiniBarSecenegi { get => miniBarSecenegi; set => miniBarSecenegi = value; }
+        public string SehirBilgisi { get => sehirBilgisi; set => sehirBilgisi = value; }
         public bool DenizManzarasiSecenegi { get => denizManzarasiSecenegi; set => denizManzarasiSecenegi = value; }
         public bool DagManzarasiSecenegi { get => dagManzarasiSecenegi; set => dagManzarasiSecenegi = value; }
         public bool EkonomikFiyatSecenegi { get => ekonomikFiyatSecenegi; set => ekonomikFiyatSecenegi = value; }
@@ -42,13 +41,11 @@ namespace OtelProgrami
 
         }
 
-        internal void OdaBilgiGir(string otelAd, int fiyat, int kisiKap, bool klima, bool minibar, bool deniz, bool dag, bool eko, bool rezerv)
+        internal void OdaBilgiGir(string otelAd, int fiyat, int kisiKap, bool deniz, bool dag, bool eko, bool rezerv)
         {
             OtelIsmi = otelAd;
             Fiyat = fiyat;
             KisiKapasitesi = kisiKap;
-            KlimaSecenegi = klima;
-            MiniBarSecenegi = minibar;
             DenizManzarasiSecenegi = deniz;
             DagManzarasiSecenegi = dag;
             EkonomikFiyatSecenegi = eko;
