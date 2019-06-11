@@ -96,7 +96,7 @@ namespace OtelProgrami
         private void AnaGiris_Load(object sender, EventArgs e)
         {
             //OtelRezervasyon aa = new OtelRezervasyon();
-            //aa.Show();
+           // aa.Show();
             //form load kısmına bu kodu yazdık cunku ilk girildiginde sifre göster butonuna basmadan gosteriyordu.
             textBox_Sifre.PasswordChar = '*';
         }

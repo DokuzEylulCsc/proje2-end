@@ -8,19 +8,13 @@ namespace OtelProgrami
 {
     class TekKisilikOda : Oda
     {
-        public TekKisilikOda(int fiyat, bool denizManzarasiBilgisi, bool dagManzarasiBilgisi, bool ekonomikFiyatBilgisi)
+        public TekKisilikOda(int fiyat, string odaOzeligi)
         {
             Fiyat = fiyat;
             KisiKapasitesi = 1;
-            DenizManzarasiSecenegi = denizManzarasiBilgisi;
-            DagManzarasiSecenegi = dagManzarasiBilgisi;
-            EkonomikFiyatSecenegi = ekonomikFiyatBilgisi;
+            OdaOzelligi = odaOzeligi;
             OdaTuru = "Tek kişilik oda";
         }
 
-        public TekKisilikOda()
-        {
-            OdaTuru = "Tek kişilik oda";
-        }
     }
 }

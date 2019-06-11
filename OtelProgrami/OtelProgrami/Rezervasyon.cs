@@ -11,7 +11,7 @@ namespace OtelProgrami
         Otel otelBilgisi;
         string otelTuru; // Otel türü: Butik, Pansiyon vs.
         string odaTuru; // Oda türü: Tek kisilik, iki kisilik vs.
-        string odaOzelligi; // Ekonomik, Normal, Deniz manzarasi vs.
+        string odaOzelligi; // Ekonomik, Deniz manzarasi vs.
         DateTime rezervasyonBaslangic;
         DateTime rezervasyonBitis;
         Uye rezerveEden = new Uye();

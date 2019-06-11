@@ -20,7 +20,7 @@ namespace OtelProgrami
         public string SehirBilgisi { get => sehirBilgisi; set => sehirBilgisi = value; }
         public int YildizSayisi { get => yildizSayisi; set => yildizSayisi = value; }
         public string OtelTuru { get => otelTuru; set => otelTuru = value; }
-
+    
         internal Otel(string otelIsmi, string sehirBilgisi, int yildizSy, string otelTur)
         {
             OtelIsmi = otelIsmi;

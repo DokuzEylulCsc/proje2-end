@@ -6,3 +6,7 @@ Giriş yaparken Kullanici adini veya şifresini yanlış girdi 10.06.2019
 Giriş yaparken Kullanici adini veya şifresini yazmadı 10.06.2019 22:12:42
 Giriş yaparken Kullanici adini veya şifresini yazmadı 10.06.2019 22:53:01
 Giriş yaparken Kullanici adini veya şifresini yanlış girdi 10.06.2019 23:17:39
+Giriş yaparken Kullanici adini veya şifresini yanlış girdi 11.06.2019 22:26:27
+Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı 11.06.2019 22:27:34
+Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı 11.06.2019 22:28:06
+Giriş yaparken Kullanici adini veya şifresini yanlış girdi 11.06.2019 22:34:10

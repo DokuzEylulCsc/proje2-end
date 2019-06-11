@@ -27,13 +27,14 @@ namespace OtelProgrami
         {
             //string otelAd = odaOtelIsim.Text;
             int odaFiyati = Int32.Parse(odaFiyat.Text);
-            
-            bool rezBilgisi = false;
-
+            string odaTuru = comboBox_OdaTuru.Text;
+            string otelIsmi = comboBox_OtelIsmi.Text;
+            string odaOzelligi = comboBox_odaOzellik.Text;
+            bool rezBilgisi = false;         
             //Oda oda = new Oda(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);
-            CiftKisilikOda oda = new CiftKisilikOda();
+           // CiftKisilikOda oda = new CiftKisilikOda();
           //  oda.OdaBilgiGir(otelAd, odaFiyati, kisiKap, klimaBilgisi, minibarBilgisi, denizBilgisi, dagBilgisi, ekoBilgisi, rezBilgisi);
-            oda.OdaEkle(I);
+            //oda.OdaEkle(I);
             I++;
         }
 
@@ -41,9 +42,17 @@ namespace OtelProgrami
         {
             string otelIsmi = otelIsim.Text;
             string sehir = otelSehir.Text;
-            //int yildizSy = Int32.Parse(otelYildiz.Text);
             string otelTur = otelTuru.Text;
-
+            int yildiz;
+            if (radioButton_ucYildiz.Checked)
+            {
+                yildiz = 3;
+            }
+            else if (radioButton_dortYildiz.Checked)
+            {
+                yildiz = 4;
+            }
+            else yildiz = 5;
             //Otel otel = new Otel(otelIsmi, sehir, yildizSy, otelTur);
             //otel.OtelEkle();
         }

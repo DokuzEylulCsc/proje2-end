@@ -17,12 +17,7 @@ namespace OtelProgrami
         int fiyat;
         int kisiKapasitesi;
         string sehirBilgisi;
-
-        bool denizManzarasiSecenegi;
-        bool dagManzarasiSecenegi;
-
-        // false ise fiyat Normal olsun, NormalFiyatSecenegine gerek kalmamis olur!
-        bool ekonomikFiyatSecenegi;
+        string odaOzelligi;    
         bool rezervBilgisi = false;
 
         public string OtelIsmi { get => otelIsmi; set => otelIsmi = value; }
@@ -31,9 +26,7 @@ namespace OtelProgrami
         public int Fiyat { get => fiyat; set => fiyat = value; }
         public int KisiKapasitesi { get => kisiKapasitesi; set => kisiKapasitesi = value; }
         public string SehirBilgisi { get => sehirBilgisi; set => sehirBilgisi = value; }
-        public bool DenizManzarasiSecenegi { get => denizManzarasiSecenegi; set => denizManzarasiSecenegi = value; }
-        public bool DagManzarasiSecenegi { get => dagManzarasiSecenegi; set => dagManzarasiSecenegi = value; }
-        public bool EkonomikFiyatSecenegi { get => ekonomikFiyatSecenegi; set => ekonomikFiyatSecenegi = value; }
+        public string OdaOzelligi { get=>odaOzelligi; set=>odaOzelligi=value; }
         public bool RezervBilgisi { get => rezervBilgisi; set => rezervBilgisi = value; }
 
         internal Oda()
@@ -41,14 +34,12 @@ namespace OtelProgrami
 
         }
 
-        internal void OdaBilgiGir(string otelAd, int fiyat, int kisiKap, bool deniz, bool dag, bool eko, bool rezerv)
+        internal void OdaBilgiGir(string otelAd, int fiyat, int kisiKap,string ozellik, bool rezerv)
         {
             OtelIsmi = otelAd;
             Fiyat = fiyat;
             KisiKapasitesi = kisiKap;
-            DenizManzarasiSecenegi = deniz;
-            DagManzarasiSecenegi = dag;
-            EkonomikFiyatSecenegi = eko;
+            OdaOzelligi = ozellik;
             RezervBilgisi = rezerv;
         }
 

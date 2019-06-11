@@ -19,14 +19,14 @@ namespace OtelProgrami
             
         }
 
-        private void button_RezGuncelle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_Cikis_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button_Sil_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
