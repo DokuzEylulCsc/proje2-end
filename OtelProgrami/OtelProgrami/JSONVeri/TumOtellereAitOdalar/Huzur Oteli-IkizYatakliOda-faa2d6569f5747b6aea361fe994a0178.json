@@ -1,0 +1,9 @@
+{
+  "OtelIsmi": "Huzur Oteli",
+  "OdaTuru": "İkiz Yataklı Oda",
+  "Fiyat": 300,
+  "KisiKapasitesi": 2,
+  "SehirBilgisi": "Muğla",
+  "OdaOzelligi": "Ekonomik",
+  "RezervBilgisi": false
+}

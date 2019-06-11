@@ -1,9 +1,9 @@
 {
-  "OtelIsmi": "Yıldız Oteli",
+  "OtelIsmi": "Şahmeran Otel",
   "OdaTuru": "İkiz Yataklı Oda",
-  "Fiyat": 2222,
+  "Fiyat": 500,
   "KisiKapasitesi": 2,
-  "SehirBilgisi": "efe",
+  "SehirBilgisi": "Ankara",
   "OdaOzelligi": "Dağ Manzarası",
   "RezervBilgisi": false
 }

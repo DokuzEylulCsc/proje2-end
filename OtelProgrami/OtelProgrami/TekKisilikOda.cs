@@ -15,6 +15,5 @@ namespace OtelProgrami
             OdaOzelligi = odaOzelligi;
             OdaTuru = "Tek Kişilik Oda";
         }
-
     }
 }

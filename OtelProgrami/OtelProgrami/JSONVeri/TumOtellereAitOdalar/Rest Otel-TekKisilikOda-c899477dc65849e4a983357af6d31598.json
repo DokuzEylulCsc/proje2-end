@@ -1,0 +1,9 @@
+{
+  "OtelIsmi": "Rest Otel",
+  "OdaTuru": "Tek Kişilik Oda",
+  "Fiyat": 255,
+  "KisiKapasitesi": 1,
+  "SehirBilgisi": "Antalya",
+  "OdaOzelligi": "Ekonomik",
+  "RezervBilgisi": false
+}

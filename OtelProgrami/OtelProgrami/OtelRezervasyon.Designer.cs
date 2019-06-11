@@ -41,22 +41,17 @@
             this.bes_yildiz = new System.Windows.Forms.RadioButton();
             this.comboBox_odaOzellik = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox_ucret = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox_Sehir = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox_OtelIsim = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.uygunOdalar_dataGrid = new System.Windows.Forms.DataGridView();
             this.Sehir = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.otelIsım = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OtelTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OtelIsim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OdaTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OdaOzelligi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ucret = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Giristarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cikistarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.OdaFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GirisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.uygunOdalar_dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker_Giris
@@ -120,10 +115,10 @@
             // 
             this.comboBox_OdaTuru.FormattingEnabled = true;
             this.comboBox_OdaTuru.Items.AddRange(new object[] {
-            "Tek Kişilik",
-            "İki Kişilik",
-            "İkiz Yataklı Çift Kişilik",
-            "Üç Kişilik "});
+            "Tek Kişilik Oda",
+            "İki Kişilik Oda",
+            "İkiz Yataklı Çift Kişilik Oda",
+            "Üç Kişilik Oda"});
             this.comboBox_OdaTuru.Location = new System.Drawing.Point(166, 64);
             this.comboBox_OdaTuru.Name = "comboBox_OdaTuru";
             this.comboBox_OdaTuru.Size = new System.Drawing.Size(209, 28);
@@ -210,29 +205,11 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Oda Özelliği:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label6.Location = new System.Drawing.Point(22, 273);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Ücret:";
-            // 
-            // textBox_ucret
-            // 
-            this.textBox_ucret.Location = new System.Drawing.Point(166, 270);
-            this.textBox_ucret.Name = "textBox_ucret";
-            this.textBox_ucret.Size = new System.Drawing.Size(209, 26);
-            this.textBox_ucret.TabIndex = 21;
-            this.textBox_ucret.Text = "0";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label7.Location = new System.Drawing.Point(23, 227);
+            this.label7.Location = new System.Drawing.Point(22, 170);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 20);
             this.label7.TabIndex = 22;
@@ -248,99 +225,75 @@
             "Mersin",
             "Muğla",
             "Antalya"});
-            this.comboBox_Sehir.Location = new System.Drawing.Point(166, 224);
+            this.comboBox_Sehir.Location = new System.Drawing.Point(165, 167);
             this.comboBox_Sehir.Name = "comboBox_Sehir";
             this.comboBox_Sehir.Size = new System.Drawing.Size(209, 28);
             this.comboBox_Sehir.TabIndex = 23;
             // 
-            // label8
+            // uygunOdalar_dataGrid
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label8.Location = new System.Drawing.Point(22, 170);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Otel İsmi:";
-            // 
-            // comboBox_OtelIsim
-            // 
-            this.comboBox_OtelIsim.FormattingEnabled = true;
-            this.comboBox_OtelIsim.Items.AddRange(new object[] {
-            "Şahmeran",
-            "Yıldız Otel",
-            "Huzur Oteli",
-            "Asos Oteli",
-            "Rest Otel",
-            "Otel Beşiktaş"});
-            this.comboBox_OtelIsim.Location = new System.Drawing.Point(166, 167);
-            this.comboBox_OtelIsim.Name = "comboBox_OtelIsim";
-            this.comboBox_OtelIsim.Size = new System.Drawing.Size(209, 28);
-            this.comboBox_OtelIsim.TabIndex = 25;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.uygunOdalar_dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.uygunOdalar_dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Sehir,
-            this.otelIsım,
-            this.OtelTuru,
+            this.OtelIsim,
             this.OdaTuru,
             this.OdaOzelligi,
-            this.Ucret,
-            this.Giristarih,
-            this.Cikistarih});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 324);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1160, 216);
-            this.dataGridView1.TabIndex = 26;
+            this.OdaFiyati,
+            this.GirisTarihi,
+            this.CikisTarihi});
+            this.uygunOdalar_dataGrid.Location = new System.Drawing.Point(1, 331);
+            this.uygunOdalar_dataGrid.Name = "uygunOdalar_dataGrid";
+            this.uygunOdalar_dataGrid.Size = new System.Drawing.Size(1173, 210);
+            this.uygunOdalar_dataGrid.TabIndex = 24;
             // 
             // Sehir
             // 
             this.Sehir.HeaderText = "Şehir";
             this.Sehir.Name = "Sehir";
+            this.Sehir.ReadOnly = true;
+            this.Sehir.Width = 150;
             // 
-            // otelIsım
+            // OtelIsim
             // 
-            this.otelIsım.HeaderText = "Otel İsim";
-            this.otelIsım.Name = "otelIsım";
-            this.otelIsım.Width = 150;
-            // 
-            // OtelTuru
-            // 
-            this.OtelTuru.HeaderText = "Otel Türü";
-            this.OtelTuru.Name = "OtelTuru";
-            this.OtelTuru.Width = 150;
+            this.OtelIsim.HeaderText = "Otel İsmi";
+            this.OtelIsim.Name = "OtelIsim";
+            this.OtelIsim.ReadOnly = true;
+            this.OtelIsim.Width = 235;
             // 
             // OdaTuru
             // 
             this.OdaTuru.HeaderText = "Oda Türü";
             this.OdaTuru.Name = "OdaTuru";
+            this.OdaTuru.ReadOnly = true;
             this.OdaTuru.Width = 150;
             // 
             // OdaOzelligi
             // 
             this.OdaOzelligi.HeaderText = "Oda Özelliği";
             this.OdaOzelligi.Name = "OdaOzelligi";
-            this.OdaOzelligi.Width = 160;
+            this.OdaOzelligi.ReadOnly = true;
+            this.OdaOzelligi.Width = 150;
             // 
-            // Ucret
+            // OdaFiyati
             // 
-            this.Ucret.HeaderText = "Ücret";
-            this.Ucret.Name = "Ucret";
+            this.OdaFiyati.HeaderText = "Oda Fiyatı";
+            this.OdaFiyati.Name = "OdaFiyati";
+            this.OdaFiyati.ReadOnly = true;
+            this.OdaFiyati.Width = 150;
             // 
-            // Giristarih
+            // GirisTarihi
             // 
-            this.Giristarih.HeaderText = "Giriş Tarihi";
-            this.Giristarih.Name = "Giristarih";
-            this.Giristarih.Width = 150;
+            this.GirisTarihi.HeaderText = "Giriş Tarihi";
+            this.GirisTarihi.Name = "GirisTarihi";
+            this.GirisTarihi.ReadOnly = true;
+            this.GirisTarihi.Width = 150;
             // 
-            // Cikistarih
+            // CikisTarihi
             // 
-            this.Cikistarih.HeaderText = "Çıkış Tarihi";
-            this.Cikistarih.Name = "Cikistarih";
-            this.Cikistarih.Width = 150;
+            this.CikisTarihi.HeaderText = "Çıkış Tarihi";
+            this.CikisTarihi.Name = "CikisTarihi";
+            this.CikisTarihi.ReadOnly = true;
+            this.CikisTarihi.Width = 150;
             // 
             // OtelRezervasyon
             // 
@@ -349,13 +302,9 @@
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1174, 542);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox_OtelIsim);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.uygunOdalar_dataGrid);
             this.Controls.Add(this.comboBox_Sehir);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox_ucret);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox_odaOzellik);
             this.Controls.Add(this.bes_yildiz);
@@ -375,7 +324,7 @@
             this.Name = "OtelRezervasyon";
             this.Text = "OtelRezervasyon";
             this.Load += new System.EventHandler(this.OtelRezervasyon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uygunOdalar_dataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,20 +345,15 @@
         private System.Windows.Forms.RadioButton bes_yildiz;
         private System.Windows.Forms.ComboBox comboBox_odaOzellik;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox_ucret;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox_Sehir;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox_OtelIsim;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView uygunOdalar_dataGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sehir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn otelIsım;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OtelTuru;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OtelIsim;
         private System.Windows.Forms.DataGridViewTextBoxColumn OdaTuru;
         private System.Windows.Forms.DataGridViewTextBoxColumn OdaOzelligi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ucret;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Giristarih;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cikistarih;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OdaFiyati;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GirisTarihi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CikisTarihi;
     }
 }

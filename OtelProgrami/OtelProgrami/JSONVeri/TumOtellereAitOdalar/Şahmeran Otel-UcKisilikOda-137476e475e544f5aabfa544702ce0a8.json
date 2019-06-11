@@ -1,0 +1,9 @@
+{
+  "OtelIsmi": "Şahmeran Otel",
+  "OdaTuru": "Üç Kişilik Oda",
+  "Fiyat": 600,
+  "KisiKapasitesi": 3,
+  "SehirBilgisi": "Ankara",
+  "OdaOzelligi": "Ekonomik",
+  "RezervBilgisi": false
+}

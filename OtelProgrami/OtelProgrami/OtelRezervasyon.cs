@@ -12,6 +12,9 @@ namespace OtelProgrami
 {
     public partial class OtelRezervasyon : Form
     {
+        Sistem sistem = new Sistem();
+
+        internal Sistem Sistem { get => sistem; set => sistem = value; }
 
         public OtelRezervasyon()
         {
@@ -21,39 +24,37 @@ namespace OtelProgrami
         private void OtelRezervasyon_Load(object sender, EventArgs e)
         {
             //ucrete form üzerinden işlem yapılmasın sadece okunsun.
-            textBox_ucret.ReadOnly = true;
-            //ındexlendi ki exception hataları engellendi.
-            comboBox_OtelIsim.SelectedIndex = 0;
+            //indexlendi ki exception hatalari engellendi.
             comboBox_OdaTuru.SelectedIndex = 0;
-            //comboBox_OtelTuru.SelectedIndex = 0;
             comboBox_odaOzellik.SelectedIndex = 0;
             comboBox_Sehir.SelectedIndex = 0;
-            uc_yildiz.Checked = true;
-            uc_yildiz.Checked = true;
         }
 
         private void button_rezYap_Click(object sender, EventArgs e)
         {
+            string odaTuru = comboBox_OdaTuru.Text;
+            string odaOzelligi = comboBox_odaOzellik.Text;
+            //string otelIsmi = comboBox_OtelIsim.Text;
+            string sehir = comboBox_Sehir.Text;
 
             DateTime giris = dateTimePicker_Giris.Value.Date;
             DateTime cikis = dateTimePicker_Cikis.Value.Date;
-            int yildiz;
-            string otelIsmi = comboBox_OtelIsim.Text;
-            string odaTuru = comboBox_OdaTuru.Text;
-            string odaOzelligi = comboBox_odaOzellik.Text;
-            if (uc_yildiz.Checked)
+
+            // Rezervasyon Bul butonuna her basışta datagridview'i temizle
+            uygunOdalar_dataGrid.Rows.Clear();
+
+            Sistem.OdaAra(odaTuru, odaOzelligi, sehir);
+
+            foreach (var oda in Sistem.BulunanOdalar)
             {
-                yildiz = 3;
+                uygunOdalar_dataGrid.Rows.Add(oda.SehirBilgisi, oda.OtelIsmi, oda.OdaTuru, oda.OdaOzelligi, oda.Fiyat, giris.ToShortDateString(), cikis.ToShortDateString());
             }
-            else if (dort_yildiz.Checked)
-            {
-                yildiz = 4;
-            }
+
+            if (Sistem.BulunanOdalar.Count == 0)
+                MessageBox.Show("Aradığınız kriterlere uygun oda bulunamadı");
             else
-            {
-                yildiz = 5;
-            }
-            MessageBox.Show(" , " + odaTuru + " ve " + yildiz + " yıldızlı otele " + giris.ToString("dd/MM/yyyy") + " - " + cikis.ToString("dd/MM/yyyy") + " tarihleri arasinda rezervasyon yaptınız.");
+                // Her sorgudan sonra listeyi sifirla
+                Sistem.BulunanOdalar.Clear();
         }
         private void button_rezKayitlari_Click(object sender, EventArgs e)
         {

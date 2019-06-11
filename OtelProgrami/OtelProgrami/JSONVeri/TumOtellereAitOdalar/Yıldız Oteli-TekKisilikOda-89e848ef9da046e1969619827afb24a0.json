@@ -1,9 +1,9 @@
 {
   "OtelIsmi": "Yıldız Oteli",
   "OdaTuru": "Tek Kişilik Oda",
-  "Fiyat": 2222,
+  "Fiyat": 300,
   "KisiKapasitesi": 1,
-  "SehirBilgisi": "efe",
-  "OdaOzelligi": "Dağ Manzarası",
+  "SehirBilgisi": "Mersin",
+  "OdaOzelligi": "Ekonomik",
   "RezervBilgisi": false
 }
