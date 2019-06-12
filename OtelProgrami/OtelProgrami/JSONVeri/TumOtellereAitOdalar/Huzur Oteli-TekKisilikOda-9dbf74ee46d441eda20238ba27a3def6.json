@@ -1,0 +1,11 @@
+{
+  "OtelIsmi": "Huzur Oteli",
+  "OdaTuru": "Tek Kişilik Oda",
+  "Fiyat": 250,
+  "KisiKapasitesi": 1,
+  "SehirBilgisi": "Muğla",
+  "OdaOzelligi": "Deniz Manzarası",
+  "RezervBilgisi": false,
+  "Giris": "0001-01-01T00:00:00",
+  "Cikis": "0001-01-01T00:00:00"
+}

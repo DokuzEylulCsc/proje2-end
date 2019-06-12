@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dateTimePicker_Giris = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_Cikis = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,25 +44,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button_rezSorgu = new System.Windows.Forms.Button();
-            this.radioButton_ucYildiz = new System.Windows.Forms.RadioButton();
-            this.radioButton_dortYildiz = new System.Windows.Forms.RadioButton();
-            this.radioButton_besYildiz = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox_odaOzelligi = new System.Windows.Forms.ComboBox();
-            this.uyeListesiDataGrid = new System.Windows.Forms.DataGridView();
-            this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sehir = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OtelTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OdaOzelligi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OdaTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ucret = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GirisTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            ((System.ComponentModel.ISupportInitialize)(this.uyeListesiDataGrid)).BeginInit();
+            this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GirisTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ucret = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OdaTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OdaOzelligi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OtelTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sehir = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RezervasyonListesi = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.RezervasyonListesi)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker_Giris
@@ -177,45 +172,6 @@
             this.button_rezSorgu.UseVisualStyleBackColor = true;
             this.button_rezSorgu.Click += new System.EventHandler(this.button_rezSorgu_Click);
             // 
-            // radioButton_ucYildiz
-            // 
-            this.radioButton_ucYildiz.AutoSize = true;
-            this.radioButton_ucYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_ucYildiz.Location = new System.Drawing.Point(369, 159);
-            this.radioButton_ucYildiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton_ucYildiz.Name = "radioButton_ucYildiz";
-            this.radioButton_ucYildiz.Size = new System.Drawing.Size(60, 29);
-            this.radioButton_ucYildiz.TabIndex = 12;
-            this.radioButton_ucYildiz.TabStop = true;
-            this.radioButton_ucYildiz.Text = "***";
-            this.radioButton_ucYildiz.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_dortYildiz
-            // 
-            this.radioButton_dortYildiz.AutoSize = true;
-            this.radioButton_dortYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_dortYildiz.Location = new System.Drawing.Point(504, 159);
-            this.radioButton_dortYildiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton_dortYildiz.Name = "radioButton_dortYildiz";
-            this.radioButton_dortYildiz.Size = new System.Drawing.Size(69, 29);
-            this.radioButton_dortYildiz.TabIndex = 13;
-            this.radioButton_dortYildiz.TabStop = true;
-            this.radioButton_dortYildiz.Text = "****";
-            this.radioButton_dortYildiz.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_besYildiz
-            // 
-            this.radioButton_besYildiz.AutoSize = true;
-            this.radioButton_besYildiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton_besYildiz.Location = new System.Drawing.Point(645, 159);
-            this.radioButton_besYildiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton_besYildiz.Name = "radioButton_besYildiz";
-            this.radioButton_besYildiz.Size = new System.Drawing.Size(78, 29);
-            this.radioButton_besYildiz.TabIndex = 14;
-            this.radioButton_besYildiz.TabStop = true;
-            this.radioButton_besYildiz.Text = "*****";
-            this.radioButton_besYildiz.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -241,70 +197,28 @@
             this.comboBox_odaOzelligi.Size = new System.Drawing.Size(168, 24);
             this.comboBox_odaOzelligi.TabIndex = 16;
             // 
-            // uyeListesiDataGrid
-            // 
-            this.uyeListesiDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uyeListesiDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ad,
-            this.Soyad,
-            this.Tel,
-            this.TC,
-            this.Sehir,
-            this.OtelTuru,
-            this.OdaOzelligi,
-            this.OdaTuru,
-            this.Ucret,
-            this.GirisTarih,
-            this.CikisTarihi});
-            this.uyeListesiDataGrid.Location = new System.Drawing.Point(3, 230);
-            this.uyeListesiDataGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uyeListesiDataGrid.Name = "uyeListesiDataGrid";
-            this.uyeListesiDataGrid.RowTemplate.Height = 24;
-            this.uyeListesiDataGrid.Size = new System.Drawing.Size(1166, 290);
-            this.uyeListesiDataGrid.TabIndex = 17;
-            // 
-            // Ad
+            // CikisTarihi
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Ad.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Ad.HeaderText = "Ad";
-            this.Ad.Name = "Ad";
+            this.CikisTarihi.DefaultCellStyle = dataGridViewCellStyle1;
+            this.CikisTarihi.HeaderText = "Çıkış Tarihi";
+            this.CikisTarihi.Name = "CikisTarihi";
+            this.CikisTarihi.Width = 120;
             // 
-            // Soyad
+            // GirisTarih
             // 
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Soyad.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Soyad.HeaderText = "Soyad";
-            this.Soyad.Name = "Soyad";
+            this.GirisTarih.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GirisTarih.HeaderText = "Giriş Tarihi";
+            this.GirisTarih.Name = "GirisTarih";
+            this.GirisTarih.Width = 120;
             // 
-            // Tel
+            // Ucret
             // 
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Tel.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Tel.HeaderText = "Telefon";
-            this.Tel.Name = "Tel";
-            // 
-            // TC
-            // 
-            this.TC.HeaderText = "TC";
-            this.TC.Name = "TC";
-            // 
-            // Sehir
-            // 
-            this.Sehir.HeaderText = "Şehir";
-            this.Sehir.Name = "Sehir";
-            // 
-            // OtelTuru
-            // 
-            this.OtelTuru.HeaderText = "Otel Türü";
-            this.OtelTuru.Name = "OtelTuru";
-            // 
-            // OdaOzelligi
-            // 
-            this.OdaOzelligi.HeaderText = "Oda Özelliği";
-            this.OdaOzelligi.Name = "OdaOzelligi";
-            this.OdaOzelligi.Width = 120;
+            this.Ucret.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Ucret.HeaderText = "Ücret";
+            this.Ucret.Name = "Ucret";
             // 
             // OdaTuru
             // 
@@ -313,40 +227,71 @@
             this.OdaTuru.HeaderText = "Oda Türü";
             this.OdaTuru.Name = "OdaTuru";
             // 
-            // Ucret
+            // OdaOzelligi
+            // 
+            this.OdaOzelligi.HeaderText = "Oda Özelliği";
+            this.OdaOzelligi.Name = "OdaOzelligi";
+            this.OdaOzelligi.Width = 120;
+            // 
+            // OtelTuru
+            // 
+            this.OtelTuru.HeaderText = "Otel Türü";
+            this.OtelTuru.Name = "OtelTuru";
+            // 
+            // Sehir
+            // 
+            this.Sehir.HeaderText = "Şehir";
+            this.Sehir.Name = "Sehir";
+            // 
+            // TC
+            // 
+            this.TC.HeaderText = "TC";
+            this.TC.Name = "TC";
+            // 
+            // Soyad
             // 
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Ucret.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Ucret.HeaderText = "Ücret";
-            this.Ucret.Name = "Ucret";
+            this.Soyad.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Soyad.HeaderText = "Soyad";
+            this.Soyad.Name = "Soyad";
             // 
-            // GirisTarih
+            // Ad
             // 
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.GirisTarih.DefaultCellStyle = dataGridViewCellStyle6;
-            this.GirisTarih.HeaderText = "Giriş Tarihi";
-            this.GirisTarih.Name = "GirisTarih";
-            this.GirisTarih.Width = 120;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.Ad.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Ad.HeaderText = "Ad";
+            this.Ad.Name = "Ad";
             // 
-            // CikisTarihi
+            // RezervasyonListesi
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CikisTarihi.DefaultCellStyle = dataGridViewCellStyle7;
-            this.CikisTarihi.HeaderText = "Çıkış Tarihi";
-            this.CikisTarihi.Name = "CikisTarihi";
-            this.CikisTarihi.Width = 120;
+            this.RezervasyonListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RezervasyonListesi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ad,
+            this.Soyad,
+            this.TC,
+            this.Sehir,
+            this.OtelTuru,
+            this.OdaOzelligi,
+            this.OdaTuru,
+            this.Ucret,
+            this.GirisTarih,
+            this.CikisTarihi});
+            this.RezervasyonListesi.Location = new System.Drawing.Point(3, 230);
+            this.RezervasyonListesi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RezervasyonListesi.Name = "RezervasyonListesi";
+            this.RezervasyonListesi.RowTemplate.Height = 24;
+            this.RezervasyonListesi.Size = new System.Drawing.Size(1166, 290);
+            this.RezervasyonListesi.TabIndex = 17;
             // 
             // YoneticiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 522);
-            this.Controls.Add(this.uyeListesiDataGrid);
+            this.Controls.Add(this.RezervasyonListesi);
             this.Controls.Add(this.comboBox_odaOzelligi);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.radioButton_besYildiz);
-            this.Controls.Add(this.radioButton_dortYildiz);
-            this.Controls.Add(this.radioButton_ucYildiz);
             this.Controls.Add(this.button_rezSorgu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -362,7 +307,7 @@
             this.Name = "YoneticiForm";
             this.Text = "YöneticiForm";
             this.Load += new System.EventHandler(this.YöneticiForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.uyeListesiDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RezervasyonListesi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,23 +325,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_rezSorgu;
-        private System.Windows.Forms.RadioButton radioButton_ucYildiz;
-        private System.Windows.Forms.RadioButton radioButton_dortYildiz;
-        private System.Windows.Forms.RadioButton radioButton_besYildiz;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox_odaOzelligi;
-        private System.Windows.Forms.DataGridView uyeListesiDataGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sehir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OtelTuru;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OdaOzelligi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OdaTuru;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ucret;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GirisTarih;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CikisTarihi;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CikisTarihi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GirisTarih;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ucret;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OdaTuru;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OdaOzelligi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OtelTuru;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sehir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
+        private System.Windows.Forms.DataGridView RezervasyonListesi;
     }
 }

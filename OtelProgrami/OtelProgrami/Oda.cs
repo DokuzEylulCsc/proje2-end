@@ -49,16 +49,5 @@ namespace OtelProgrami
         {
             return JsonConvert.DeserializeObject<Oda>(serialized);
         }
-
-        // JSONVeri/Odalar klasörune yeni oda'nin json olarak bilgilerini yazdir
-        internal void OdaEkle()
-        {
-            string filePath = System.IO.Directory.GetCurrentDirectory();
-            filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\TumOtellereAitOdalar\";
-
-            // ...\JSONVeri\TumOtellereAitOdalar\OtelIsim-OdaTuru-uniqueID.json
-            // Guid.NewGuid().ToString("N") her bir json dosyasina unique isim vermek icin kullanildi.
-            File.WriteAllText(filePath + OtelIsmi + "-" + this.GetType().Name + "-" + Guid.NewGuid().ToString("N") + ".json", this.Serialize(this));
-        }
     }
 }

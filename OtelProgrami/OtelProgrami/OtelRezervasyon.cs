@@ -14,6 +14,7 @@ namespace OtelProgrami
     {
         Sistem sistem = new Sistem();
         Uye uye = new Uye();
+       
         string sehir;
         string otelIsmi;
         string odaTuru;
@@ -24,10 +25,16 @@ namespace OtelProgrami
 
         internal Sistem Sistem { get => sistem; set => sistem = value; }
         internal Uye Uye { get => uye; set => uye = value; }
+       
 
         public OtelRezervasyon(Uye uye)
         {
             Uye = uye;
+            InitializeComponent();
+        }
+
+        public OtelRezervasyon()
+        {
             InitializeComponent();
         }
 
@@ -38,6 +45,7 @@ namespace OtelProgrami
             comboBox_OdaTuru.SelectedIndex = 0;
             comboBox_odaOzellik.SelectedIndex = 0;
             comboBox_Sehir.SelectedIndex = 0;
+            
         }
 
         private void rezervasyonSorgula_Click(object sender, EventArgs e)
@@ -97,7 +105,7 @@ namespace OtelProgrami
         {
             Rezervasyon rez = new Rezervasyon(uye.Ad, uye.Soyad, uye.TcNo, sehir, otelIsmi, odaFiyati, odaTuru, odaOzelligi, girisTarihi, cikisTarihi, uye);
             uye.RezervasyonTamamla(rez);
-            MessageBox.Show(sehir + " sehrinde " + otelIsmi + " isimli " + odaFiyati + " TL " + odaTuru + " olan " + odaOzelligi + " olan " + girisTarihi + "-" + cikisTarihi+" arasında rezervasyon yaptınız.");
+            MessageBox.Show(sehir + " sehrinde " + otelIsmi + " isimli " + odaFiyati + " TL " + odaTuru + " olan " + odaOzelligi + " olan " + girisTarihi + "-" + cikisTarihi + " arasında rezervasyon yaptınız.");
         }
     }
 }

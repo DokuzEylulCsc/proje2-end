@@ -14,19 +14,13 @@ namespace OtelProgrami
         string kullanici_Ad;
         string sifre;
 
-        LinkedList<Oda> odaListesi = new LinkedList<Oda>();
-        LinkedList<Uye> musteriListesi = new LinkedList<Uye>();
+        List<Oda> odaListesi = new List<Oda>();
+        List<Uye> musteriListesi = new List<Uye>();
 
         internal string Kullanici_Ad { get => kullanici_Ad; set => kullanici_Ad = value; }
         internal string Sifre { get => sifre; set => sifre = value; }
-        internal LinkedList<Oda> OdaListesi { get => odaListesi; set => odaListesi = value; }
-        internal LinkedList<Uye> MusteriListesi { get => musteriListesi; set => musteriListesi = value; }
-
-        internal Yonetici(string ad, string soyad, string telNo, string tcNo, string sifre)
-        {
-            kullanici_Ad = ad;
-            Sifre = sifre;
-        }
+        internal List<Oda> OdaListesi { get => odaListesi; set => odaListesi = value; }
+        internal List<Uye> MusteriListesi { get => musteriListesi; set => musteriListesi = value; }
 
         public Yonetici()
         {
@@ -42,14 +36,25 @@ namespace OtelProgrami
         // Otel eklendiginde Json olarak JSONVeri\Oteller klasorune Otel eklenecek
         public void OtelEkle(Otel otel)
         {
+            OtelRezervasyon otelRez = new OtelRezervasyon();
+            string filePath = System.IO.Directory.GetCurrentDirectory();
+            filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Oteller\";
 
+            // ...\JSONVeri\TumOtellereAitOdalar\OtelIsim-uniqueID.json
+            // Guid.NewGuid().ToString("N") her bir json dosyasina unique isim vermek icin kullanildi.
+            File.WriteAllText(filePath + otel.OtelIsmi + "-" + Guid.NewGuid().ToString("N") + ".json", this.Serialize(otel));
         }
 
         // JSONVeri\TumOtellereAitOdalar klasorune otel bilgisi
         // belirli olan yeni bir oda eklenecek
-        public void OteleOdaEkle(Otel otel)
+        public void OdaEkle(Oda oda)
         {
+            string filePath = System.IO.Directory.GetCurrentDirectory();
+            filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\TumOtellereAitOdalar\";
 
+            // ...\JSONVeri\TumOtellereAitOdalar\OtelIsim-OdaTuru-uniqueID.json
+            // Guid.NewGuid().ToString("N") her bir json dosyasina unique isim vermek icin kullanildi.
+            File.WriteAllText(filePath + oda.OtelIsmi + "-" + oda.GetType().Name + "-" + Guid.NewGuid().ToString("N") + ".json", this.Serialize(oda));
         }
 
         internal string Serialize(Object o)
@@ -63,17 +68,8 @@ namespace OtelProgrami
             return JsonConvert.DeserializeObject<Yonetici>(serialized);
         }
 
-        // Belirli bir tarih aralığı girildiğinde hangi otelde kaç oda dolu,
-        // hangi odalar dolu, kaç kişi ve ne kadara kalıyor bilgileri sunulmalıdır
-        // Sadece Yonetici Erisecek
-        public void OteleAitOzetBilgiler(DateTime baslangictarih, DateTime bitisTarih)
-        {
-
-        }
-
         internal List<Uye> Listele()
         {
-
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Uyeler\";
 

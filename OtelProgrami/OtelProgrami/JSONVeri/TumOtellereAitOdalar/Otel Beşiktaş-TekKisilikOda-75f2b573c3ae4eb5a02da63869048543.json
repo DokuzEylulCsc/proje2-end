@@ -1,0 +1,11 @@
+{
+  "OtelIsmi": "Otel Beşiktaş",
+  "OdaTuru": "Tek Kişilik Oda",
+  "Fiyat": 350,
+  "KisiKapasitesi": 1,
+  "SehirBilgisi": "İstanbul",
+  "OdaOzelligi": "Deniz Manzarası",
+  "RezervBilgisi": false,
+  "Giris": "0001-01-01T00:00:00",
+  "Cikis": "0001-01-01T00:00:00"
+}

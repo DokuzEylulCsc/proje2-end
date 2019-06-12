@@ -21,6 +21,7 @@ namespace OtelProgrami
         public AnaGiris()
         {
             InitializeComponent();
+           // textBox_Sifre += textBox_Sifre_KeyDown;
         }
 
         private void button_giris_Click(object sender, EventArgs e)
@@ -101,6 +102,14 @@ namespace OtelProgrami
            // aa.Show();
             //form load kısmına bu kodu yazdık cunku ilk girildiginde sifre göster butonuna basmadan gosteriyordu.
             textBox_Sifre.PasswordChar = '*';
+            
+        }
+        private void textBox_Sifre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button_giris_Click(this, new EventArgs());
+            }
         }
     }
 }

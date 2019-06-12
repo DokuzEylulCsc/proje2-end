@@ -150,6 +150,8 @@
             this.Name = "AnaGiris";
             this.Text = "Otel Otomasyonu";
             this.Load += new System.EventHandler(this.AnaGiris_Load);
+           this.textBox_Sifre.KeyDown+= new System.Windows.Forms.KeyEventHandler(this.textBox_Sifre_KeyDown);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
