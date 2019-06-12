@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="CiftKisilikOda.cs" />
     <Compile Include="IkizYatakliOda.cs" />
+    <Compile Include="Iterator.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Oda.cs" />
     <Compile Include="Otel.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="OdaveOtelEkle.Designer.cs">
       <DependentUpon>OdaveOtelEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="OtelIterator.cs" />
     <Compile Include="OtelRezervasyon.cs">
       <SubType>Form</SubType>
     </Compile>

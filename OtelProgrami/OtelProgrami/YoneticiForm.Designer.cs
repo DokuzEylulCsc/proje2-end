@@ -48,16 +48,17 @@
             this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RezervasyonListesi = new System.Windows.Forms.DataGridView();
+            this.iterasyonSorgula = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.RezervasyonListesi)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Ekle
             // 
             this.button_Ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Ekle.Location = new System.Drawing.Point(193, 390);
-            this.button_Ekle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_Ekle.Location = new System.Drawing.Point(145, 317);
+            this.button_Ekle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_Ekle.Name = "button_Ekle";
-            this.button_Ekle.Size = new System.Drawing.Size(153, 54);
+            this.button_Ekle.Size = new System.Drawing.Size(115, 44);
             this.button_Ekle.TabIndex = 5;
             this.button_Ekle.Text = "Otel Ve Oda İşlemleri";
             this.button_Ekle.UseVisualStyleBackColor = true;
@@ -66,10 +67,10 @@
             // button_rezSorgu
             // 
             this.button_rezSorgu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_rezSorgu.Location = new System.Drawing.Point(814, 390);
-            this.button_rezSorgu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_rezSorgu.Location = new System.Drawing.Point(610, 317);
+            this.button_rezSorgu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_rezSorgu.Name = "button_rezSorgu";
-            this.button_rezSorgu.Size = new System.Drawing.Size(153, 54);
+            this.button_rezSorgu.Size = new System.Drawing.Size(115, 44);
             this.button_rezSorgu.TabIndex = 11;
             this.button_rezSorgu.Text = "Rezervasyon Sorgula";
             this.button_rezSorgu.UseVisualStyleBackColor = true;
@@ -155,24 +156,37 @@
             this.Ucret,
             this.GirisTarih,
             this.CikisTarihi});
-            this.RezervasyonListesi.Location = new System.Drawing.Point(12, 11);
-            this.RezervasyonListesi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RezervasyonListesi.Location = new System.Drawing.Point(9, 9);
+            this.RezervasyonListesi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RezervasyonListesi.Name = "RezervasyonListesi";
             this.RezervasyonListesi.RowTemplate.Height = 24;
-            this.RezervasyonListesi.Size = new System.Drawing.Size(1118, 290);
+            this.RezervasyonListesi.Size = new System.Drawing.Size(838, 236);
             this.RezervasyonListesi.TabIndex = 17;
+            // 
+            // iterasyonSorgula
+            // 
+            this.iterasyonSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.iterasyonSorgula.Location = new System.Drawing.Point(359, 317);
+            this.iterasyonSorgula.Margin = new System.Windows.Forms.Padding(2);
+            this.iterasyonSorgula.Name = "iterasyonSorgula";
+            this.iterasyonSorgula.Size = new System.Drawing.Size(115, 44);
+            this.iterasyonSorgula.TabIndex = 18;
+            this.iterasyonSorgula.Text = "İterasyon Sorgula";
+            this.iterasyonSorgula.UseVisualStyleBackColor = true;
+            this.iterasyonSorgula.Click += new System.EventHandler(this.iterasyonSorgula_Click);
             // 
             // YoneticiForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1139, 522);
+            this.ClientSize = new System.Drawing.Size(854, 424);
+            this.Controls.Add(this.iterasyonSorgula);
             this.Controls.Add(this.RezervasyonListesi);
             this.Controls.Add(this.button_rezSorgu);
             this.Controls.Add(this.button_Ekle);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "YoneticiForm";
             this.Text = "YöneticiForm";
@@ -196,5 +210,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
         private System.Windows.Forms.DataGridView RezervasyonListesi;
+        private System.Windows.Forms.Button iterasyonSorgula;
     }
 }
