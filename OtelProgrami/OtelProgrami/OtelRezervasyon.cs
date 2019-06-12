@@ -14,6 +14,14 @@ namespace OtelProgrami
     {
         Sistem sistem = new Sistem();
         Uye uye = new Uye();
+        string sehir;
+        string otelIsmi;
+        string odaTuru;
+        string odaFiyati;
+        string odaOzelligi;
+        string girisTarihi;
+        string cikisTarihi;
+
         internal Sistem Sistem { get => sistem; set => sistem = value; }
         internal Uye Uye { get => uye; set => uye = value; }
 
@@ -45,7 +53,7 @@ namespace OtelProgrami
             uygunOdalar_dataGrid.Rows.Clear();
 
             // Sistem classi uygun odalari bulur
-            Sistem.OdaAra(odaTuru, odaOzelligi, sehir,giris.ToString(), cikis.ToString());
+            Sistem.OdaAra(odaTuru, odaOzelligi, sehir, giris.ToString(), cikis.ToString());
 
             foreach (var oda in Sistem.UyeyeUygunOtelleriListele())
             {
@@ -58,8 +66,8 @@ namespace OtelProgrami
                 // Her sorgudan sonra listeyi sifirla
                 Sistem.BulunanOdalar.Clear();
 
-                // DataGridView'de otomatik ilk secimi kaldir.
-                uygunOdalar_dataGrid.ClearSelection();
+            // DataGridView'de otomatik ilk secimi kaldir.
+            uygunOdalar_dataGrid.ClearSelection();
         }
         private void button_rezKayitlari_Click(object sender, EventArgs e)
         {
@@ -74,19 +82,22 @@ namespace OtelProgrami
         {
             if (uygunOdalar_dataGrid.SelectedCells.Count > 0)
             {
-                //[0] [1] .. [6] ya kadar hepsini al ve rezerve json olarak kaydet
-                //MessageBox.Show(uygunOdalar_dataGrid.CurrentRow.Cells[6].Value.ToString());
-                uye.RezervasyonTamamla();
+                sehir = uygunOdalar_dataGrid.CurrentRow.Cells[0].Value.ToString();
+                otelIsmi = uygunOdalar_dataGrid.CurrentRow.Cells[1].Value.ToString();
+                odaTuru = uygunOdalar_dataGrid.CurrentRow.Cells[2].Value.ToString();
+                odaOzelligi = uygunOdalar_dataGrid.CurrentRow.Cells[3].Value.ToString();
+                odaFiyati = uygunOdalar_dataGrid.CurrentRow.Cells[4].Value.ToString();
+                girisTarihi = uygunOdalar_dataGrid.CurrentRow.Cells[5].Value.ToString();
+                cikisTarihi = uygunOdalar_dataGrid.CurrentRow.Cells[6].Value.ToString();
+
             }
         }
 
         private void rezTamamla_Click(object sender, EventArgs e)
         {
-            //Uye nesnesi uye.rezervasyonTamamla() fonksiyonunu kullanacak.
-
-
-            //if (uygunOdalar_dataGrid.Rows[0].Cells[0].Selected)
-            //..
+            Rezervasyon rez = new Rezervasyon(uye.Ad, uye.Soyad, uye.TcNo, sehir, otelIsmi, odaFiyati, odaTuru, odaOzelligi, girisTarihi, cikisTarihi, uye);
+            uye.RezervasyonTamamla(rez);
+            MessageBox.Show(sehir + " sehrinde " + otelIsmi + " isimli " + odaFiyati + " TL " + odaTuru + " olan " + odaOzelligi + " olan " + girisTarihi + "-" + cikisTarihi+" arasında rezervasyon yaptınız.");
         }
     }
 }

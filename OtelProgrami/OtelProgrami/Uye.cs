@@ -55,9 +55,13 @@ namespace OtelProgrami
 
         // Uye, sistemin sundugu uygun otel sonuclarindan birini secer,
         // ve rezervasyonu tamamlar.
-        internal void RezervasyonTamamla()
+        internal void RezervasyonTamamla(Rezervasyon rezervasyon)
         {
-            
+            string filePath = System.IO.Directory.GetCurrentDirectory();
+            filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Rezervasyonlar\";
+
+            // ...\JSONVeri\Uyeler\Ahmet-Mehmet-tcNo-uniqueRezervasyonID.json
+            File.WriteAllText(filePath + this.Ad + "-" + this.Soyad + "-" + this.TcNo + "-" + Guid.NewGuid().ToString("N") + ".json", this.Serialize(rezervasyon));
         }
 
         internal string Serialize(Object o)

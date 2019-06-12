@@ -12,9 +12,6 @@ namespace OtelProgrami
 {
     public partial class OdaveOtelEkle : Form
     {
-        private object odaOtelIsim;
-        private object otelYildiz;
-
         public OdaveOtelEkle()
         {
             InitializeComponent();
