@@ -20,12 +20,6 @@ namespace OtelProgrami
             InitializeComponent();
         }
 
-        private void YöneticiForm_Load(object sender, EventArgs e)
-        {
-            comboBox_odaOzelligi.SelectedIndex = 0;
-            comboBox_odaTuru.SelectedIndex = 0;
-            comboBox_otelTuru.SelectedIndex = 0;
-        }
 
         private void button_rezSorgu_Click(object sender, EventArgs e)
         {

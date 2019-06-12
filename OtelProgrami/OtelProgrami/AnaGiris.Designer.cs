@@ -35,8 +35,9 @@
             this.textBox_Sifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox_sifregizle = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_giris
@@ -95,6 +96,7 @@
             this.textBox_Sifre.Name = "textBox_Sifre";
             this.textBox_Sifre.Size = new System.Drawing.Size(179, 24);
             this.textBox_Sifre.TabIndex = 4;
+            this.textBox_Sifre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Sifre_KeyDown);
             // 
             // label2
             // 
@@ -121,22 +123,48 @@
             this.checkBox_sifregizle.UseVisualStyleBackColor = false;
             this.checkBox_sifregizle.CheckedChanged += new System.EventHandler(this.checkBox_sifregizle_CheckedChanged);
             // 
-            // pictureBox1
+            // label3
             // 
-            this.pictureBox1.Image = global::OtelProgrami.Properties.Resources.Deniz_Manzarasi_a5ac1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(801, 457);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Lime;
+            this.label3.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label3.Location = new System.Drawing.Point(21, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "TcNO:admin";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Lime;
+            this.label4.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label4.Location = new System.Drawing.Point(21, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Şifre:admin";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(21, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Yönetici:";
             // 
             // AnaGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::OtelProgrami.Properties.Resources.Deniz_Manzarasi_a5ac1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBox_sifregizle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_Sifre);
@@ -144,15 +172,11 @@
             this.Controls.Add(this.Kayit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_giris);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "AnaGiris";
             this.Text = "Otel Otomasyonu";
             this.Load += new System.EventHandler(this.AnaGiris_Load);
-           this.textBox_Sifre.KeyDown+= new System.Windows.Forms.KeyEventHandler(this.textBox_Sifre_KeyDown);
-
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,7 +191,9 @@
         private System.Windows.Forms.TextBox textBox_Sifre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox_sifregizle;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

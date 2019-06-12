@@ -101,7 +101,7 @@
             // 
             this.rezervasyonSorgula.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.rezervasyonSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rezervasyonSorgula.Location = new System.Drawing.Point(444, 187);
+            this.rezervasyonSorgula.Location = new System.Drawing.Point(503, 196);
             this.rezervasyonSorgula.Margin = new System.Windows.Forms.Padding(5);
             this.rezervasyonSorgula.Name = "rezervasyonSorgula";
             this.rezervasyonSorgula.Size = new System.Drawing.Size(221, 74);
@@ -137,7 +137,7 @@
             // 
             this.button_rezKayitlari.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button_rezKayitlari.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_rezKayitlari.Location = new System.Drawing.Point(932, 187);
+            this.button_rezKayitlari.Location = new System.Drawing.Point(991, 196);
             this.button_rezKayitlari.Margin = new System.Windows.Forms.Padding(5);
             this.button_rezKayitlari.Name = "button_rezKayitlari";
             this.button_rezKayitlari.Size = new System.Drawing.Size(214, 74);
@@ -204,10 +204,10 @@
             this.OdaFiyati,
             this.GirisTarihi,
             this.CikisTarihi});
-            this.uygunOdalar_dataGrid.Location = new System.Drawing.Point(1, 331);
+            this.uygunOdalar_dataGrid.Location = new System.Drawing.Point(12, 289);
             this.uygunOdalar_dataGrid.Name = "uygunOdalar_dataGrid";
             this.uygunOdalar_dataGrid.ShowCellToolTips = false;
-            this.uygunOdalar_dataGrid.Size = new System.Drawing.Size(1173, 210);
+            this.uygunOdalar_dataGrid.Size = new System.Drawing.Size(1197, 241);
             this.uygunOdalar_dataGrid.TabIndex = 24;
             this.uygunOdalar_dataGrid.TabStop = false;
             this.uygunOdalar_dataGrid.SelectionChanged += new System.EventHandler(this.uygunOdalar_dataGrid_SelectionChanged);
@@ -265,7 +265,7 @@
             // 
             this.rezTamamla.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.rezTamamla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rezTamamla.Location = new System.Drawing.Point(690, 187);
+            this.rezTamamla.Location = new System.Drawing.Point(749, 196);
             this.rezTamamla.Margin = new System.Windows.Forms.Padding(5);
             this.rezTamamla.Name = "rezTamamla";
             this.rezTamamla.Size = new System.Drawing.Size(221, 74);

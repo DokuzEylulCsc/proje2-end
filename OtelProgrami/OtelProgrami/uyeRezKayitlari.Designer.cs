@@ -101,7 +101,7 @@
             // button_Sil
             // 
             this.button_Sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Sil.Location = new System.Drawing.Point(49, 310);
+            this.button_Sil.Location = new System.Drawing.Point(89, 310);
             this.button_Sil.Name = "button_Sil";
             this.button_Sil.Size = new System.Drawing.Size(198, 70);
             this.button_Sil.TabIndex = 1;
@@ -113,7 +113,7 @@
             // 
             this.button_Cikis.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_Cikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Cikis.Location = new System.Drawing.Point(516, 310);
+            this.button_Cikis.Location = new System.Drawing.Point(786, 310);
             this.button_Cikis.Name = "button_Cikis";
             this.button_Cikis.Size = new System.Drawing.Size(123, 70);
             this.button_Cikis.TabIndex = 2;
