@@ -30,7 +30,7 @@ namespace OtelProgrami
             comboBox_Sehir.SelectedIndex = 0;
         }
 
-        private void button_rezYap_Click(object sender, EventArgs e)
+        private void rezervasyonSorgula_Click(object sender, EventArgs e)
         {
             string odaTuru = comboBox_OdaTuru.Text;
             string odaOzelligi = comboBox_odaOzellik.Text;
@@ -43,24 +43,48 @@ namespace OtelProgrami
             // Rezervasyon Bul butonuna her basışta datagridview'i temizle
             uygunOdalar_dataGrid.Rows.Clear();
 
+            // Sistem classi uygun odalari bulur
             Sistem.OdaAra(odaTuru, odaOzelligi, sehir);
 
-            foreach (var oda in Sistem.BulunanOdalar)
+            foreach (var oda in Sistem.UyeyeUygunOtelleriListele())
             {
-                uygunOdalar_dataGrid.Rows.Add(oda.SehirBilgisi, oda.OtelIsmi, oda.OdaTuru, oda.OdaOzelligi, oda.Fiyat, giris.ToShortDateString(), cikis.ToShortDateString());
+                uygunOdalar_dataGrid.Rows.Add(oda.SehirBilgisi, oda.OtelIsmi, oda.OdaTuru, oda.OdaOzelligi, oda.Fiyat + " TL", giris.ToShortDateString(), cikis.ToShortDateString());
             }
 
             if (Sistem.BulunanOdalar.Count == 0)
-                MessageBox.Show("Aradığınız kriterlere uygun oda bulunamadı");
+                MessageBox.Show("Aradığınız kriterlere uygun oda ve otel bulunamadı.");
             else
                 // Her sorgudan sonra listeyi sifirla
                 Sistem.BulunanOdalar.Clear();
+
+                // DataGridView'de otomatik ilk secimi kaldir.
+                uygunOdalar_dataGrid.ClearSelection();
         }
         private void button_rezKayitlari_Click(object sender, EventArgs e)
         {
             //nesnemizi burada tanımlıyoruz ki form sayfası kapatıldıgında bır daha açılmak istendiginde hata vermesin.
             uyeRezKayitlari rez = new uyeRezKayitlari();
             rez.Show();
+
+            // rezervasyon jsonlari arasinda tc bilgisine gore arama yapip rezervasyonlari gosterecek.
+        }
+
+        public void uygunOdalar_dataGrid_SelectionChanged(object sender, EventArgs e)
+        {
+            if (uygunOdalar_dataGrid.SelectedCells.Count > 0)
+            {
+                //[0] [1] .. [6] ya kadar hepsini al ve rezerve json olarak kaydet
+                MessageBox.Show(uygunOdalar_dataGrid.CurrentRow.Cells[6].Value.ToString());
+            }
+        }
+
+        private void rezTamamla_Click(object sender, EventArgs e)
+        {
+            //Uye nesnesi uye.rezervasyonTamamla() fonksiyonunu kullanacak.
+
+
+            //if (uygunOdalar_dataGrid.Rows[0].Cells[0].Selected)
+            //..
         }
     }
 }

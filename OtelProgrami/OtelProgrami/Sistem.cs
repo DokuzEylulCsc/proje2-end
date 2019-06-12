@@ -38,9 +38,9 @@ namespace OtelProgrami
 
         // Sistem üyenin isteğine uyan her bir oteli üyeye geri bildirir.
         // JSONVeri klasorundeki Otellerdeki Odalari Arayip kullaniciya bilgi vermeli.
-        //public List<Oda> UyeyeUygunOtelleriListele()
-        //{
-        //    return new List<Oda>();
-        //}
+        public List<Oda> UyeyeUygunOtelleriListele()
+        {
+            return BulunanOdalar;
+        }
     }
 }

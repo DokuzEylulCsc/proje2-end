@@ -33,8 +33,8 @@ namespace OtelProgrami
                 string tcNo = textBox_TcNo.Text;
                 string sifre = textBox_Sifre.Text;
                 //telefona veya tc nosuna string bir karakter girerse cath bloguna gitmesi saglandı
-                int telNo_Kontrol = Convert.ToInt32(textBox_Tel.Text);
-                int tcNo_Kontrol = Convert.ToInt32(textBox_TcNo.Text);
+                //int telNo_Kontrol = Convert.ToInt32(textBox_Tel.Text);
+                //int tcNo_Kontrol = Convert.ToInt32(textBox_TcNo.Text);
                 //bilgileri boş bırakmasını istemiyoruz.
                 if (textBox_Ad.Text == string.Empty || textBox_Sifre.Text == string.Empty || textBox_Tel.Text == string.Empty ||
                     textBox_TcNo.Text == string.Empty || textBox_Soyad.Text == string.Empty)
@@ -44,9 +44,9 @@ namespace OtelProgrami
                     onemli_soyad.Visible = true;
                     onemli_tcNo.Visible = true;
                     onemli_tel.Visible = true;
-                    MessageBox.Show("Lütfen Bilgileri Boş Bırakmayınız.");
+                    MessageBox.Show("Lütfen bilgileri boş bırakmayınız.");
                     //exception log kaydı gelecek.
-                    kayit.logOlustur("Üye Olunurken Bilgiler Boş bırakıldı", DateTime.Now.ToString());
+                    kayit.logOlustur("Üye olunurken bilgiler boş bırakıldı", DateTime.Now.ToString());
 
                 }
                 //15 karakterden buyuk kullanıcı adı alamaz.
@@ -61,20 +61,18 @@ namespace OtelProgrami
                 {
                     Uye yeniUye = new Uye(ad, soyad, telNo, tcNo, sifre);
                     yeniUye.KayitOl();
-                    MessageBox.Show("Üye başarıyla kayıt oldu");
+                    MessageBox.Show(ad + soyad + " başarıyla kayıt oldunuz");
                 }
             }
-            catch (Exception exp)
+            catch (HataliGirisException exp)
             {
                 //labelada nerede hata yaptıgını gösterdik.
                 //ilk başta gozukmemesi için görünürlügünü kapattok ki hata yaptıgında gozuksun.
                 onemli_tel.Visible = true;
                 onemli_tcNo.Visible = true;
                 //Log classi eklenecek uye kayit olamadi log'u olusturulacak
-                kayit.logOlustur("Üye Olunurken Tel no veya Tc No girilirken harf kullanıldı", DateTime.Now.ToString());
-                MessageBox.Show(exp.Message);
-                string json = JsonConvert.SerializeObject(exp);
-                MessageBox.Show(json);
+                kayit.logOlustur("Üye olunurken tel no veya tc no girilirken harf kullanıldı", DateTime.Now.ToString());
+                MessageBox.Show(exp.Message); // exception mesajı duzenlenecek
             }
             finally
             {

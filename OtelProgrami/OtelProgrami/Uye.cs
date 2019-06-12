@@ -50,7 +50,7 @@ namespace OtelProgrami
 
         internal void RezervasyonIptalEt()
         {
-
+            // rezervasyon jsonunu okuyup rezerv bilgisini false yapacak
         }
 
         // Sistem'e rezervasyon talebi gider, sistem uyenin talebine uygun sonuclari
@@ -64,7 +64,7 @@ namespace OtelProgrami
         // ve rezervasyonu tamamlar.
         internal void RezervasyonTamamla()
         {
-
+            // iterator kullanilacak(factory)
         }
 
         internal string Serialize(Object o)

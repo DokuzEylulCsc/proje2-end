@@ -32,13 +32,10 @@
             this.dateTimePicker_Cikis = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button_Bul = new System.Windows.Forms.Button();
+            this.rezervasyonSorgula = new System.Windows.Forms.Button();
             this.comboBox_OdaTuru = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button_rezKayitlari = new System.Windows.Forms.Button();
-            this.uc_yildiz = new System.Windows.Forms.RadioButton();
-            this.dort_yildiz = new System.Windows.Forms.RadioButton();
-            this.bes_yildiz = new System.Windows.Forms.RadioButton();
             this.comboBox_odaOzellik = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,6 +48,8 @@
             this.OdaFiyati = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GirisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rezTamamla = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uygunOdalar_dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,18 +97,18 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Çıkış Tarihi";
             // 
-            // button_Bul
+            // rezervasyonSorgula
             // 
-            this.button_Bul.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button_Bul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Bul.Location = new System.Drawing.Point(620, 183);
-            this.button_Bul.Margin = new System.Windows.Forms.Padding(5);
-            this.button_Bul.Name = "button_Bul";
-            this.button_Bul.Size = new System.Drawing.Size(221, 74);
-            this.button_Bul.TabIndex = 4;
-            this.button_Bul.Text = "Rezervasyon Bul";
-            this.button_Bul.UseVisualStyleBackColor = false;
-            this.button_Bul.Click += new System.EventHandler(this.button_rezYap_Click);
+            this.rezervasyonSorgula.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.rezervasyonSorgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rezervasyonSorgula.Location = new System.Drawing.Point(444, 187);
+            this.rezervasyonSorgula.Margin = new System.Windows.Forms.Padding(5);
+            this.rezervasyonSorgula.Name = "rezervasyonSorgula";
+            this.rezervasyonSorgula.Size = new System.Drawing.Size(221, 74);
+            this.rezervasyonSorgula.TabIndex = 4;
+            this.rezervasyonSorgula.Text = "Rezervasyon Bul";
+            this.rezervasyonSorgula.UseVisualStyleBackColor = false;
+            this.rezervasyonSorgula.Click += new System.EventHandler(this.rezervasyonSorgula_Click);
             // 
             // comboBox_OdaTuru
             // 
@@ -138,7 +137,7 @@
             // 
             this.button_rezKayitlari.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button_rezKayitlari.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_rezKayitlari.Location = new System.Drawing.Point(900, 183);
+            this.button_rezKayitlari.Location = new System.Drawing.Point(932, 187);
             this.button_rezKayitlari.Margin = new System.Windows.Forms.Padding(5);
             this.button_rezKayitlari.Name = "button_rezKayitlari";
             this.button_rezKayitlari.Size = new System.Drawing.Size(214, 74);
@@ -146,42 +145,6 @@
             this.button_rezKayitlari.Text = "Rezervasyon Kayıtları";
             this.button_rezKayitlari.UseVisualStyleBackColor = false;
             this.button_rezKayitlari.Click += new System.EventHandler(this.button_rezKayitlari_Click);
-            // 
-            // uc_yildiz
-            // 
-            this.uc_yildiz.AutoSize = true;
-            this.uc_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.uc_yildiz.Location = new System.Drawing.Point(669, 127);
-            this.uc_yildiz.Name = "uc_yildiz";
-            this.uc_yildiz.Size = new System.Drawing.Size(48, 24);
-            this.uc_yildiz.TabIndex = 15;
-            this.uc_yildiz.TabStop = true;
-            this.uc_yildiz.Text = "***";
-            this.uc_yildiz.UseVisualStyleBackColor = false;
-            // 
-            // dort_yildiz
-            // 
-            this.dort_yildiz.AutoSize = true;
-            this.dort_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.dort_yildiz.Location = new System.Drawing.Point(833, 127);
-            this.dort_yildiz.Name = "dort_yildiz";
-            this.dort_yildiz.Size = new System.Drawing.Size(55, 24);
-            this.dort_yildiz.TabIndex = 16;
-            this.dort_yildiz.TabStop = true;
-            this.dort_yildiz.Text = "****";
-            this.dort_yildiz.UseVisualStyleBackColor = false;
-            // 
-            // bes_yildiz
-            // 
-            this.bes_yildiz.AutoSize = true;
-            this.bes_yildiz.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bes_yildiz.Location = new System.Drawing.Point(994, 127);
-            this.bes_yildiz.Name = "bes_yildiz";
-            this.bes_yildiz.Size = new System.Drawing.Size(62, 24);
-            this.bes_yildiz.TabIndex = 17;
-            this.bes_yildiz.TabStop = true;
-            this.bes_yildiz.Text = "*****";
-            this.bes_yildiz.UseVisualStyleBackColor = false;
             // 
             // comboBox_odaOzellik
             // 
@@ -243,8 +206,11 @@
             this.CikisTarihi});
             this.uygunOdalar_dataGrid.Location = new System.Drawing.Point(1, 331);
             this.uygunOdalar_dataGrid.Name = "uygunOdalar_dataGrid";
+            this.uygunOdalar_dataGrid.ShowCellToolTips = false;
             this.uygunOdalar_dataGrid.Size = new System.Drawing.Size(1173, 210);
             this.uygunOdalar_dataGrid.TabIndex = 24;
+            this.uygunOdalar_dataGrid.TabStop = false;
+            this.uygunOdalar_dataGrid.SelectionChanged += new System.EventHandler(this.uygunOdalar_dataGrid_SelectionChanged);
             // 
             // Sehir
             // 
@@ -295,6 +261,28 @@
             this.CikisTarihi.ReadOnly = true;
             this.CikisTarihi.Width = 150;
             // 
+            // rezTamamla
+            // 
+            this.rezTamamla.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.rezTamamla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rezTamamla.Location = new System.Drawing.Point(690, 187);
+            this.rezTamamla.Margin = new System.Windows.Forms.Padding(5);
+            this.rezTamamla.Name = "rezTamamla";
+            this.rezTamamla.Size = new System.Drawing.Size(221, 74);
+            this.rezTamamla.TabIndex = 25;
+            this.rezTamamla.Text = "Rezervasyonu Tamamla";
+            this.rezTamamla.UseVisualStyleBackColor = false;
+            this.rezTamamla.Click += new System.EventHandler(this.rezTamamla_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(536, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(545, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Listelenen odalardan birini seçip, Rezervasyon Tamamla\'ya basınız.";
+            // 
             // OtelRezervasyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -302,18 +290,17 @@
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1174, 542);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.rezTamamla);
             this.Controls.Add(this.uygunOdalar_dataGrid);
             this.Controls.Add(this.comboBox_Sehir);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox_odaOzellik);
-            this.Controls.Add(this.bes_yildiz);
-            this.Controls.Add(this.dort_yildiz);
-            this.Controls.Add(this.uc_yildiz);
             this.Controls.Add(this.button_rezKayitlari);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox_OdaTuru);
-            this.Controls.Add(this.button_Bul);
+            this.Controls.Add(this.rezervasyonSorgula);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker_Cikis);
@@ -336,13 +323,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker_Cikis;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button_Bul;
+        private System.Windows.Forms.Button rezervasyonSorgula;
         private System.Windows.Forms.ComboBox comboBox_OdaTuru;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_rezKayitlari;
-        private System.Windows.Forms.RadioButton uc_yildiz;
-        private System.Windows.Forms.RadioButton dort_yildiz;
-        private System.Windows.Forms.RadioButton bes_yildiz;
         private System.Windows.Forms.ComboBox comboBox_odaOzellik;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
@@ -355,5 +339,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn OdaFiyati;
         private System.Windows.Forms.DataGridViewTextBoxColumn GirisTarihi;
         private System.Windows.Forms.DataGridViewTextBoxColumn CikisTarihi;
+        private System.Windows.Forms.Button rezTamamla;
+        private System.Windows.Forms.Label label3;
     }
 }
