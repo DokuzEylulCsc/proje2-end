@@ -60,7 +60,7 @@
             this.dateTimePicker_Giris.Location = new System.Drawing.Point(749, 25);
             this.dateTimePicker_Giris.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker_Giris.Name = "dateTimePicker_Giris";
-            this.dateTimePicker_Giris.Size = new System.Drawing.Size(323, 21);
+            this.dateTimePicker_Giris.Size = new System.Drawing.Size(323, 24);
             this.dateTimePicker_Giris.TabIndex = 0;
             // 
             // dateTimePicker_Cikis
@@ -70,7 +70,7 @@
             this.dateTimePicker_Cikis.Location = new System.Drawing.Point(749, 77);
             this.dateTimePicker_Cikis.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker_Cikis.Name = "dateTimePicker_Cikis";
-            this.dateTimePicker_Cikis.Size = new System.Drawing.Size(323, 21);
+            this.dateTimePicker_Cikis.Size = new System.Drawing.Size(323, 24);
             this.dateTimePicker_Cikis.TabIndex = 1;
             // 
             // label1
@@ -81,7 +81,7 @@
             this.label1.Location = new System.Drawing.Point(648, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 15);
+            this.label1.Size = new System.Drawing.Size(91, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Giriş Tarihi";
             // 
@@ -93,7 +93,7 @@
             this.label2.Location = new System.Drawing.Point(646, 77);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 15);
+            this.label2.Size = new System.Drawing.Size(93, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Çıkış Tarihi";
             // 
@@ -120,7 +120,7 @@
             "Üç Kişilik Oda"});
             this.comboBox_OdaTuru.Location = new System.Drawing.Point(166, 64);
             this.comboBox_OdaTuru.Name = "comboBox_OdaTuru";
-            this.comboBox_OdaTuru.Size = new System.Drawing.Size(209, 28);
+            this.comboBox_OdaTuru.Size = new System.Drawing.Size(209, 33);
             this.comboBox_OdaTuru.TabIndex = 9;
             // 
             // label4
@@ -129,7 +129,7 @@
             this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label4.Location = new System.Drawing.Point(22, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 20);
+            this.label4.Size = new System.Drawing.Size(111, 25);
             this.label4.TabIndex = 11;
             this.label4.Text = "Oda Türü:";
             // 
@@ -155,7 +155,7 @@
             "Deniz Manzarası"});
             this.comboBox_odaOzellik.Location = new System.Drawing.Point(166, 114);
             this.comboBox_odaOzellik.Name = "comboBox_odaOzellik";
-            this.comboBox_odaOzellik.Size = new System.Drawing.Size(209, 28);
+            this.comboBox_odaOzellik.Size = new System.Drawing.Size(209, 33);
             this.comboBox_odaOzellik.TabIndex = 18;
             // 
             // label5
@@ -164,7 +164,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label5.Location = new System.Drawing.Point(22, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 20);
+            this.label5.Size = new System.Drawing.Size(138, 25);
             this.label5.TabIndex = 19;
             this.label5.Text = "Oda Özelliği:";
             // 
@@ -174,7 +174,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label7.Location = new System.Drawing.Point(22, 170);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 20);
+            this.label7.Size = new System.Drawing.Size(70, 25);
             this.label7.TabIndex = 22;
             this.label7.Text = "Şehir:";
             // 
@@ -190,7 +190,7 @@
             "Antalya"});
             this.comboBox_Sehir.Location = new System.Drawing.Point(165, 167);
             this.comboBox_Sehir.Name = "comboBox_Sehir";
-            this.comboBox_Sehir.Size = new System.Drawing.Size(209, 28);
+            this.comboBox_Sehir.Size = new System.Drawing.Size(209, 33);
             this.comboBox_Sehir.TabIndex = 23;
             // 
             // uygunOdalar_dataGrid
@@ -279,17 +279,17 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(536, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(545, 20);
+            this.label3.Size = new System.Drawing.Size(662, 25);
             this.label3.TabIndex = 26;
             this.label3.Text = "Listelenen odalardan birini seçip, Rezervasyon Tamamla\'ya basınız.";
             // 
             // OtelRezervasyon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OtelProgrami.Properties.Resources._376352;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1174, 542);
+            this.ClientSize = new System.Drawing.Size(1219, 542);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rezTamamla);
             this.Controls.Add(this.uygunOdalar_dataGrid);

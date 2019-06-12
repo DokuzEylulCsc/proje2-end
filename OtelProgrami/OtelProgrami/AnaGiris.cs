@@ -14,7 +14,7 @@ namespace OtelProgrami
 {
     public partial class AnaGiris : Form
     {
-        OtelRezervasyon rez = new OtelRezervasyon();
+        OtelRezervasyon rez;
         YoneticiForm formYonetici = new YoneticiForm();
 
         Log kayit = new Log();
@@ -58,6 +58,8 @@ namespace OtelProgrami
                     {
                         MessageBox.Show("Sayın " + uye.Ad + " " + uye.Soyad + " Hoşgeldiniz");
                         kullaniciGirisiSaglandi = true;
+
+                        rez = new OtelRezervasyon(uye);
                         rez.Show();
                         break;
                     }

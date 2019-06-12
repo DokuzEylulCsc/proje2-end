@@ -105,3 +105,8 @@ C:\Users\Ozgur Can\Desktop\nesneodev\11haziran\proje2-end\OtelProgrami\OtelProgr
 C:\Users\Ozgur Can\Desktop\nesneodev\11haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Ozgur Can\Desktop\nesneodev\11haziran\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Ozgur Can\Desktop\nesneodev\11haziran\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CopyComplete
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.dll
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\bin\Debug\Newtonsoft.Json.xml
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.OdaveOtelEkle.resources
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.uyeRezKayitlari.resources
+C:\Users\EMRE\Desktop\NesneOdevi\proje2-end\OtelProgrami\OtelProgrami\obj\Debug\OtelProgrami.csproj.CopyComplete

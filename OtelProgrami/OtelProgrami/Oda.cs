@@ -19,6 +19,9 @@ namespace OtelProgrami
         string odaOzelligi;
         bool rezervBilgisi = false;
 
+        DateTime giris = new DateTime();
+        DateTime cikis=new DateTime();
+
         public string OtelIsmi { get => otelIsmi; set => otelIsmi = value; }
         public string OdaTuru { get => odaTuru; set => odaTuru = value; }
         public int Fiyat { get => fiyat; set => fiyat = value; }
@@ -26,6 +29,8 @@ namespace OtelProgrami
         public string SehirBilgisi { get => sehirBilgisi; set => sehirBilgisi = value; }
         public string OdaOzelligi { get => odaOzelligi; set => odaOzelligi = value; }
         public bool RezervBilgisi { get => rezervBilgisi; set => rezervBilgisi = value; }
+        public DateTime Giris { get => giris; set => giris = value; }
+        public DateTime Cikis { get => cikis; set => cikis = value; }
 
         internal void OdaBilgiGir(string otelAd, string sehir, string ozellik)
         {

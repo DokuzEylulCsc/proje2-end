@@ -13,11 +13,13 @@ namespace OtelProgrami
     public partial class OtelRezervasyon : Form
     {
         Sistem sistem = new Sistem();
-
+        Uye uye = new Uye();
         internal Sistem Sistem { get => sistem; set => sistem = value; }
+        internal Uye Uye { get => uye; set => uye = value; }
 
-        public OtelRezervasyon()
+        public OtelRezervasyon(Uye uye)
         {
+            Uye = uye;
             InitializeComponent();
         }
 
@@ -34,7 +36,6 @@ namespace OtelProgrami
         {
             string odaTuru = comboBox_OdaTuru.Text;
             string odaOzelligi = comboBox_odaOzellik.Text;
-            //string otelIsmi = comboBox_OtelIsim.Text;
             string sehir = comboBox_Sehir.Text;
 
             DateTime giris = dateTimePicker_Giris.Value.Date;
@@ -44,7 +45,7 @@ namespace OtelProgrami
             uygunOdalar_dataGrid.Rows.Clear();
 
             // Sistem classi uygun odalari bulur
-            Sistem.OdaAra(odaTuru, odaOzelligi, sehir);
+            Sistem.OdaAra(odaTuru, odaOzelligi, sehir,giris.ToString(), cikis.ToString());
 
             foreach (var oda in Sistem.UyeyeUygunOtelleriListele())
             {
@@ -74,7 +75,8 @@ namespace OtelProgrami
             if (uygunOdalar_dataGrid.SelectedCells.Count > 0)
             {
                 //[0] [1] .. [6] ya kadar hepsini al ve rezerve json olarak kaydet
-                MessageBox.Show(uygunOdalar_dataGrid.CurrentRow.Cells[6].Value.ToString());
+                //MessageBox.Show(uygunOdalar_dataGrid.CurrentRow.Cells[6].Value.ToString());
+                uye.RezervasyonTamamla();
             }
         }
 

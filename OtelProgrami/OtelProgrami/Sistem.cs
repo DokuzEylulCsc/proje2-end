@@ -14,7 +14,7 @@ namespace OtelProgrami
 
         internal List<Oda> BulunanOdalar { get => bulunanOdalar; set => bulunanOdalar = value; }
 
-        public void OdaAra(string odaTuru, string odaOzelligi, string sehir)
+        public void OdaAra(string odaTuru, string odaOzelligi, string sehir,string giris,string cikis)
         {
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\TumOtellereAitOdalar\";

@@ -11,7 +11,7 @@ using System.IO;
 
 namespace OtelProgrami
 {
-    class Uye
+    public class Uye
     {
         string ad;
         string soyad;
@@ -53,18 +53,11 @@ namespace OtelProgrami
             // rezervasyon jsonunu okuyup rezerv bilgisini false yapacak
         }
 
-        // Sistem'e rezervasyon talebi gider, sistem uyenin talebine uygun sonuclari
-        // uyeye bildirir.
-        internal void RezervasyonTalepEt()
-        {
-            //Rezervasyon rezervasyon = new Rezervasyon();
-        }
-
         // Uye, sistemin sundugu uygun otel sonuclarindan birini secer,
         // ve rezervasyonu tamamlar.
         internal void RezervasyonTamamla()
         {
-            // iterator kullanilacak(factory)
+            
         }
 
         internal string Serialize(Object o)
