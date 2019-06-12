@@ -65,6 +65,8 @@ namespace OtelProgrami
 
             foreach (var oda in Sistem.UyeyeUygunOtelleriListele())
             {
+                // Rezerve edilmiş odalari gostermesin
+                if(oda.RezervBilgisi != true)
                 uygunOdalar_dataGrid.Rows.Add(oda.SehirBilgisi, oda.OtelIsmi, oda.OdaTuru, oda.OdaOzelligi, oda.Fiyat + " TL", giris.ToShortDateString(), cikis.ToShortDateString());
             }
 
@@ -77,6 +79,7 @@ namespace OtelProgrami
             // DataGridView'de otomatik ilk secimi kaldir.
             uygunOdalar_dataGrid.ClearSelection();
         }
+
         private void button_rezKayitlari_Click(object sender, EventArgs e)
         {
             //nesnemizi burada tanımlıyoruz ki form sayfası kapatıldıgında bır daha açılmak istendiginde hata vermesin.
@@ -97,7 +100,6 @@ namespace OtelProgrami
                 odaFiyati = uygunOdalar_dataGrid.CurrentRow.Cells[4].Value.ToString();
                 girisTarihi = uygunOdalar_dataGrid.CurrentRow.Cells[5].Value.ToString();
                 cikisTarihi = uygunOdalar_dataGrid.CurrentRow.Cells[6].Value.ToString();
-
             }
         }
 

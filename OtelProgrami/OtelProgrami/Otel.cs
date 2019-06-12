@@ -31,7 +31,7 @@ namespace OtelProgrami
 
         internal string Serialize(Object o)
         {
-            //Serilestirip, Json'u guzel bicimde yazdiriyor.
+            //Serilestirip, Json'u guzel bicimde(PrettyJSON) yazdiriyor.
             return JToken.Parse(JsonConvert.SerializeObject(o)).ToString(Formatting.Indented);
         }
 

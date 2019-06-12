@@ -55,7 +55,6 @@ namespace OtelProgrami
 
         // Uye, sistemin sundugu uygun otel sonuclarindan birini secer,
         // ve rezervasyonu tamamlar
-     
         internal void RezervasyonTamamla(Rezervasyon rezervasyon)
         {
             string filePath = System.IO.Directory.GetCurrentDirectory();

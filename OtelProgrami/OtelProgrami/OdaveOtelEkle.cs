@@ -80,8 +80,6 @@ namespace OtelProgrami
             Otel otel = new Otel(otelIsmi, sehir, yildizSy, otelTur);
             Yonetici.OtelEkle(otel);
             MessageBox.Show("Oteli Basarı İle Eklediniz.");
-
-           
         }
     }
 }

@@ -21,7 +21,7 @@ namespace OtelProgrami
         {
             InitializeComponent();
         }
-        internal Uye UyeHataDurumunda { get => UyeHataDurumunda; set => UyeHataDurumunda = value; }
+
         //kayit ol deyince yeni bir uye json bilgisi olustur
         private void button_Kayitol_Click(object sender, EventArgs e)
         {
@@ -32,9 +32,11 @@ namespace OtelProgrami
                 string telNo = textBox_Tel.Text;
                 string tcNo = textBox_TcNo.Text;
                 string sifre = textBox_Sifre.Text;
+
                 //telefona veya tc nosuna string bir karakter girerse cath bloguna gitmesi saglandı
-                //int telNo_Kontrol = Convert.ToInt32(textBox_Tel.Text);
-                //int tcNo_Kontrol = Convert.ToInt32(textBox_TcNo.Text);
+                int telNo_Kontrol = Convert.ToInt32(textBox_Tel.Text);
+                int tcNo_Kontrol = Convert.ToInt32(textBox_TcNo.Text);
+
                 //bilgileri boş bırakmasını istemiyoruz.
                 if (textBox_Ad.Text == string.Empty || textBox_Sifre.Text == string.Empty || textBox_Tel.Text == string.Empty ||
                     textBox_TcNo.Text == string.Empty || textBox_Soyad.Text == string.Empty)
@@ -44,8 +46,9 @@ namespace OtelProgrami
                     onemli_soyad.Visible = true;
                     onemli_tcNo.Visible = true;
                     onemli_tel.Visible = true;
+
                     MessageBox.Show("Lütfen bilgileri boş bırakmayınız.");
-                    //exception log kaydı gelecek.
+
                     kayit.logOlustur("Üye olunurken bilgiler boş bırakıldı", DateTime.Now.ToString());
 
                 }
@@ -54,6 +57,7 @@ namespace OtelProgrami
                 {
                     //hatayı nerede yaptıgı goruntulendi
                     onemli_ad.Visible = true;
+
                     MessageBox.Show("15 karakterden büyük yazdınız.");
                     kayit.logOlustur("Üye Olunurken Kullanıcı adı 15 karakterden fazla girildi", DateTime.Now.ToString());
                 }
@@ -61,17 +65,21 @@ namespace OtelProgrami
                 {
                     Uye yeniUye = new Uye(ad, soyad, telNo, tcNo, sifre);
                     yeniUye.KayitOl();
+
                     MessageBox.Show(ad + soyad + " başarıyla kayıt oldunuz");
+                    this.Close();
                 }
             }
-            catch (HataliGirisException exp)
+            catch (Exception exp)
             {
                 //labelada nerede hata yaptıgını gösterdik.
                 //ilk başta gozukmemesi için görünürlügünü kapattok ki hata yaptıgında gozuksun.
                 onemli_tel.Visible = true;
                 onemli_tcNo.Visible = true;
+
                 //Log classi eklenecek uye kayit olamadi log'u olusturulacak
                 kayit.logOlustur("Üye olunurken tel no veya tc no girilirken harf kullanıldı", DateTime.Now.ToString());
+
                 MessageBox.Show(exp.Message); // exception mesajı duzenlenecek
             }
             finally

@@ -21,7 +21,6 @@ namespace OtelProgrami
         public AnaGiris()
         {
             InitializeComponent();
-           // textBox_Sifre += textBox_Sifre_KeyDown;
         }
 
         private void button_giris_Click(object sender, EventArgs e)
@@ -45,9 +44,9 @@ namespace OtelProgrami
                 bool kullaniciGirisiSaglandi = false;
 
                 // kullanici girisi yapildi.
-                foreach (var a in fileEntries)
+                foreach (var temp in fileEntries)
                 {
-                    Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(a));
+                    Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(temp));
                     if (kullanici_TcNo == "admin" && kullanici_Sifre == "admin")
                     {
                         MessageBox.Show("Yonetici girişi yaptınız!");
@@ -69,8 +68,8 @@ namespace OtelProgrami
                 if (kullaniciGirisiSaglandi == false)
                 {
                     
-                    MessageBox.Show("Kullanıcı Bilgileriniz Yanlış Lütfen Tekrar Deneyiniz.");
-                    kayit.logOlustur("Giriş yaparken Kullanici adini veya şifresini yanlış girdi", DateTime.Now.ToString());
+                    MessageBox.Show("Kullanıcı bilgileriniz yanlış lütfen tekrar deneyiniz.");
+                    kayit.logOlustur("Giriş yaparken kullanici adini veya şifresini yanlış girdi", DateTime.Now.ToString());
                 }
             }
 
@@ -79,8 +78,7 @@ namespace OtelProgrami
         private void Kayit_Click(object sender, EventArgs e)
         {
             UyeOl uye = new UyeOl();
-            uye.ShowDialog();
-
+            uye.Show();
         }
 
         private void checkBox_sifregizle_CheckedChanged(object sender, EventArgs e)
@@ -98,12 +96,12 @@ namespace OtelProgrami
 
         private void AnaGiris_Load(object sender, EventArgs e)
         {
-            //OtelRezervasyon aa = new OtelRezervasyon();
-           // aa.Show();
             //form load kısmına bu kodu yazdık cunku ilk girildiginde sifre göster butonuna basmadan gosteriyordu.
             textBox_Sifre.PasswordChar = '*';
             
         }
+
+        //enter tusuna basınca giriş yap butonumuz çalısıyor
         private void textBox_Sifre_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

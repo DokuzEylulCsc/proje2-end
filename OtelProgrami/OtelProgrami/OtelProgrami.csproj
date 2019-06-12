@@ -59,7 +59,6 @@
       <DependentUpon>AnaGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="CiftKisilikOda.cs" />
-    <Compile Include="HataliGirisException.cs" />
     <Compile Include="IkizYatakliOda.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Oda.cs" />

@@ -14,7 +14,7 @@ namespace OtelProgrami
 
         internal List<Oda> BulunanOdalar { get => bulunanOdalar; set => bulunanOdalar = value; }
 
-        public void OdaAra(string odaTuru, string odaOzelligi, string sehir,string giris,string cikis)
+        public void OdaAra(string odaTuru, string odaOzelligi, string sehir, string giris, string cikis)
         {
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\TumOtellereAitOdalar\";
@@ -24,8 +24,7 @@ namespace OtelProgrami
 
             foreach (var element in fileEntries)
             {
-                //newton soft json okuma
-                // read file into a string and deserialize JSON to a type
+                // string olarak json okundu, objeye cevrildi
                 Oda oda = JsonConvert.DeserializeObject<Oda>(File.ReadAllText(element));
 
                 if (oda.OdaTuru == odaTuru && oda.OdaOzelligi == odaOzelligi && oda.SehirBilgisi == sehir)
@@ -33,7 +32,6 @@ namespace OtelProgrami
                     BulunanOdalar.Add(oda);
                 }
             }
-
         }
 
         // Sistem üyenin isteğine uyan her bir oteli üyeye geri bildirir.

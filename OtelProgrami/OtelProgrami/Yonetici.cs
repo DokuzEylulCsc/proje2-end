@@ -11,26 +11,9 @@ namespace OtelProgrami
 {
     class Yonetici
     {
-        string kullanici_Ad;
-        string sifre;
-
-        List<Oda> odaListesi = new List<Oda>();
-        List<Uye> musteriListesi = new List<Uye>();
-
-        internal string Kullanici_Ad { get => kullanici_Ad; set => kullanici_Ad = value; }
-        internal string Sifre { get => sifre; set => sifre = value; }
-        internal List<Oda> OdaListesi { get => odaListesi; set => odaListesi = value; }
-        internal List<Uye> MusteriListesi { get => musteriListesi; set => musteriListesi = value; }
-
-        public Yonetici()
+         public Yonetici()
         {
-
-        }
-
-        public void BilgileriniGuncelle(string yeniAd, string yeniSifre)
-        {
-            kullanici_Ad = yeniAd;
-            Sifre = yeniSifre;
+            
         }
 
         // Otel eklendiginde Json olarak JSONVeri\Oteller klasorune Otel eklenecek
@@ -77,11 +60,10 @@ namespace OtelProgrami
 
             List<Uye> uyeler = new List<Uye>();
 
-            foreach (var a in fileEntries)
+            foreach (var temp in fileEntries)
             {
-                // newton soft json okuma
-                // read file into a string and deserialize JSON to a type
-                Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(a));
+                // string olarak json okundu, objeye cevrildi
+                Uye uye = JsonConvert.DeserializeObject<Uye>(File.ReadAllText(temp));
 
                 uyeler.Add(uye);
             }

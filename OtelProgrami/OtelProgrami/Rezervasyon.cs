@@ -18,6 +18,7 @@ namespace OtelProgrami
         string odaOzelligi; // Ekonomik, Deniz manzarasi vs.
         string rezervasyonBaslangic;
         string rezervasyonBitis;
+        string odaID;
         Uye rezerveEden = new Uye();
 
         // Otel Türü, Oda Türü, Oda Özelliği vs seçilecek,
@@ -37,6 +38,7 @@ namespace OtelProgrami
           
         }
 
+        public string OdaID { get => odaID; set => odaID = value; }
         public string Ad { get => ad; set => ad = value; }
         public string Soyad { get => soyad; set => soyad = value; }
         public string TcNo { get => tcNo; set => tcNo = value; }

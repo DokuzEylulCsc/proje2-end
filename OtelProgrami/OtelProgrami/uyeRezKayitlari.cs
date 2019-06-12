@@ -18,7 +18,6 @@ namespace OtelProgrami
         public uyeRezKayitlari()
         {
             InitializeComponent();
-
         }
 
 
@@ -34,7 +33,6 @@ namespace OtelProgrami
 
         private void uyeRezKayitlari_Load(object sender, EventArgs e)
         {
-
             string filePath = System.IO.Directory.GetCurrentDirectory();
             filePath = System.IO.Directory.GetCurrentDirectory().Substring(0, filePath.LastIndexOf("bin")) + @"JSONVeri\Rezervasyonlar\";
 
@@ -42,9 +40,10 @@ namespace OtelProgrami
 
             foreach (var eleman in fileEntries)
             {
-                // newton soft json okuma
-                // read file into a string and deserialize JSON to a type
+                // string json'u Rezervasyon objesine çeviriyoruz
                 Rezervasyon rez = JsonConvert.DeserializeObject<Rezervasyon>(File.ReadAllText(eleman));
+
+                // Rezervasyon kayitlari datagrid'ine rezervasyonlari okuyup, ekliyoruz
                 rezervasyonKayitlari.Rows.Add(rez.Sehir,rez.OtelIsmi,rez.OdaTuru,rez.OdaOzelligi,rez.OdaFiyati,rez.RezervasyonBaslangic,rez.RezervasyonBitis);
             }
         }
